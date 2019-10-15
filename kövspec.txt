@@ -1,0 +1,72 @@
+									Követelmény specifikáció
+
+
+1. Bevezetés(vezetõi összefoglaló):
+
+	
+
+2. Jelenlegi helyzet leírása:(üzleti környezet)
+
+	
+
+
+3.Vágyálom rendszer:
+
+	
+
+4.Feltételek:
+
+	
+
+
+5. Jelenlegi üzleti folyamatok modellje:
+
+
+	
+6. Igényelt üzleti folyamatok modellje:(vágyálom rendszerben leírt dolgokat modellezzük)
+
+	
+	
+
+7. Követelmény Lista:(példaként marad)
+
+	Modul		ID		Név		Verzió		Leírás
+
+	Játékmotor	F1		AnimalWorld	0.1		A 0.1-es verzió tartalmazni fogja az állatokról készült listát, mely az IntelliJ IDEA által támogatott
+									Javafx programozási nyelven készül, valamint egy szöveges dobozt, melyben a kliens a megbízást
+									tudja teljesíteni.
+
+	Játékmotor	F2		AnimalWorld	0.2		A lista tartalmazni fog 10 darab állatról készült illusztrációt, mely a panel közepén megjelenõ
+									ablakban tud megjelenni, így a felhasználó tudja teljesíteni a megbízásokat.
+
+	Design		F3		Háttér		0.3		A szoftver esztétikai tartalmakkal fog bõvülni, mely a megbízó igényeit figyelembe véve és azokat
+									kielégítve egyszerû, hagyományos módon készül.
+
+	Játékmotor	F4		Egyéb modulok	0.4		A program újabb modulokkal bõvül, melyben a felhasználó minden sikeres megbízás után pontot
+									kap, melybõl késõbb segítséget tud kérni.
+
+	Játékmotor	F5		funkció		0.5		A szoftver további funkciókkal bõvül, melyben a felhasználó egy kattintással megszakíthatja
+									a játék által kínált szolgáltatást.
+
+	Játékmotor	F6		AnimalWorld	0.6		A szoftver hibátlan mûködése után további állatokról készült illusztrációval bõvül a lista.
+
+	Tanúsítványok	F7		kiadás		1.0		A program a követelményeknek eleget téve tesztek alatt fog átesni, melyben a megbízó összes igényét
+									kielégítve a játék kiadásra kerül
+									 
+
+8. fogalomszótár:
+
+	kifejezések:
+
+	
+
+	szaknyelvek:
+
+	
+
+	rövidítések:
+	
+
+
+
+	
