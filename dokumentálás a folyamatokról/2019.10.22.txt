@@ -3,7 +3,7 @@ Követelmény Specifikáció:
 
 A követelmény specifikáció Bevezetés részét elkezdtem kidolgozni, melyben részleteztem a modern világ fejlõdését a vendéglátás szempontjából.
 Továbbá kutatások eredményeképp kitértem néhány alapvetõ szállodai hibákra, melyek megtalálhatók a kisebb hoteleknél, apartmanoknál.
-
+*******************************************************************************************************************************************************
 Funkcionális specifikáció
 -dolgozott: Oravecz Zsolt
 A funkcionális specifikáció bevezetését kezdtem el, megragadva projektük alapvetõ témáját.
