@@ -5,3 +5,6 @@ Sass-Gyarmati Norbert:
 - A követelmény specifikációnak a bevezetés részét vállalltam el elsõ feladatként, azon dolgoztam, valamint vázlatosan kidolgoztam, szaknyelveket, illetve kifejezéseket
 definiáltam. 
 - Az elõzõ meeting témáját a csoport leszavazta, így új ötletet vetettünk fel, mely hoteleknek készül, a recepciósok munkáját könnyítik meg.
+
+Oravecz Zsolt:
+- Feladatként a funkcionalitás specifikációt vállaltam el. És a mai nap folyamán ennek létrehozásán dolgoztam.

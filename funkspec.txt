@@ -5,23 +5,27 @@ Funkcionális specifikáció:
 ösztönzőleg hat más gazdasági ágakra, például: infrastruktúra fejlesztése. A vendéglátás fókuszpontjában a hotelek, illetve
 a panziók állnak, melyek arra törekednek, hogy a legjobb színvonallal fogadhassák vendégeiket, továbbá kellemes 
 környezetben pihenésre és kikapcsolódásra adjanak lehetőséget. 
+
 	Azonban már egy személy vendégüll látása is igen nagy szervezettséget igényel. A népszerűbb vendéglátóhelyeken
 azonban a vendégek száma jóval több. A szállodába, hotelbe látogatókról több információt is nyílván kell tartani ahhoz,
 hogy számukra a megfelelő szolgáltatás legyen nyújtható, és a vállakozás kiegyensúlyozott működését is segíti, ha minden
-információt rendezetten tárolunk. A fejlett informatika napjainkban beleszövődött a kereskedelem szinte minden területére,
+információt rendezetten tárolunk. A fejlett informatika napjainkban beleszövődött a kereskedelem szinte minden területébe,
 ezzel segítve az adminisztrációs, és nyilvántartó feladatokat. Kisebb szállásadók nem engedhetik meg maguknak a megfelelő 
 szoftverek használatát, ezzel viszont veszítenek az ügyfelek szimpátiájából, és az elégedettségi mutatók is csökkennek.
+
 	Célunk az, hogy egy olyan rendszert teremtsünk, mellyel alapvetően segítjük és gördülékenyebbé tesszük a kissebb 
 vendéglátó egységek működését. Specifikációnk alapján szeretnénk olyan árat biztosítani, mely számukra is elérhető.
+a szoftver képes arra, hogy a vendégekről a legtöbb számunkra jelentős információt struktúráltan tárolja. 
+A program javafx grafikus felületén használható, amelyhez tartozik egy adatbázis is, melyben az ügyfelek tulajdonságait 
+tároljuk. Ha bármilyen információra van szükségünk, akkor ezeket az adatokat természetesen le is tudjuk kérni. Abból kiindulva,
+hogy bizalmas adatokat 
 
-	a
 
-
-
+	
 //A szoftvernek nem alapvető követelménye a hálózatos használat
 
 **A rendszer funkciói
-
+Adatvédelem szempontjából nem tanácsos hálózatban használni.
 **Nem funkcionális követelményekk
 
 **Interfészek
