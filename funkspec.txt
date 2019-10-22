@@ -61,8 +61,23 @@ Ajánlások a következõk:
 	
 	
 
-Adatvédelem szempontjából nem tanácsos hálózatban használni.
+
 **Nem funkcionális követelményekk
+
+	Használhatóság: a rendszer egyszerû felépítésû lesz, mely legfõképp a célközönség miatt lesz egy letisztult panel. 
+A felhasználók a szoftver szolgáltatásait igénybe véve egy letisztult felület tárul eléjük, valamint a hagyományos és megszokott 
+szoftver egyedi ötletekkel, igényeknek megfelelõ  eszközökkel tárul majd eléjük, mellyel élvezetesebbé válik a szolgáltatás.
+
+	Teljesítmény: a rendszer nem lesz nagy tárhely, illetve memória igényû, ennek okai a gyors munkavégzés, valamint a felhasználók
+eltérõ eszközeik specifikációja. Teljesítmény szempontjából alacsony rangot kap, mely nem fogja elérni az 1GB tárhelyet, valamint az 
+elegendõ RAM*2 csupán 500-1000MB lesz.
+	Megbízhatóság: Csoportunk kifejezetten ügyel rá, hogy a felhasználó biztonságban érezhesse magát a szoftver által tárolt adatokkal 
+kapcsolatban. Ebből kifolyólag kell olyan intézkedéseket csinálni amely véd az adatlopás ellen: pl. a bejelenztkezés, illetve az offline működés.
+	Skálázhatóság: Mivel a célközönségünk között a kisebb vendéglátók szerepelnek, ahol kevesebb vendégre számíthatunk, így kapacitást is 
+ennek megfelelően határoztuk meg kb. 100 főben. Ha több férőhelyre van szükség, akkor az dinamikusan később változtatható.
+	A tranzakciók integritása:  a szoftver a logikailag összefüggő frissítések csoportját egyetlen munkaegységként hajtja végre.
+	Biztonság és teljesítmény: . Vegyük figyelembe, hogy nem minden szolgáltatást és interakciót kell aláírni vagy titkosítani. Ezzel 
+javíthatunk a szoftver teljesítményén.
 
 **Interfészek
 
@@ -70,3 +85,10 @@ Adatvédelem szempontjából nem tanácsos hálózatban használni.
 **Az alkalmazás működésének áttekintése
 
 **Dizájn terv
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+fogalomtár:
+	-*1 IntelliJ IDEA: egy Java IDE a JetBrains-tõl, elérhetõ Apache 2 Licenccel közösségi kiadásban és kereskedelmi kiadásban is.
+Gyakran egyszerûen csak "IDEA"-ként vagy "IntelliJ"-ként hivatkoznak rá.
+	-*2 RAM: A RAM (az angol Random Access Memory rövidítéseként, tetszõleges hozzáférésû memória, közvetlen hozzáférésû memória, véletlen hozzáférésû memória,
+bár ez utóbbi helytelenül terjedt el). egy véletlen elérésû írható–olvasható adattároló eszköz.
