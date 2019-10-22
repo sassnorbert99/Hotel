@@ -5,6 +5,21 @@ Rendszerterv:
 		
 
 
+3.5 Követelmények:
+
+ 	Funkcionális követelmények:
+
+ 		-Menü: 
+
+ 	Nemfunkcionális követelmények: 
+
+ 		-A programnak egyszerûnek kell lennie , ezért a teljesítménye nem lehet nagy , viszonylag olcsóbb hardvereken 
+ 		is szépen kell futnia és ezáltal a  megbízhatósága is nagyobb lesz mivel nincs túlterhelve a rendszer.
+
+	Törvényi elõírások, szabványok : 
+
+		-Az alkalmazásban nem jelenhetnek meg felnõtt tartalmak.
+
 4. Fizikai környezetek:
 	- támogatott operációs rendszer: multiplatform
 	- támogatott eszközök: PC, laptop
