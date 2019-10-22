@@ -3,6 +3,11 @@ Rendszerterv:
 
 
 		
+1. Bevezetés: 
+	A rendszer célja a következõk:
+	
+	- A program fõ funkciója, hogy a kliensek a szoftver szolgáltatásait igénybe véve egy letisztult felület tárul eléjük, valamint a hagyományos és megszokott
+szoftver egyedi ötletekkel, igényeknek megfelelõ eszközökkel tárul majd eléjük, mellyel élvezetesebbé válik a szolgáltatás.
 
 2. Projekt Terv:
 
