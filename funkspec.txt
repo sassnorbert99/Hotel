@@ -14,7 +14,7 @@ szoftverek használatát, ezzel viszont veszítenek az ügyfelek szimpátiájáb
 	Célunk az, hogy egy olyan rendszert teremtsünk, mellyel alapvetően segítjük és gördülékenyebbé tesszük a kissebb 
 vendéglátó egységek működését. Specifikációnk alapján szeretnénk olyan árat biztosítani, mely számukra is elérhető.
 
-	
+	a
 
 
 
