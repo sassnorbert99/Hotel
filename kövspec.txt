@@ -7,7 +7,24 @@
 és gyorsabban fejlõdnek, mint a vidéki illetve falusi települések. A városokban ezáltal keresetté váltak az ingatlanok eladása illetve kiadása, valamint további
 szórakozási, kikapcsolódási intézmények is fejlõdnek. Ilyenek például a hotelek, panziók fejlõdése, mely alapvetõen meghatározzák a városok turizmus-és idegen
 forgalmát.
-	
+	Magyarországon minden kis-és nagyvárosban számtalan hotelek, apartmanok és egyéb pihenõ helyek épültek, melyek évrõl évre egyre több turistát, külföldit
+vonz. Azonban nem minden hotel mûködik megfelelõen. Számos szállodák küzdenek hibákkal, ilyenek például az árlista használata a recepciónál:
+	Abból ered, hogy a recepció árlistát használ a telefonos vagy e-mailes érdeklõdések kezelésére. A vendégek jellemzõen elõször a szállásközvetítõ oldalakon
+tájékozódnak, hiszen ott könnyen összehasonlíthatják a szállodák árait, szolgáltatásait. Ezután egy részük közvetlenül is felkeresi a szállodát több információért 
+vagy jobb árért. Ha a recepció ilyenkor árlistából dolgozik, akkor elõfordulhat, hogy a vendég rosszabb árat kap, mint amit korábban a szállásközvetítõ oldalon látott.
+Egyrészt az emberi tényezõ miatt megvan a lehetõsége, hogy beállít a vendég egy promóciót, például a booking.com-on, és a recepció árlistáján nem frissíti az árat,
+másrészt árlista használatával nem tudja lekövetni az early bird, a nonref, a secret deal vagy más összetettebb árakat. Így a vendég rosszabb árat kap közvetlenül,
+mint amit a szállás közvetítõ oldalon talált.
+	A következõ hibák néhány szállodáknál, hogy nem tudják pontosan vezetni a vendégek adatait és a lefoglalt szobák közötti kapcsolatokat, illetve további adatokat,
+hiszen nem minden helyen kivitelezhetõ. Ennek hatására a kevésbé ismert hotelek veszítenek a elégedettségi garanciájukból, valamint a vendégeikbõl is.
+	További hibák:
+	1. Hiányos a telefonszám – pedig szükséges lenne a szálloda címével együtt feltüntetni. Az alapvetõ kontakt információk nélkül rengeteg vevõt vesztít a szálloda,
+akik addig sem jutnak el, hogy kérdezni tudjanak tõlük.
+	2. Rossz foglalási rendszer használata – A vásárló számára a foglalási rendszer a honlapok részét képezi. Ha nem mûködik gördülékenyen, az
+a szállodát minõsít. Ez is egy olyan hiba, amely bármely értékesítõ weboldal esetén a totális kudarcot jelenti. Az ügyfél eljutot az adott hotelhez, megtalálta amit keresett
+meggyõzi a szálloda, hogy õket válassza és úgy dönt, fizetni akar azért, amit kínálnak neki. Ha nem hagyják, gyorsan továbbáll.
+
+
 
 	
 
