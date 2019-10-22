@@ -76,7 +76,7 @@ kapcsolatban. Ebből kifolyólag kell olyan intézkedéseket csinálni amely vé
 	Skálázhatóság: Mivel a célközönségünk között a kisebb vendéglátók szerepelnek, ahol kevesebb vendégre számíthatunk, így kapacitást is 
 ennek megfelelően határoztuk meg kb. 100 főben. Ha több férőhelyre van szükség, akkor az dinamikusan később változtatható.
 	A tranzakciók integritása:  a szoftver a logikailag összefüggő frissítések csoportját egyetlen munkaegységként hajtja végre.
-	Biztonság és teljesítmény: . Vegyük figyelembe, hogy nem minden szolgáltatást és interakciót kell aláírni vagy titkosítani. Ezzel 
+	Biztonság és teljesítmény: Vegyük figyelembe, hogy nem minden szolgáltatást és interakciót kell aláírni vagy titkosítani. Ezzel 
 javíthatunk a szoftver teljesítményén.
 
 **Interfészek
