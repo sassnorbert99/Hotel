@@ -1,0 +1,55 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Rendszerterv:
+
+
+		
+1. Bevezetés: 
+	A rendszer célja a következõk:
+	
+	- A program fõ funkciója, hogy a kliensek a szoftver szolgáltatásait igénybe véve egy letisztult felület tárul eléjük, valamint a hagyományos és megszokott
+szoftver egyedi ötletekkel, igényeknek megfelelõ eszközökkel tárul majd eléjük, mellyel élvezetesebbé válik a szolgáltatás.
+
+2. Projekt Terv:
+
+	Projekt szerepkörei:
+	- Csoport tagok: Deák Ádám, Sass-Gyarmati Norbert, Nagy Bálint,Járomi Dávid Antal, Oravecz Zsolt
+	- Projekt vezetõ: Sass-Gyarmati Norbert
+	- Fejlesztõk: Deák Ádám, Sass-Gyarmati Norbert, Nagy Bálint, Járomi Dávid Antal, Oravecz Zsolt
+	- Vezetõ fejlesztõ: Deák Ádám, Nagy Bálint
+	- Forrás adminisztrátor: Járomi Dávid Antal, Nagy Bálint
+	- Teszter: Járomi Dávid Antal, Deák Ádám, Sass-Gyarmati Norbert, Nagy Bálint, Oravecz Zsolt
+	- Követelmény specifikáció vezetõ: Sass-Gyarmati Norbert
+	- Funkcionális specifikáció vezetõ: Oravecz Zsolt
+	- Rendszerterv vezetõ: Járomi Dávid Antal
+	- Illusztráció vezetõ: 
+	- Ütemterv: Az alkalmazásnak a hónap(2019.december) elejére kész kell lennie
+
+	
+
+3. Üzleti folyamatok modellje:
+
+3.5 Követelmények:
+
+ 	Funkcionális követelmények:
+
+ 		-Menü: 
+
+ 	Nemfunkcionális követelmények: 
+
+ 		-A programnak egyszerûnek kell lennie , ezért a teljesítménye nem lehet nagy , viszonylag olcsóbb hardvereken 
+ 		is szépen kell futnia és ezáltal a  megbízhatósága is nagyobb lesz mivel nincs túlterhelve a rendszer.
+
+	Törvényi elõírások, szabványok : 
+
+		-Az alkalmazásban nem jelenhetnek meg felnõtt tartalmak.
+
+4. Fizikai környezetek:
+	- támogatott operációs rendszer: multiplatform
+	- támogatott eszközök: PC, laptop
+	- nem támogatott eszközök: mobileszközök(mobil, pda, tablet)
+	- programozási nyelv: 
+	- adatbázis-kezelõ rendszerek: 
+	- tárhely: <1GB
+	- RAM: <500MB
+	- fejlesztõi környezet: Windows alapú hordozható számítógép
+	
