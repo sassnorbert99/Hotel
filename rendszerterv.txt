@@ -1,0 +1,17 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Rendszerterv:
+
+
+		
+
+
+4. Fizikai környezetek:
+	- támogatott operációs rendszer: multiplatform
+	- támogatott eszközök: PC, laptop
+	- nem támogatott eszközök: mobileszközök(mobil, pda, tablet)
+	- programozási nyelv: 
+	- adatbázis-kezelõ rendszerek: 
+	- tárhely: <1GB
+	- RAM: <500MB
+	- fejlesztõi környezet: Windows alapú hordozható számítógép
+	
