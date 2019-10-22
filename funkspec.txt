@@ -18,7 +18,7 @@ vendéglátó egységek működését. Specifikációnk alapján szeretnénk oly
 a szoftver képes arra, hogy a vendégekről a legtöbb számunkra jelentős információt struktúráltan tárolja. 
 A program javafx grafikus felületén használható, amelyhez tartozik egy adatbázis is, melyben az ügyfelek tulajdonságait 
 tároljuk. Ha bármilyen információra van szükségünk, akkor ezeket az adatokat természetesen le is tudjuk kérni. Abból kiindulva,
-hogy bizalmas adatokat 
+hogy bizalmas adatoka
 
 
 	
