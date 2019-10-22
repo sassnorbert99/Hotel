@@ -54,41 +54,7 @@ továbbá mindkét fél tudomásul veszi a megrendelõ által meghatározott leadási hat
 	-A felhasználók(recepciósok) többsége szereti, ha egy szoftver kezelése egyszerû és letisztult kezelõfelületet biztosít.
 
 
-  Fontos a lokális helyesség:  - Teljesség
-                               - Ellentmondás-mentesség
-                               - Szigorú specifikációs nyelv
-                               – Ellenõrzött tervezési minták használata
-                               – Specifikáció ellenõrzése/verifikáció/
-
- Legyen megvalósítható, ehhez fontos: -erõforrások,
-                                       -használhatóság
-                                       -karbantarthatóság
-                                       és figyelembe kell venni a -költségbeli-
-                                                                  -technikai-
-                                                                  -környezeti-
-                                                                  kockázatokat is.
-
- Szükséges, hogy megbízható legyen:   – Védelem a szisztematikus hibák ellen
-                                      – Az összes technikai és irányítási tevékenység meghatározása,
-                                        figyelése, ellenõrzése
-                                      - Szoftverek ellenõrzése, fejlesztési eszközök megfelelõsége
-                                      - Probléma bejelentés és javítás rögzítése:   – Dokumentáció és visszajelzések
-                                                                                    – Elemzések/okok azonosítása
-                                                                                    – Felderítés és megoldás módszerei, megelõzõ
-                                                                                      tevékenységek
-                                                                                    – Javítás ellenõrzése, ismételt igazolás
-                                                                                      és érvényesítés
-
- Szintén nagyon fontos, hogy legyenek támogatók és olyan személyek, akik karbantartják a rendszert.
-
- Könnyen ellenõrizhetõ/tesztelhetõ legyen: – specifikus, egyértelmû, számszerûsíthetõ
-
- Tegyen eleget a nemfunkcionális követelményeknek:  -megbízhatóság
-                                                    -válaszidõ
-                                                    -tárfoglalás
-                                                    -rugalmasság
-                                                    -robosztusság
-                                                    -hordozhatóság
+  
                                                     
 
 	
