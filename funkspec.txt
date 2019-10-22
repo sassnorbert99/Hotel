@@ -16,15 +16,51 @@ szoftverek használatát, ezzel viszont veszítenek az ügyfelek szimpátiájáb
 	Célunk az, hogy egy olyan rendszert teremtsünk, mellyel alapvetően segítjük és gördülékenyebbé tesszük a kissebb 
 vendéglátó egységek működését. Specifikációnk alapján szeretnénk olyan árat biztosítani, mely számukra is elérhető.
 a szoftver képes arra, hogy a vendégekről a legtöbb számunkra jelentős információt struktúráltan tárolja. 
+Mivel a szoftvert a legtöbb korosztály számára tervezzük, így ügyelnünk kell arra hogy minden korosztály számára érthető és 
+használható legyen. 
 A program javafx grafikus felületén használható, amelyhez tartozik egy adatbázis is, melyben az ügyfelek tulajdonságait 
 tároljuk. Ha bármilyen információra van szükségünk, akkor ezeket az adatokat természetesen le is tudjuk kérni. Abból kiindulva,
-hogy bizalmas adatoka
+hogy bizalmas adatok vannak a birtokunkban, azokat megfelelően kell kezelnünk és nem szabad engednünk, hogy illetéktelen kezekbe
+ kerüljenek.
 
 
 	
-//A szoftvernek nem alapvető követelménye a hálózatos használat
+
 
 **A rendszer funkciói
+
+	A funkciók kifejtése elõtt szót kell ejtenünk a platformról, operációs rendszer verziókról, valamint, hogy milyen eszközökre 
+tervezzük megvalósítani az alkalmazást. A szoftver az IntelliJ IDEA*1 által támogatott Java programozási nyelvvel készül. 
+Ennek legfõbb oka, hogy a kliensek ne legyenek operációs rendszerhez kötve, dinamikusan bármelyik operációs rendszerrel 
+rendelkezõ számítógépen, illetve hordozható számítógépen el tudják érni, ezzel fokozva a felhasználói élményt.
+
+	Sok felhasználó nem rendelkezik a Microsoft által kiadott Windows operációs rendszerrel, hanem más -lásd. Linux, Mac OS-
+operációs rendszer szolgáltatásait veszik igénybe, melynek több oka is adódhat. Célunk tehát, hogy ne legyen operációs rendszerhez 
+kötött szoftver, hanem bárki hozzáférhessen és hasznáni tudja a szoftver által nyújtott szolgáltatásokat.
+	A megrendelõ pályázati elvárásai a következõk:
+	-A rendszer offline legyen, így elkerülve a sebezhetőséget, és az adatlopást.
+	-A rendszer legyen jól követhető, könnyen használható és jól átlátható.
+	-A szoftver ne egy klón szoftver legyen, tehát más felépítésû legyen, mint az eddigi kiadott szoftverek.
+	-A pályázati határidõ 2019 év 12 hónap 04 nap.
+	-A megbízó számítógépes platformon, illetve különböző operációs rendszereken szeretné használni a szoftvert.
+	Az általános törvények a rendszerünkre is vonatkozik, mind a megrendelõ, mind a projekt vezetõ beleegyezik abba, hogy a pályázatban
+felsorolt pontokat betartja, továbbá mindkét fél tudomásul veszi a megrendelõ által meghatározott leadási határidõpontját. 
+	A csoportunk ajánlásokkal kiegészítve, a megrendelõtõl engedélyt kér, hogy a projekt elemi részeit önállóan feldolgozhassák.
+Ajánlások a következõk:
+	-A megrendelõ igényeit kielégítve a program nem mobilos applikáció lesz, hanem a pályázatban megfogalmazott 4. pont alapján csak számítógépen lehet használni.
+	-A szoftver offline lesz, és a vendégfelvétel csak egy helyen történik. 
+
+	Fukcióinak kifejtése a következõk lesznek:
+
+	Kliensoldal
+	- nincs operációs rendszerhez kötve
+	- csak számtógépes eszközökön érhetõ el.
+	- az adatok adatbázisban lesznek tárolva, így ezekről az adatokról biztonsági mentés is készíthető.
+	- A felhasználónak be kell jelentkeznie a szoftverfejlesztő által előre meghatározott bejelentkezési adatokkal. 
+	- nem lesz szükség hálózati adatkapcsolatra, a program offline lesz elérhetõ
+	
+	
+
 Adatvédelem szempontjából nem tanácsos hálózatban használni.
 **Nem funkcionális követelményekk
 
