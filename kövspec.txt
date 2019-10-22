@@ -40,6 +40,57 @@ mely megkönnyíti és elõsegíti a recepciós feladatokat, vendégek és a hotel közöt
 
 4.Feltételek:
 
+A szoftverünk a megrendelõ elvárásait és igényeit figyelembe véve, kiegészítve a csapatunk kreativitásával készül. Célunk, hogy hotelek számára biztosítsunk egy olyan
+szoftvert, mely lokális módon mûködjön és a recepciós munkákban segítsen, könnyebbé és hatékonyabbá téve az adminisztratív tevékenységeket.
+A megrendelõ pályázati elvárásai a következõk:
+	-Hagyományos módszereken alapuljon az ügyességi szoftver, mégis egyedi hatásokkal, környezettel rendelkezzen.
+	-A szoftver ne egy klón szoftver legyen, tehát más felépítésû legyen, mint az eddigi kiadott program
+	-A pályázati határidõ 2019 év 10 hónap 08 nap-tól 2019 év 12 hónap 04 napjáig lehetséges beadni
+	-A megbízó a hagyományos mobil applikációk helyett számítógépes -ide beleértve a hordozható számítógépeket(laptop, notebook)- szoftvert akar, külön kikötéssel,
+hogy semmilyen mobil eszközzel ne lehessen használni a szolgáltatást
+	Az általános törvények a rendszerünkre is vonatkozik, mind a megrendelõ, mind a projekt vezetõ beleegyezik abba, hogy a pályázatban felsorolt pontokat betartja,
+továbbá mindkét fél tudomásul veszi a megrendelõ által meghatározott leadási határidõpontját. 
+	A csoportunk ajánlásokkal kiegészítve, a megrendelõtõl engedélyt kér, hogy a projekt elemi részeit önállóan feldolgozhassák. Ajánlások a következõk:
+	-A felhasználók(recepciósok) többsége szereti, ha egy szoftver kezelése egyszerû és letisztult kezelõfelületet biztosít.
+Fontos a lokális helyesség:  - Teljesség
+                               - Ellentmondás-mentesség
+                               - Szigorú specifikációs nyelv
+                               – Ellenõrzött tervezési minták használata
+                               – Specifikáció ellenõrzése/verifikáció/
+
+ 
+Legyen megvalósítható, ehhez fontos: -erõforrások,
+                                       -használhatóság
+                                       -karbantarthatóság
+                                       és figyelembe kell venni a -költségbeli-
+                                                                  -technikai-
+                                                                  -környezeti-
+                                                                  kockázatokat is.
+
+ Szükséges, hogy megbízható legyen:   – Védelem a szisztematikus hibák ellen
+                                      – Az összes technikai és irányítási tevékenység meghatározása,
+                                        figyelése, ellenõrzése
+                                      - Szoftverek ellenõrzése, fejlesztési eszközök megfelelõsége
+                                      - Probléma bejelentés és javítás rögzítése:   – Dokumentáció és visszajelzések
+                                                                                    – Elemzések/okok azonosítása
+                                                                                    – Felderítés és megoldás módszerei, megelõzõ
+                                                                                      tevékenységek
+                                                                                    – Javítás ellenõrzése, ismételt igazolás
+                                                                                      és érvényesítés
+
+ Szintén nagyon fontos, hogy legyenek támogatók és olyan személyek, akik karbantartják a rendszert.
+
+ Könnyen ellenõrizhetõ/tesztelhetõ legyen: – specifikus, egyértelmû, számszerûsíthetõ
+
+ Tegyen eleget a nemfunkcionális követelményeknek:  -megbízhatóság
+                                                    -válaszidõ
+                                                    -tárfoglalás
+                                                    -rugalmasság
+                                                    -robosztusság
+                                                    -hordozhatóság
+  
+                                                    
+
 	
 
 
