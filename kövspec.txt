@@ -24,7 +24,7 @@ akik addig sem jutnak el, hogy kérdezni tudjanak tõlük.
 a szállodát minõsít. Ez is egy olyan hiba, amely bármely értékesítõ weboldal esetén a totális kudarcot jelenti. Az ügyfél eljutot az adott hotelhez, megtalálta amit keresett
 meggyõzi a szálloda, hogy õket válassza és úgy dönt, fizetni akar azért, amit kínálnak neki. Ha nem hagyják, gyorsan továbbáll.
 	A mi projektünkben szeretnénk egy olyan szoftvert fejleszteni minden korosztály számára, mely a kisebb hotelek számára is biztosít egy olyan kezelõ felületet, 
-mely megkönnyíti és elõsegíti a recepciós feladatokat, vendégek és a hotel közötti kapcsolatokat.
+mely megkönnyíti és elõsegíti a recepciós feladatokat, vendégek és a hotel közötti kapcsolatokat
 
 
 	
