@@ -71,6 +71,7 @@ szoftver egyedi ötletekkel, igényeknek megfelelõ  eszközökkel tárul majd e
 	Teljesítmény: a rendszer nem lesz nagy tárhely, illetve memória igényû, ennek okai a gyors munkavégzés, valamint a felhasználók
 eltérõ eszközeik specifikációja. Teljesítmény szempontjából alacsony rangot kap, mely nem fogja elérni az 1GB tárhelyet, valamint az 
 elegendõ RAM*2 csupán 500-1000MB lesz.
+
 	Megbízhatóság: Csoportunk kifejezetten ügyel rá, hogy a felhasználó biztonságban érezhesse magát a szoftver által tárolt adatokkal 
 kapcsolatban. Ebből kifolyólag kell olyan intézkedéseket csinálni amely véd az adatlopás ellen: pl. a bejelenztkezés, illetve az offline működés.
 	Skálázhatóság: Mivel a célközönségünk között a kisebb vendéglátók szerepelnek, ahol kevesebb vendégre számíthatunk, így kapacitást is 
