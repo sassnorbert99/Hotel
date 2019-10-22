@@ -52,7 +52,13 @@ hogy semmilyen mobil eszközzel ne lehessen használni a szolgáltatást
 továbbá mindkét fél tudomásul veszi a megrendelõ által meghatározott leadási határidõpontját. 
 	A csoportunk ajánlásokkal kiegészítve, a megrendelõtõl engedélyt kér, hogy a projekt elemi részeit önállóan feldolgozhassák. Ajánlások a következõk:
 	-A felhasználók(recepciósok) többsége szereti, ha egy szoftver kezelése egyszerû és letisztult kezelõfelületet biztosít.
+Fontos a lokális helyesség:  - Teljesség
+                               - Ellentmondás-mentesség
+                               - Szigorú specifikációs nyelv
+                               – Ellenõrzött tervezési minták használata
+                               – Specifikáció ellenõrzése/verifikáció/
 
+ 
 
   
                                                     
