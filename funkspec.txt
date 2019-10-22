@@ -1,0 +1,14 @@
+Funkcionális specifikáció:
+********************************************************
+**Áttekintés
+
+**A rendszer funkciói
+
+**Nem funkcionális követelményekk
+
+**Interfészek
+
+
+**Az alkalmazás működésének áttekintése
+
+**Dizájn terv
