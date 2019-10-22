@@ -12,8 +12,8 @@ vonz. Azonban nem minden hotel mûködik megfelelõen. Számos szállodák küzdenek hi
 	Abból ered, hogy a recepció árlistát használ a telefonos vagy e-mailes érdeklõdések kezelésére. A vendégek jellemzõen elõször a szállásközvetítõ oldalakon
 tájékozódnak, hiszen ott könnyen összehasonlíthatják a szállodák árait, szolgáltatásait. Ezután egy részük közvetlenül is felkeresi a szállodát több információért 
 vagy jobb árért. Ha a recepció ilyenkor árlistából dolgozik, akkor elõfordulhat, hogy a vendég rosszabb árat kap, mint amit korábban a szállásközvetítõ oldalon látott.
-Egyrészt az emberi tényezõ miatt megvan a lehetõsége, hogy beállít a vendég egy promóciót, például a booking.com-on, és a recepció árlistáján nem frissíti az árat,
-másrészt árlista használatával nem tudja lekövetni az early bird, a nonref, a secret deal vagy más összetettebb árakat. Így a vendég rosszabb árat kap közvetlenül,
+Egyrészt az emberi tényezõ miatt megvan a lehetõsége, hogy beállít a vendég egy promóciót, például a booking.com-on*1, és a recepció árlistáján nem frissíti az árat,
+másrészt árlista használatával nem tudja lekövetni az early bird*2, a nonref*3, a secret deal vagy más összetettebb árakat. Így a vendég rosszabb árat kap közvetlenül,
 mint amit a szállás közvetítõ oldalon talált.
 	A következõ hibák néhány szállodáknál, hogy nem tudják pontosan vezetni a vendégek adatait és a lefoglalt szobák közötti kapcsolatokat, illetve további adatokat,
 hiszen nem minden helyen kivitelezhetõ. Ennek hatására a kevésbé ismert hotelek veszítenek a elégedettségi garanciájukból, valamint a vendégeikbõl is.
@@ -81,6 +81,12 @@ mely megkönnyíti és elõsegíti a recepciós feladatokat, vendégek és a hotel közöt
 8. fogalomszótár:
 
 	kifejezések:
+	-*1 booking.com:A Booking.com egy nemzetközi honlap, amelyen keresztül különféle kisebb-nagyobb szolgáltató szállásajánlatát lehet megtalálni. Jelenleg 43 nyelven
+érhetõ el a lap, többek között magyar nyelven is. Saját állítása szerint kb. 1,07 millió szállást közvetítenek nap mint nap.
+	-*2 early bird: Az Early Bird jegyek a bizalmat megjutalmazó jegytípusok. Aki, ilyen jegyet vásárol a legkedvezõbb áron kerül bele a fesztiválunk családi légkörébe.
+Az Early Bird magyarul tükörfordításban, „Korai madarat” jelent.
+	-*3 nonref: A non ref árak megnevezés a szállodaiparban gyakran használatos kifejezés, amelyet röviden így lehet összefoglalni: Kedvezõ ár szigorú feltételekkel.
+	-
 
 	
 
