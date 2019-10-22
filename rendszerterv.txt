@@ -4,6 +4,24 @@ Rendszerterv:
 
 		
 
+2. Projekt Terv:
+
+	Projekt szerepkörei:
+	- Csoport tagok: Deák Ádám, Sass-Gyarmati Norbert, Nagy Bálint,Járomi Dávid Antal, Oravecz Zsolt
+	- Projekt vezetõ: Sass-Gyarmati Norbert
+	- Fejlesztõk: Deák Ádám, Sass-Gyarmati Norbert, Nagy Bálint, Járomi Dávid Antal, Oravecz Zsolt
+	- Vezetõ fejlesztõ: Deák Ádám, Nagy Bálint
+	- Forrás adminisztrátor: Járomi Dávid Antal, Nagy Bálint
+	- Teszter: Járomi Dávid Antal, Deák Ádám, Sass-Gyarmati Norbert, Nagy Bálint, Oravecz Zsolt
+	- Követelmény specifikáció vezetõ: Sass-Gyarmati Norbert
+	- Funkcionális specifikáció vezetõ: Oravecz Zsolt
+	- Rendszerterv vezetõ: Járomi Dávid Antal
+	- Illusztráció vezetõ: 
+	- Ütemterv: Az alkalmazásnak a hónap(2019.december) elejére kész kell lennie
+
+	
+
+3. Üzleti folyamatok modellje:
 
 3.5 Követelmények:
 
