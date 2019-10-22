@@ -1,0 +1,5 @@
+Követelmény Specifikáció:
+-dolgozott: Sass-Gyarmati Norbert
+
+A követelmény specifikáció Bevezetés részét elkezdtem kidolgozni, melyben részleteztem a modern világ fejlõdését a vendéglátás szempontjából.
+Továbbá kutatások eredményeképp kitértem néhány alapvetõ szállodai hibákra, melyek megtalálhatók a kisebb hoteleknél, apartmanoknál.
