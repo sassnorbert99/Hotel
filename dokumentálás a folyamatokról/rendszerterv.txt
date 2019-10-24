@@ -1,0 +1,5 @@
+Rendszerterv:
+2019.10.22
+-dolgozott: Sass-Gyarmati Norbert
+Minden rendszertervben lévõ fejezetet elkezdtem kidolgozni vázlatosan.
+***********************************************************************************
