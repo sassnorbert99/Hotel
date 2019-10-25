@@ -1,5 +1,8 @@
-2019.10.22
+2019.10.24
 
 Sass-Gyarmati Norbert:
 
 -rendszerterv: A rendszertervet elkezdtem vázlatosan kidolgozni
+
+Oravecz Zsolt:
+- A funkspec. további kidolgozása, egyéb részleteken való ötltelés.

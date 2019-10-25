@@ -1,0 +1,4 @@
+2019.10.25
+
+Deák Ádám:
+- SQLite adatbázis létrehozva és test adattal feltöltve
