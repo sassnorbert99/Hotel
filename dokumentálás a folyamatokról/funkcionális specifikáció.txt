@@ -3,3 +3,11 @@ Funkcionális specifikáció:
 -dolgozott: Oravecz Zsolt
 A funkcionális specifikáció bevezetését kezdtem el, megragadva projektünk alapvetõ témáját.
 **********************************************************************************************************
+2019.10.29.
+dolgozott: Oravecz Zsolt
+Funkcionális specifikáció
+	-nem funkcionális követelmények
+	-interfészek
+	-fogalomtár bõvítés
+	-szoftver mûködésének áttekintése
+************************************************************************************************************
