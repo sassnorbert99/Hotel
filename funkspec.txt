@@ -96,11 +96,38 @@ Mivel az alkalmazás offline, így távoli helyreállításra nincsen lehetősé
 helyre állítható és kiküszöbölhető.
 
 **Megszorítások
+	A működési környezet megszorításai: Mivel a megrendelő nem szolgáltatás orientált programot kér, így a tervezés és a programozás jóval ütemesebb és rugalmasabb.
+Egy szolgáltatás orientált program létrehozásánál külön gondot kell fordítani, hogy a kommunikáció a szolgáltatás és az interfész között
+minden platform között rugalmasan és megfelelően működjön. A mi esetünkben a szolgáltatás és az interfész is egy csomagban helyezkedik el,
+ezzel elősegítve a biztonságos, kiegyensúlyozott  és gyors működést.
+
+	Szakértelmi megszorítások: A szakértelmi megszorítások korlátozzák a technikai környezet és a nem funkcionális követelmények fejlesztésének és megváltoztatásának 
+lehetőségét. A technológiai tudásterületek folyamatosan változnak, ami miatt a technikai csapatnak rendszeresen tréningre van szüksége, vagy külső konzultánsok szakértelmét kell 
+igénybe venni.
 
 **Interfészek
 
+	A felhasználó(jelen esetünkben: recepciós) a programot használva tudja majd a vendéglátó épületbe érkező vendégek adatait struktúráltan nyílvántartani.
+A felhasználó elkéri a vendégek adatait, majd a számítógépen meghívja a programot, a program a számítógép feldolgozó egységét CPU*3 és a memóriáját használva
+rögzíti az adatokat egy adatbázisba, mely adatbázis a számítógép saját háttértárán található.
 
-**Az alkalmazás működésének áttekintése
+A program nem fog tartalmazni a külsõ kapcsolatokat biztosító interfészeket, mivel az adatbázis lokálisan elérhető,így  nem kell majd hálózati adatkapcsolat a forások eléréséhez.
+Felhasználói interfész (GUI) terv – ahogy az alkalmazás „kinéz” majd (lehet vázlatos is, részben ez alapján készülnek majd a részletes képernyõtervek)
+- kezdetben a felhasználó egy teljesen letisztult képernyõvel fog találkozni, mely hagyományos színeket és felépítést, felbontást fog tartalmazni
+
+	- a felhasználó egy egyszerű bejelentkezési képernyővel fog találkozni, ahol az általunk készített azonosítóval, illetve jelszóval tud majd bejelentkezni.
+		(bejelentkezés nélkül a szoftver nem hazsnálható, az adatvédelmi elővigyázatosságból kiindulva)
+
+	- Ha a kliens a szolgáltatást meg akarja szakítani, esetleg késõbb igénybe venni, ehhez rendelkezni fog egy "kilépés" gomb, mely rákattintás után
+megszakítja, majd kilép a programból, ezzel együtt kijelentkezik. Az alkalmazás bezárása után ismét meg kell adnia adatait.
+
+	- Az általunk készített szoftver a felhasználó és az adatbázis között fog egy közös réteget biztosítani. A szoftver segít a felhasználónak
+grafikus úton  menedzselni az adatbázist, könnyíti az átláthatóságot, illetve megakadályozza, hogy az adatbázisban redundancia*4 keletkezzen.
+Példának okáért, ha a felhasználó egy olyan személyt próbál regisztrálni, aki már jelen van az adatbázisban, akkor őt egy hibaüzenettel tájékoztatja erről.
+	
+
+**Az szoftver működésének áttekintése
+	A szoftver
 
 **Dizájn terv
 
@@ -110,3 +137,5 @@ fogalomtár:
 Gyakran egyszerûen csak "IDEA"-ként vagy "IntelliJ"-ként hivatkoznak rá.
 	-*2 RAM: A RAM (az angol Random Access Memory rövidítéseként, tetszõleges hozzáférésû memória, közvetlen hozzáférésû memória, véletlen hozzáférésû memória,
 bár ez utóbbi helytelenül terjedt el). egy véletlen elérésû írható–olvasható adattároló eszköz.
+	-*3 CPU: Central process unit, a számítógép központi feldolgozó egysége. Minden egyes számítást ez az egység végez el.
+	-*4 redundancia: Jelen esetünkben adatismétlés a táblázat egyedi azonosítói között.
