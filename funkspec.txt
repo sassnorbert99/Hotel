@@ -68,22 +68,66 @@ Ajánlások a következõk:
 A felhasználók a szoftver szolgáltatásait igénybe véve egy letisztult felület tárul eléjük, valamint a hagyományos és megszokott 
 szoftver egyedi ötletekkel, igényeknek megfelelõ  eszközökkel tárul majd eléjük, mellyel élvezetesebbé válik a szolgáltatás.
 
-	Teljesítmény: a rendszer nem lesz nagy tárhely, illetve memória igényû, ennek okai a gyors munkavégzés, valamint a felhasználók
-eltérõ eszközeik specifikációja. Teljesítmény szempontjából alacsony rangot kap, mely nem fogja elérni az 1GB tárhelyet, valamint az 
+	Teljesítmény:A fogyasztók a szolgáltatások teljesítményét a válaszidő és az áteresztőképesség alapján állapítják meg.  A rendszer
+ nem lesz nagy tárhely, illetve memória igényû, ennek okai a gyors munkavégzés, valamint a felhasználókeltérõ eszközeik specifikációja. 
+Teljesítmény szempontjából alacsony rangot kap, mely nem fogja elérni az 1GB tárhelyet, valamint az 
 elegendõ RAM*2 csupán 500-1000MB lesz.
 
 	Megbízhatóság: Csoportunk kifejezetten ügyel rá, hogy a felhasználó biztonságban érezhesse magát a szoftver által tárolt adatokkal 
-kapcsolatban. Ebből kifolyólag kell olyan intézkedéseket csinálni amely véd az adatlopás ellen: pl. a bejelenztkezés, illetve az offline működés.
-	Skálázhatóság: Mivel a célközönségünk között a kisebb vendéglátók szerepelnek, ahol kevesebb vendégre számíthatunk, így kapacitást is 
-ennek megfelelően határoztuk meg kb. 100 főben. Ha több férőhelyre van szükség, akkor az dinamikusan később változtatható.
+kapcsolatban. Ebből kifolyólag kell olyan intézkedéseket csinálni, amely véd az adatlopás ellen: pl. a bejelenztkezés, illetve az offline működés.
+
+	Skálázhatóság:A skálázhatóság komoly problémát jelent a szolgáltatásorientált rendszerekben. Nyilvános szolgáltatásoknál emellett fennáll a 
+nemkívánatos hozzáférések veszélye, amik bár lehetnek véletlenek vagy szándékosak, mindenképpen hátrányosak a rendszer ellenőrzött skálázhatósága szempontjából. 
+Mivel a célközönségünk között a kisebb vendéglátók szerepelnek, ahol kevesebb vendégre számíthatunk, így kapacitást is ennek megfelelően határoztuk meg kb. 100 főben. 
+Ha több férőhelyre van szükség, akkor az dinamikusan később változtatható.
+
 	A tranzakciók integritása:  a szoftver a logikailag összefüggő frissítések csoportját egyetlen munkaegységként hajtja végre.
-	Biztonság és teljesítmény: Vegyük figyelembe, hogy nem minden szolgáltatást és interakciót kell aláírni vagy titkosítani. Ezzel 
-javíthatunk a szoftver teljesítményén.
+Az integrált szolgáltatások általában egy üzleti tranzakcióhoz tartoznak, az undo (vagy a rollback) művelet feldolgozását pedig kompenzációs technikákkal oldják meg, 
+amik az ellenkező logikai tevékenységet hajtják végre. Az alkalmazás tervezésekor biztosítani kell az atomi tranzakciók kezelésének lehetőségét a szolgáltatás-interfészek 
+szemcsézettségének figyelembevételével.
+
+	Biztonság és teljesítmény: A legáltalánosabb biztonsági követelmény a végfelhasználók és a középső réteghez tartozó szerverek hitelesítése.
+A biztonsági architektúra kiválasztásakor igyekszünk megfelelni az üzleti követelményeknek, de kerüljük a többletterheléssel járó megoldásokat.
+Vegyük figyelembe, hogy nem minden szolgáltatást és interakciót kell aláírni vagy titkosítani. Ezzel javíthatunk a szoftver teljesítményén.
+	
+	Helyreállítás:  A szolgáltatás-interfészek  kapcsolódási pontok, melyeken keresztül a konkrét implementációk elérhető. Ez azt jelenti, hogy a magukat az implementációkat 
+futtató infrastruktúrát külön fel kell készíteni a katasztrófák kezelésére. Biztosítani kell például az adattároló központok redundanciáját. 
+Mivel az alkalmazás offline, így távoli helyreállításra nincsen lehetőség. Az adatbázisról biztonsági mentések készíthetőek, mellyel egy esetleges adatvesztés 
+helyre állítható és kiküszöbölhető.
+
+**Megszorítások
+	A működési környezet megszorításai: Mivel a megrendelő nem szolgáltatás orientált programot kér, így a tervezés és a programozás jóval ütemesebb és rugalmasabb.
+Egy szolgáltatás orientált program létrehozásánál külön gondot kell fordítani, hogy a kommunikáció a szolgáltatás és az interfész között
+minden platform között rugalmasan és megfelelően működjön. A mi esetünkben a szolgáltatás és az interfész is egy csomagban helyezkedik el,
+ezzel elősegítve a biztonságos, kiegyensúlyozott  és gyors működést.
+
+	Szakértelmi megszorítások: A szakértelmi megszorítások korlátozzák a technikai környezet és a nem funkcionális követelmények fejlesztésének és megváltoztatásának 
+lehetőségét. A technológiai tudásterületek folyamatosan változnak, ami miatt a technikai csapatnak rendszeresen tréningre van szüksége, vagy külső konzultánsok szakértelmét kell 
+igénybe venni.
 
 **Interfészek
 
+	A felhasználó(jelen esetünkben: recepciós) a programot használva tudja majd a vendéglátó épületbe érkező vendégek adatait struktúráltan nyílvántartani.
+A felhasználó elkéri a vendégek adatait, majd a számítógépen meghívja a programot, a program a számítógép feldolgozó egységét CPU*3 és a memóriáját használva
+rögzíti az adatokat egy adatbázisba, mely adatbázis a számítógép saját háttértárán található.
 
-**Az alkalmazás működésének áttekintése
+A program nem fog tartalmazni a külsõ kapcsolatokat biztosító interfészeket, mivel az adatbázis lokálisan elérhető,így  nem kell majd hálózati adatkapcsolat a forások eléréséhez.
+Felhasználói interfész (GUI) terv – ahogy az alkalmazás „kinéz” majd (lehet vázlatos is, részben ez alapján készülnek majd a részletes képernyõtervek)
+- kezdetben a felhasználó egy teljesen letisztult képernyõvel fog találkozni, mely hagyományos színeket és felépítést, felbontást fog tartalmazni
+
+	- a felhasználó egy egyszerű bejelentkezési képernyővel fog találkozni, ahol az általunk készített azonosítóval, illetve jelszóval tud majd bejelentkezni.
+		(bejelentkezés nélkül a szoftver nem hazsnálható, az adatvédelmi elővigyázatosságból kiindulva)
+
+	- Ha a kliens a szolgáltatást meg akarja szakítani, esetleg késõbb igénybe venni, ehhez rendelkezni fog egy "kilépés" gomb, mely rákattintás után
+megszakítja, majd kilép a programból, ezzel együtt kijelentkezik. Az alkalmazás bezárása után ismét meg kell adnia adatait.
+
+	- Az általunk készített szoftver a felhasználó és az adatbázis között fog egy közös réteget biztosítani. A szoftver segít a felhasználónak
+grafikus úton  menedzselni az adatbázist, könnyíti az átláthatóságot, illetve megakadályozza, hogy az adatbázisban redundancia*4 keletkezzen.
+Példának okáért, ha a felhasználó egy olyan személyt próbál regisztrálni, aki már jelen van az adatbázisban, akkor őt egy hibaüzenettel tájékoztatja erről.
+	
+
+**Az szoftver működésének áttekintése
+	A szoftver
 
 **Dizájn terv
 
@@ -93,3 +137,5 @@ fogalomtár:
 Gyakran egyszerûen csak "IDEA"-ként vagy "IntelliJ"-ként hivatkoznak rá.
 	-*2 RAM: A RAM (az angol Random Access Memory rövidítéseként, tetszõleges hozzáférésû memória, közvetlen hozzáférésû memória, véletlen hozzáférésû memória,
 bár ez utóbbi helytelenül terjedt el). egy véletlen elérésû írható–olvasható adattároló eszköz.
+	-*3 CPU: Central process unit, a számítógép központi feldolgozó egysége. Minden egyes számítást ez az egység végez el.
+	-*4 redundancia: Jelen esetünkben adatismétlés a táblázat egyedi azonosítói között.

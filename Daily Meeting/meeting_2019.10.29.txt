@@ -1,0 +1,7 @@
+Oravecz Zsolt
+Funkcionális specifikáció
+	-nem funkcionális követelmények
+	-interfészek
+	-fogalomtár bővítés
+	-szoftver működésének áttekintése
+----------------------------------------------------------
