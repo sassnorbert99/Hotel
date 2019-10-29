@@ -1,5 +1,5 @@
 Funkcionális specifikáció:
 2019.10.22
 -dolgozott: Oravecz Zsolt
-A funkcionális specifikáció bevezetését kezdtem el, megragadva projektük alapvetõ témáját.
+A funkcionális specifikáció bevezetését kezdtem el, megragadva projektünk alapvetõ témáját.
 **********************************************************************************************************
