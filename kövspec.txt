@@ -107,23 +107,22 @@ Legyen megvalósítható, ehhez fontos: -erõforrások,
 
 	Modul		ID		Név		Verzió		Leírás
 
-	Játékmotor	F1		AnimalWorld	0.1		A 0.1-es verzió tartalmazni fogja az állatokról készült listát, mely az IntelliJ IDEA által támogatott
-									Javafx programozási nyelven készül, valamint egy szöveges dobozt, melyben a kliens a megbízást
-									tudja teljesíteni.
+	Motor		F1		Hotel		0.1		A 0.1-es verzió tartalmazni fogja az alap szoftvert, mely az IntelliJ IDEA által támogatott
+									Javafx programozási nyelven készül, valamint egy szöveges dobozt, melyben a kliens megbízásokat
+									tud létesíteni.
 
-	Játékmotor	F2		AnimalWorld	0.2		A lista tartalmazni fog 10 darab állatról készült illusztrációt, mely a panel közepén megjelenõ
-									ablakban tud megjelenni, így a felhasználó tudja teljesíteni a megbízásokat.
+	Motor		F2		Hotel		0.2		A szoftver tartalmazni fog további funkciót, mely a kliens számára könnyítést teljesít, dinamikusan
+									tudja majd kezelni a vendégek fogadását, funkcióit.
 
 	Design		F3		Háttér		0.3		A szoftver esztétikai tartalmakkal fog bõvülni, mely a megbízó igényeit figyelembe véve és azokat
-									kielégítve egyszerû, hagyományos módon készül.
+									kielégítve egyszerû módon készül.
 
-	Játékmotor	F4		Egyéb modulok	0.4		A program újabb modulokkal bõvül, melyben a felhasználó minden sikeres megbízás után pontot
-									kap, melybõl késõbb segítséget tud kérni.
+	Motor		F4		Egyéb modulok	0.4		A program újabb modulokkal bõvül, mely praktikussá teszi majd a szoftvert.
 
-	Játékmotor	F5		funkció		0.5		A szoftver további funkciókkal bõvül, melyben a felhasználó egy kattintással megszakíthatja
-									a játék által kínált szolgáltatást.
+	Motor		F5		funkció		0.5		A szoftver további funkciókkal bõvül, melyben a felhasználó egy kattintással megszakíthatja
+									a program által kínált szolgáltatást.
 
-	Játékmotor	F6		AnimalWorld	0.6		A szoftver hibátlan mûködése után további állatokról készült illusztrációval bõvül a lista.
+	Motor		F6		Hotel		0.6		A szoftver hibátlan mûködése után további funkciókkal fogjuk bõvíteni a programot.
 
 	Tanúsítványok	F7		kiadás		1.0		A program a követelményeknek eleget téve tesztek alatt fog átesni, melyben a megbízó összes igényét
 									kielégítve a játék kiadásra kerül
