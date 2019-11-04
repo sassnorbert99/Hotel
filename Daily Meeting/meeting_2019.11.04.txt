@@ -1,0 +1,5 @@
+﻿Sass-Gyarmati Norbert:
+projekt:
+- leírásokat adtam egyes metódusok működéséhez, valamint kiegészítettem néhány hasznos 
+ötlettel
+----------------------------------------------------------
