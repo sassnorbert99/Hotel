@@ -5,5 +5,7 @@ Bevezetés:
 melyben szemléltetjük a panel kialakítását, a fõbb funkciókat, illetve, a 
 menüpontokat. A prototípus nem fog rendelkezni esztétikai jellemzõkkel, csak maga
 a váz szerkezet lesz a fõbb funkcióival.
+	A szoftvert windows operációs rendszerû számítógépen készítettük, programzási
+nyelvet tekintve pedig a visual studio által támogatott c# programozási nyelvet
+használtuk, ezen belül a vizuális windows form applikációt.
 	
-
