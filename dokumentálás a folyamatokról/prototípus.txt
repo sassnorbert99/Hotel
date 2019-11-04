@@ -1,0 +1,17 @@
+Hotel szoftver prototípusa
+2019.10.27
+Bevezetés:
+	A hoteleknek készülõ recepciós szoftverrõl készítettünk egy prototípust,
+melyben szemléltetjük a panel kialakítását, a fõbb funkciókat, illetve, a 
+menüpontokat. A prototípus nem fog rendelkezni esztétikai jellemzõkkel, csak maga
+a váz szerkezet lesz a fõbb funkcióival.
+	A szoftvert windows operációs rendszerû számítógépen készítettük, programzási
+nyelvet tekintve pedig a visual studio által támogatott c# programozási nyelvet
+használtuk, ezen belül a vizuális windows form applikációt.
+	A szoftverben minden adat statikusan -beleégetve- lesznek felépítve,
+a prototípus funkcióit tekintve nem kötelezõ dinamikus adatokkal, adatbázissal
+adatokat lekérdezni, illetve feltölteni.
+	A prototípus programunk memóriáját tekintve rendkívül alacsony, ami annak a
+következménye, hogy semmi megterhelõ, nagyon méretû grafikai beállítást nem tartalmaz.
+
+
