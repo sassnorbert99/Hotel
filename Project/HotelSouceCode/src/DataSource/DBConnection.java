@@ -5,7 +5,7 @@ import java.sql.*;
 public class DBConnection {
 
     private static Connection conn;
-
+    /*Connection Method*/
     public static Connection getConnection(){
         String OSName = System.getProperty("os.name").toLowerCase();
 
