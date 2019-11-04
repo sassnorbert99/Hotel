@@ -1,0 +1,9 @@
+Hotel szoftver prototípusa
+
+Bevezetés:
+	A hoteleknek készülõ recepciós szoftverrõl készítettünk egy prototípust,
+melyben szemléltetjük a panel kialakítását, a fõbb funkciókat, illetve, a 
+menüpontokat. A prototípus nem fog rendelkezni esztétikai jellemzõkkel, csak maga
+a váz szerkezet lesz a fõbb funkcióival.
+	
+
