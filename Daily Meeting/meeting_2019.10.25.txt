@@ -2,3 +2,6 @@
 
 Deák Ádám:
 - SQLite adatbázis létrehozva és test adattal feltöltve
+---------------------------------------------------------------------------
+Sass-Gyarmati Norbert
+- követelmény specifikáció: Vázlatosan kidolgozva a követelmény lista
