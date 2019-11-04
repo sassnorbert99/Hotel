@@ -13,5 +13,14 @@ a prototípus funkcióit tekintve nem kötelezõ dinamikus adatokkal, adatbázissal
 adatokat lekérdezni, illetve feltölteni.
 	A prototípus programunk memóriáját tekintve rendkívül alacsony, ami annak a
 következménye, hogy semmi megterhelõ, nagyon méretû grafikai beállítást nem tartalmaz.
+****************************************************************************
+2019.11.03.
 
+Jellemzõk:
+- operációs rendszer: windows
+- programozási nyelv: c# - winform application
+- adatok szerkezete: statikus
+- adatbázis: nincs
+- RAM: <100MB
+- tesztelt eszközök: PC, notebook
 
