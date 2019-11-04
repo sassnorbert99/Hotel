@@ -11,3 +11,9 @@ Továbbá kutatások eredményeképp kitértem néhány alapvetõ szállodai hibákra, mely
 
 követelmény specifikáció: Vázlatosan kidolgozva a követelmény lista
 *********************************************************************************************************************************************************
+2019.10.29
+dolgozott
+Sass-Gyarmati Norbert
+Követelmény Specifikáció
+	-követelmény lista: hibákat javítottam, mind szintaktikai-és fogalmi hibákat
+**********************************************************************************************************************************************************
