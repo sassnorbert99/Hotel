@@ -17,3 +17,10 @@ Sass-Gyarmati Norbert
 Követelmény Specifikáció
 	-követelmény lista: hibákat javítottam, mind szintaktikai-és fogalmi hibákat
 **********************************************************************************************************************************************************
+2019.11.03
+dolgozott:
+Sass-Gyarmati Norbert:
+Funkcionális specifikáció:
+- követelmény listát véglegesítettem, melyet a többiek beleegyezése után tudtam megtenni
+**********************************************************************************************************************************************************
+
