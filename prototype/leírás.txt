@@ -16,4 +16,10 @@ következménye, hogy semmi megterhelõ, nagyon méretû grafikai beállítást nem tart
 
 
 Jellemzõk:
+- operációs rendszer: windows
+- programozási nyelv: c# - winform application
+- adatok szerkezete: statikus
+- adatbázis: nincs
+- RAM: <100MB
+- tesztelt eszközök: PC, notebook
 
