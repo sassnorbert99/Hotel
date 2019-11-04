@@ -1,0 +1,17 @@
+Sass-Gyarmati Norbert:
+- prototípust létrehoztam, melyet winformon programozunk
+- kódokat vázlatosan kidolgoztam
+- létrehoztam a képernyõtervet, és az ahhoz tartozó képernyõképet
+- tesztelés alá vetettem a prototípust, melynek eredményei megtalálhatóak a prototype
+mappán belül a Unit tesztelésnél
+dokumentálási folyamatokat feldolgoztam, majd a prototípus tesztelési eredményeképp
+véglegesítettem.
+
+************************************************************************
+Oravecz Zsolt:
+
+************************************************************************
+
+Deák Ádám:
+
+*************************************************************************
