@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotel_prototype
 {
-    enum felszereltseg
+    public enum felszereltseg
     {
         LUXUS,
         KOMFORTOS,
