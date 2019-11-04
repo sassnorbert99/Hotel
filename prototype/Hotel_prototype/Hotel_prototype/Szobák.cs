@@ -49,5 +49,17 @@ namespace Hotel_prototype
                 felszereles = value;
             }
         }
+
+        public Szobák(int _szoba, int _agyszam, felszereltseg _felszereles)
+        {
+            Szoba = _szoba;
+            Agyszam = _agyszam;
+            Felszereles = _felszereles;
+        }
+
+        public override string ToString()
+        {
+            return "szobák száma: "+ Szoba + " ágyak száma: " + Agyszam + " agyszam felszereltsége: " + Felszereles;
+        }
     }
 }
