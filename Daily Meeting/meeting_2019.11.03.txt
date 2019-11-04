@@ -1,0 +1,4 @@
+﻿Sass-Gyarmati Norbert:
+Funkcionális specifikáció:
+- követelmény listát véglegesítettem
+----------------------------------------------------------
