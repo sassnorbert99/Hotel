@@ -15,4 +15,5 @@ adatokat lekérdezni, illetve feltölteni.
 következménye, hogy semmi megterhelõ, nagyon méretû grafikai beállítást nem tartalmaz.
 
 
+Jellemzõk:
 
