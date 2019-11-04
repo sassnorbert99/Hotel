@@ -1,7 +1,10 @@
-Oravecz Zsolt
+﻿Oravecz Zsolt
 Funkcionális specifikáció
 	-nem funkcionális követelmények
 	-interfészek
 	-fogalomtár bővítés
 	-szoftver működésének áttekintése
 ----------------------------------------------------------
+Sass-Gyarmati Norbert
+Követelmény Specifikáció
+	-követelmény lista: hibák javítva
