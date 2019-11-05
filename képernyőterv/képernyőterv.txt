@@ -71,6 +71,17 @@ meg a "sikertelen bejelentkezés" szöveg(Error.png), sikeres bejelentkezés
 esetén pedig a "sikeres bejelentkezés" ablak jelenik meg(Complete.png), mely
 ezután elõhozza az adatbeviteli panelt.
 
+6. Regisztráció:
+
+	A regisztrációs képernyõkép megtekinthetõ a registracio.png képen. A 
+regisztrációs funkció hagyományos alapokon mûködik, lesz majd egy egy "regisztráció"
+nevû gomb, mely újabb panelre irányítja át a klienst.
+	Regisztráció során a kliens több szempontokat is igénybe kell vegyen.
+Szükséges hozzá elsõsorban egy hitelesített jogtiszta licenckulcs, melyet a 
+szoftver megvételékor a cég adja a kliensnek. Ezután kell adjon egy felhasználónevet,
+majd egy jelszót, melyet késõbb bejelentkezés során tud majd használni.
+	A regisztráció után a szoftver visszatérít a beléptetés panelhez, ahol
+ismét részesül a kliens a belépés, illetve a regisztrációs funkciókkal.
 
 
 
