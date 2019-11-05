@@ -24,6 +24,7 @@ namespace Hotel_prototype
             {
                 Szobák c = new Szobák(i, rnd.Next(1, 5), felszereltseg.KOMFORTOS);
                 szoba.Add(c);
+
             }
 
         }
