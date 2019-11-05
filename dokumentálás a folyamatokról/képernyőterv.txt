@@ -30,13 +30,12 @@ reális értékekkel.
 	- alul található a kivett szobáknak készült menüsáv, mely abban az esetben 
 változik, ha a vendég kivesz egy szobát, azaz a vendég a szobák listából talál egy
 még fel nem használt szobát.
+**********************************************************************************
+2019.11.04
+Készítette: Sass-Gyarmati Norbert
 
 3.adatbevitel:
 	
-	Az adatbevitel elengedhetetlen lesz majd a szoftverünkben, hiszen a megbízó
-igényeit is figyelembe véve a kliens a panelen keresztül tudjon kommunikálni a 
-programmal és ne pedig a programkódban kelljen statikusan adatokat bevinni a 
-rendszerbe.
 	A szoftver vendégeket tud majd regisztráltatni, melyben a vendég különféle
 adatokkal kell szolgáljon a kliens számára. Ahogyan az megfigyelhetõ az "adatbevitel.png"
 képernyõképen, elõször a vendég teljes nevét kell megadnia, majd ezek után a taj
@@ -46,11 +45,8 @@ megszorítások a terjedlemmel kapcsolatban. Ha a személyes adatait kielégíti, vál
 szabad szobák közül, mely dinamikusan bõvül, illetve csökken.
 	Amint a vendég minden feltételnek eleget tesz, a kép jobb oldalán látható
 "beküld" gombbal a kliens feltölti az adatbázisba a vendég által létrehozott adat-
-tömbböt. Ez az adattömb természetesen a többi sávban is frissül, ezáltal
-dinamikusan fognak a menüsávok mozogni.
-	Beküldés után nem csak a menüsávok fognak változni, de ismét lehet majd további
-vendégek adatait bevinni, a beviteli mezõk ismét üresek lesznek.
-
+tömbböt.
+**********************************************************************************
 4. Beléptetés:
 	A beléptetés panel megelõzi az adatbeviteli panelt. A képernyõkép megtekinthetõ
 a "beleptetes.png" képen megetkinthetõ. A panel grafikai beállításait a megbízó
