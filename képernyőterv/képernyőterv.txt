@@ -57,7 +57,9 @@ vendégek adatait bevinni, a beviteli mezõk ismét üresek lesznek.
 
 4. Beléptetés:
 	A beléptetés panel megelõzi az adatbeviteli panelt. A képernyõkép megtekinthetõ
-a "beleptetes.png" képen megetkinthetõ.
+a "beleptetes.png" képen megetkinthetõ. A panel grafikai beállításait a megbízó
+igényeihez igazítjuk, melynek a panel bal oldalán lesz a bejelentkezés, a panel
+jobb oldalán pedig a regisztráció.
 
 
 
