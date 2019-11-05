@@ -14,4 +14,8 @@ egyszerûen tud adatokat bevinni a rendszerbe.
 funkciók, melyet a képen lehet látni. Lehet majd külön listázni a vendégeket, a 
 szabad szobákat, valamint a már kivett szobákat, melyek legördülõ sávban jelennek 
 meg, ezáltal a kliens nem kell nyomon kövesse az adott szobák használatát.
+	Továbbá, a vendégek sikeres regisztrálása után automatikusan meg fog 
+jelenni a vendégeket tartalmazó legördülõ sávban.
+
+2. Menüsáv:
 
