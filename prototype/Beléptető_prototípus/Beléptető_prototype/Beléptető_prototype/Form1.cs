@@ -64,7 +64,8 @@ namespace Beléptető_prototype
                 if (success)
                 {
                     MessageBox.Show("Sikeres bejelentkezés!");
-                    Process.Start("");
+                    Process.Start(@"C:\Users\O.Zsolt\Desktop\Hotel\prototype\Hotel_prototype\Hotel_prototype\bin\Debug\Hotel_prototype.exe");
+                    Application.Exit();
                 }
 
                 else
