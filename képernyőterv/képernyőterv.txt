@@ -41,4 +41,11 @@ bõvül, valamint csökken, hogy a vendég mikor vesz ki, hagy el egy adott szobát.
 igényeit is figyelembe véve a kliens a panelen keresztül tudjon kommunikálni a 
 programmal és ne pedig a programkódban kelljen statikusan adatokat bevinni a 
 rendszerbe.
+	A szoftver vendégeket tud majd regisztráltatni, melyben a vendég különféle
+adatokkal kell szolgáljon a kliens számára. Ahogyan az megfigyelhetõ az "adatbevitel.png"
+képernyõképen, elõször a vendég teljes nevét kell megadnia, majd ezek után a taj
+számot kell megadnia, mely szigorúan 9 numerikus karakterbõl állhat. 
+Továbbá a vendégnek szolgáltatnia kell a lakcímével, melynek nem lesznek külön 
+megszorítások a terjedlemmel kapcsolatban. Ha a személyes adatait kielégíti, választhat a 
+szabad szobák közül, mely dinamikusan bõvül, illetve csökken.
 	
