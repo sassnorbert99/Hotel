@@ -19,3 +19,20 @@ jelenni a vendégeket tartalmazó legördülõ sávban.
 
 2. Menüsáv:
 
+	A menüsáv a megbízó igényeit kielégítve készül, mely meghatározott pontokat
+követ nyomon. Ennek hatására a szoftver menüsávjainak felépítése a következõképp
+fog megvalósulni:
+	- "menusav.png" képen látható
+	- legfelelül a vendégek listája látható, mely minden sikeres vendég
+beregisztrálása után dinamikusan bõvül, reális mennyiségû vendégek számára biztosít 
+helyet.
+	- középen található a szobáknak készült menüsáv, melyben a kliens feltölti
+a hotel összes szobáját, és azok tulajdonságait, majd ezeket tárolja dinamikusan,
+reális értékekkel.
+	- alul található a kivett szobáknak készült menüsáv, mely abban az esetben 
+változik, ha a vendég kivesz egy szobát, azaz a vendég a szobák listából talál egy
+még fel nem használt szobát. A kliens ebben a menüsávban nem kap engedélyt a 
+módosításra, hiszen ez a menüsáv az elõzõ két menüsáv ok-okozata, mely az alapján
+bõvül, valamint csökken, hogy a vendég mikor vesz ki, hagy el egy adott szobát.
+
+
