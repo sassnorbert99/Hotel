@@ -10,11 +10,15 @@ lesznek majd legördülõ menük, melyek kényelmesebbé és praktikussá teszi majd a
 felhasználók számára az értelmezés, illetve használatát. Továbbá minden mezõnek
 lesznek textbox-ok, melybe a felhasználó -más értelemben kliens- könnyen és 
 egyszerûen tud adatokat bevinni a rendszerbe.
+*******************************************************************************
+2019.11.03
+Készítette: Sass-Gyarmati Norbert
+
 
 2. Menüsáv:
 
 	A menüsáv a megbízó igényeit kielégítve készül, mely meghatározott pontokat
-követ nyomon. Ennek hatására a szoftver menüsávjainak felépítése a következõképp
+követtem nyomon. Ennek hatására a szoftver menüsávjainak felépítése a következõképp
 fog megvalósulni:
 	- "menusav.png" képen látható
 	- legfelelül a vendégek listája látható, mely minden sikeres vendég
@@ -25,9 +29,7 @@ a hotel összes szobáját, és azok tulajdonságait, majd ezeket tárolja dinamikusan
 reális értékekkel.
 	- alul található a kivett szobáknak készült menüsáv, mely abban az esetben 
 változik, ha a vendég kivesz egy szobát, azaz a vendég a szobák listából talál egy
-még fel nem használt szobát. A kliens ebben a menüsávban nem kap engedélyt a 
-módosításra, hiszen ez a menüsáv az elõzõ két menüsáv ok-okozata, mely az alapján
-bõvül, valamint csökken, hogy a vendég mikor vesz ki, hagy el egy adott szobát.
+még fel nem használt szobát.
 
 3.adatbevitel:
 	
