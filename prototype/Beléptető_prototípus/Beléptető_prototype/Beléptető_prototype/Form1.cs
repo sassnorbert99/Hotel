@@ -12,9 +12,35 @@ namespace Beléptető_prototype
 {
     public partial class Form1 : Form
     {
+        public List<Users> Users_list = new List<Users>();
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if textBo
+
+            foreach (Users item in Users_list)
+            {
+                
+            }
         }
     }
 }
