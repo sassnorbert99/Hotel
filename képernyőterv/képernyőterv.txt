@@ -52,4 +52,6 @@ szabad szobák közül, mely dinamikusan bõvül, illetve csökken.
 "beküld" gombbal a kliens feltölti az adatbázisba a vendég által létrehozott adat-
 tömbböt. Ez az adattömb természetesen a többi sávban is frissül, ezáltal
 dinamikusan fognak a menüsávok mozogni.
-	
+	Beküldés után nem csak a menüsávok fognak változni, de ismét lehet majd további
+vendégek adatait bevinni, a beviteli mezõk ismét üresek lesznek.
+
