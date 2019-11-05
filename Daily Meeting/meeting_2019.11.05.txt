@@ -6,3 +6,5 @@ projekt:
 - képernyőképeket készítettem a prototípusról, valamint megcsináltam a bevezetés
 részét a képernyő tervnek
 ----------------------------------------------------------
+Oravecz Zsolt
+A beléptető prototype elkészítése
