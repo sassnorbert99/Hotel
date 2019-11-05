@@ -6,5 +6,11 @@ Bevezetés:
 akkor a szoftver hibaüzenetet küld és nem hvja meg a főprogramot. Ebben a verzióban a felhasználó egy az általunk kapott termékkulccsal
 tud regisztrálni, létrehozhat felhasználónevet és jelszót. A prototípus egy leegyszerűsített verzió, nem használ kódolást.
 
-
+Jellemzők:
+- operációs rendszer: windows
+- programozási nyelv: c# - winform application
+- adatok szerkezete: statikus
+- adatbázis: nincs
+- RAM: <100MB
+- tesztelt eszközök: PC, notebook
 
