@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -63,7 +64,7 @@ namespace Beléptető_prototype
                 if (success)
                 {
                     MessageBox.Show("Sikeres bejelentkezés!");
-                    Process
+                    Process.Start("");
                 }
 
                 else
