@@ -14,3 +14,8 @@ Jellemzők:
 - RAM: <100MB
 - tesztelt eszközök: PC, notebook
 
+Főbb funkciói:
+-az alkalmazásba bejelentkezni próbáló felhasználó ellenőrzése és kiszűrése
+-új felhasználó regisztrálása
+
+
