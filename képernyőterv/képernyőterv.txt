@@ -55,3 +55,8 @@ dinamikusan fognak a menüsávok mozogni.
 	Beküldés után nem csak a menüsávok fognak változni, de ismét lehet majd további
 vendégek adatait bevinni, a beviteli mezõk ismét üresek lesznek.
 
+4. Beléptetés:
+	A beléptetés panel megelõzi az adatbeviteli panelt. A képernyõkép megtekinthetõ
+a "beleptetes.png" képen megetkinthetõ.
+
+
