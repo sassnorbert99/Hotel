@@ -7,4 +7,8 @@ projekt:
 részét a képernyő tervnek
 ----------------------------------------------------------
 Oravecz Zsolt
+Létrehoztam egy prototypus_bejelentkezes mappát
 A beléptető prototype elkészítése
+	-a belépés csak azonosító és jelszó megadása esetén történik
+	-regisztrációra is van lehetőség, de csak abban az esetben ha megfelelő a termékkulcs
+--------------------------------------------------------------
