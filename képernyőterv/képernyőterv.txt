@@ -61,5 +61,16 @@ a "beleptetes.png" képen megetkinthetõ. A panel grafikai beállításait a megbízó
 igényeihez igazítjuk, melynek a panel bal oldalán lesz a bejelentkezés, a panel
 jobb oldalán pedig a regisztráció.
 
+5. login:
+	
+	A login.png nevû képen látható a bejelentkezéshez szükséges adatok.
+A bejelentkezés hagyományos módszereken alapul, kell hozzá egy felhasználónév,
+valamint egy hozzá tartozó jelszó, melyet a szoftver vásárlása után tudunk 
+biztosítani a klienseknek. Sikertelen próbálkozás során egy külön panelban jelenik
+meg a "sikertelen bejelentkezés" szöveg(Error.png), sikeres bejelentkezés
+esetén pedig a "sikeres bejelentkezés" ablak jelenik meg(Complete.png), mely
+ezután elõhozza az adatbeviteli panelt.
+
+
 
 
