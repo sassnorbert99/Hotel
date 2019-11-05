@@ -35,4 +35,23 @@ még fel nem használt szobát. A kliens ebben a menüsávban nem kap engedélyt a
 módosításra, hiszen ez a menüsáv az elõzõ két menüsáv ok-okozata, mely az alapján
 bõvül, valamint csökken, hogy a vendég mikor vesz ki, hagy el egy adott szobát.
 
+3.adatbevitel:
+	
+	Az adatbevitel elengedhetetlen lesz majd a szoftverünkben, hiszen a megbízó
+igényeit is figyelembe véve a kliens a panelen keresztül tudjon kommunikálni a 
+programmal és ne pedig a programkódban kelljen statikusan adatokat bevinni a 
+rendszerbe.
+	A szoftver vendégeket tud majd regisztráltatni, melyben a vendég különféle
+adatokkal kell szolgáljon a kliens számára. Ahogyan az megfigyelhetõ az "adatbevitel.png"
+képernyõképen, elõször a vendég teljes nevét kell megadnia, majd ezek után a taj
+számot kell megadnia, mely szigorúan 9 numerikus karakterbõl állhat. 
+Továbbá a vendégnek szolgáltatnia kell a lakcímével, melynek nem lesznek külön 
+megszorítások a terjedlemmel kapcsolatban. Ha a személyes adatait kielégíti, választhat a 
+szabad szobák közül, mely dinamikusan bõvül, illetve csökken.
+	Amint a vendég minden feltételnek eleget tesz, a kép jobb oldalán látható
+"beküld" gombbal a kliens feltölti az adatbázisba a vendég által létrehozott adat-
+tömbböt. Ez az adattömb természetesen a többi sávban is frissül, ezáltal
+dinamikusan fognak a menüsávok mozogni.
+	Beküldés után nem csak a menüsávok fognak változni, de ismét lehet majd további
+vendégek adatait bevinni, a beviteli mezõk ismét üresek lesznek.
 

@@ -1,0 +1,9 @@
+﻿Sass-Gyarmati Norbert:
+projekt:
+- hibákat javítottam, majd véglegesítettem.
+- képernyőképeket elkészítettem
+- képernyőterv leírását vázlatosan elkészítettem
+- prototípus kódjában hibákat javítottam.
+----------------------------------------------------------
+Oravecz Zsolt
+A beléptető prototype elkészítése
