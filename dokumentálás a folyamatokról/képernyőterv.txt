@@ -47,6 +47,10 @@ szabad szobák közül, mely dinamikusan bõvül, illetve csökken.
 "beküld" gombbal a kliens feltölti az adatbázisba a vendég által létrehozott adat-
 tömbböt.
 **********************************************************************************
+2019.11.05
+Készítette: Sass-Gyarmati Norbert
+
+
 4. Beléptetés:
 	A beléptetés panel megelõzi az adatbeviteli panelt. A képernyõkép megtekinthetõ
 a "beleptetes.png" képen megetkinthetõ. A panel grafikai beállításait a megbízó
