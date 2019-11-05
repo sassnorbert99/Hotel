@@ -34,7 +34,7 @@ namespace Beléptető_prototype
 
         private void Button2_Click(object sender, EventArgs e)
         {
-
+            panel2.Visible = true;
         }
 
         private void Button1_Click(object sender, EventArgs e)
