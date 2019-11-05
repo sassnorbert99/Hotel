@@ -1,2 +1,17 @@
 				Képernyõterv
 
+
+
+1. Bevezetés:
+
+	A mellékelten csatolt "kepernyokep_1.png" képen megtekinthetõ a megbízó
+igényeit kielégítõ panel elrendezései, funkciói. Amint a képen is látható,
+lesznek majd legördülõ menük, melyek kényelmesebbé és praktikussá teszi majd a 
+felhasználók számára az értelmezés, illetve használatát. Továbbá minden mezõnek
+lesznek textbox-ok, melybe a felhasználó -más értelemben kliens- könnyen és 
+egyszerûen tud adatokat bevinni a rendszerbe. 
+	A megbízó igényeit figyelembe véve létre lesz hozva a szoftverben a fõbb
+funkciók, melyet a képen lehet látni. Lehet majd külön listázni a vendégeket, a 
+szabad szobákat, valamint a már kivett szobákat, melyek legördülõ sávban jelennek 
+meg, ezáltal a kliens nem kell nyomon kövesse az adott szobák használatát.
+
