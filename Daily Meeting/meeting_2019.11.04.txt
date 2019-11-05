@@ -3,3 +3,5 @@ projekt:
 - leírásokat adtam egyes metódusok működéséhez, valamint kiegészítettem néhány hasznos 
 ötlettel
 ----------------------------------------------------------
+Oravecz Zsolt
+A prototípus javítása fejlesztése
