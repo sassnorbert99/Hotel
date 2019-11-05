@@ -19,3 +19,8 @@ Főbb funkciói:
 -új felhasználó regisztrálása
 
 
+A szoftver elkészült, tesztelések alatt esett át, melyet külön jegyzőkönyvbe vezettünk
+A tesztelési folyamatnak csak Unit tesztelés alatt esett át, melyben a szoftver
+kapacitását mértük.
+	A prototípusról készültek képernyőképek, melyet a képernyőtervben lehet
+megtekinteni, illetve ott lehet részletesen olvasni róla.
