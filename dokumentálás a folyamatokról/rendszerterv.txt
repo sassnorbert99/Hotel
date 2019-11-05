@@ -3,3 +3,37 @@ Rendszerterv:
 -dolgozott: Sass-Gyarmati Norbert
 Minden rendszertervben lévõ fejezetet elkezdtem kidolgozni vázlatosan.
 ***********************************************************************************
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Rendszerterv:
+
+2. Projekt Terv: létrehozva
+
+
+3. Üzleti folyamatok modellje: nem meghatározott
+
+3.5 Követelmények: létrehozva	
+
+ 	Funkcionális követelmények:
+
+ 		-Menü: 
+
+ 	Nemfunkcionális követelmények: 
+
+ 		-A programnak egyszerûnek kell lennie , ezért a teljesítménye nem lehet nagy , viszonylag olcsóbb hardvereken 
+ 		is szépen kell futnia és ezáltal a  megbízhatósága is nagyobb lesz mivel nincs túlterhelve a rendszer.
+
+	Törvényi elõírások, szabványok : 
+
+		-Az alkalmazásban nem jelenhetnek meg felnõtt tartalmak.
+
+4. Fizikai környezetek: létrehozva
+	- támogatott operációs rendszer: multiplatform
+	- támogatott eszközök: PC, laptop
+	- nem támogatott eszközök: mobileszközök(mobil, pda, tablet)
+	- programozási nyelv: 
+	- adatbázis-kezelõ rendszerek: 
+	- tárhely: <1GB
+	- RAM: <500MB
+	- fejlesztõi környezet: Windows alapú hordozható számítógép
+	
