@@ -48,4 +48,8 @@ számot kell megadnia, mely szigorúan 9 numerikus karakterbõl állhat.
 Továbbá a vendégnek szolgáltatnia kell a lakcímével, melynek nem lesznek külön 
 megszorítások a terjedlemmel kapcsolatban. Ha a személyes adatait kielégíti, választhat a 
 szabad szobák közül, mely dinamikusan bõvül, illetve csökken.
+	Amint a vendég minden feltételnek eleget tesz, a kép jobb oldalán látható
+"beküld" gombbal a kliens feltölti az adatbázisba a vendég által létrehozott adat-
+tömbböt. Ez az adattömb természetesen a többi sávban is frissül, ezáltal
+dinamikusan fognak a menüsávok mozogni.
 	
