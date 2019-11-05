@@ -14,12 +14,16 @@ namespace Beléptető_prototype
     public partial class Form1 : Form
     {
         public List<Users> Users_list = new List<Users>();
+        private string licence = "2D78-65JH-KHGF-78FV";
         
         public Form1()
         {
             InitializeComponent();
             Users a = new Users("a", "1");
+            
             Users_list.Add(a);
+            
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -75,6 +79,46 @@ namespace Beléptető_prototype
                     textBox2.Clear();
                 }
             }
+        }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            if (textBox_termekkulcs.Text!=licence)
+            {
+                MessageBox.Show("Hibás termékkulcs!");
+                textBox_termekkulcs.Clear();
+                textBox_felhasznalo.Clear();
+                textBox_jelszo.Clear();
+            }
+            else
+            {
+                if (textBox_felhasznalo.Text=="" || textBox_jelszo.Text=="")
+                {
+                    MessageBox.Show("A jelszót és a felhasználó nevet kötelező megadni!");
+                    textBox_termekkulcs.Clear();
+                    textBox_felhasznalo.Clear();
+                    textBox_jelszo.Clear();
+                }
+                else
+                {
+                    Users_list.Add(new Users(textBox_felhasznalo.Text,textBox_jelszo.Text));
+                    MessageBox.Show("Sikeres regisztráció!");
+                    textBox_termekkulcs.Clear();
+                    textBox_felhasznalo.Clear();
+                    textBox_jelszo.Clear();
+                    panel2.Visible = false;
+                }
+            }
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
         }
     }
 }
