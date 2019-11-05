@@ -3,4 +3,6 @@ projekt:
 - leírásokat adtam egyes metódusok működéséhez, valamint kiegészítettem néhány hasznos 
 ötlettel
 - prototípus mappát létrehoztam, valamint megírtam vázlatosan a programot
+- képernyőképeket készítettem a prototípusról, valamint megcsináltam a bevezetés
+részét a képernyő tervnek
 ----------------------------------------------------------
