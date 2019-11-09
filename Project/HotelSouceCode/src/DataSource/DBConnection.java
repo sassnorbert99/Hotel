@@ -7,9 +7,10 @@ import java.sql.*;
 
 public class DBConnection {
 
-    private static Connection conn;
-    /*Connection Method*/
-    public static Connection getConnection(){
+    private static Connection conn = Open();
+
+    /*Megnyitja az adatbázist*/
+    public static Connection Open(){
         String OSName = System.getProperty("os.name").toLowerCase();
 
         try {
@@ -26,11 +27,12 @@ public class DBConnection {
         catch (SQLException e){
             conn = null;
 
-            System.out.println( "HIBA: " + e.getMessage());
+            System.out.println( "NEM SIKERÜLT MEGNYITNI AZ ADATBÁZIST: " + e.getMessage());
         }
 
         return conn;
 
     }
+
 
 }

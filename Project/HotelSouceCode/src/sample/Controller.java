@@ -1,11 +1,9 @@
 package sample;
 
-import DataSource.DBConnection;
 
-import java.sql.Connection;
+import DataSource.Database;
 
 public class Controller {
-    Connection con = DBConnection.getConnection();
 
 
 

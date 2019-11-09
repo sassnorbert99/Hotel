@@ -1,5 +1,8 @@
 package DataSource;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.time.LocalDate;
 import java.util.Date;
 
@@ -55,4 +58,7 @@ public class Vendeg {
     public void setVaros(String varos) {
         this.varos = varos;
     }
+
+
+
 }
