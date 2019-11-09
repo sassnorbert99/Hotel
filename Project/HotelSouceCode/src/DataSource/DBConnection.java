@@ -2,6 +2,7 @@
 
 package DataSource;
 
+import java.io.Console;
 import java.sql.*;
 
 public class DBConnection {
@@ -17,7 +18,7 @@ public class DBConnection {
                 conn = DriverManager.getConnection(Database.CONNECTION_STRING_WIN);
             }
             /*connection_string_mac method*/
-            else if(OSName.contains("mac")){
+            else {
                 conn = DriverManager.getConnection(Database.CONNECTION_STRING_MAC);
             }
 
@@ -26,7 +27,8 @@ public class DBConnection {
         }
         catch (SQLException e){
             conn = null;
-            System.out.println(e.getMessage());
+
+            System.out.println( "HIBA: " + e.getMessage());
         }
 
         return conn;

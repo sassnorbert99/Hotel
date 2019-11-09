@@ -6,5 +6,5 @@ public class Database {
     /*connect to windows*/
     public static final String CONNECTION_STRING_WIN = "jdbc:sqlite:..\\Database\\" + DB_NAME;
     /*connect to MacOS*/
-    public static final String CONNECTION_STRING_MAC = "jdbc:sqlite:../Database/" + DB_NAME;
+    public static final String CONNECTION_STRING_MAC = "jdbc:sqlite:Project/Database/" + DB_NAME;
 }
