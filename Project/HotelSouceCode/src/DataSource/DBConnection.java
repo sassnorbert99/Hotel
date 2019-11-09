@@ -22,8 +22,6 @@ public class DBConnection {
                 conn = DriverManager.getConnection(Database.CONNECTION_STRING_MAC);
             }
 
-
-
         }
         catch (SQLException e){
             conn = null;
