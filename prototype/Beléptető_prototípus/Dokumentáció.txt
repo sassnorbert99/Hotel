@@ -3,7 +3,7 @@ Beléptető szoftver prototípusa
 Bevezetés:
 	A hoteleknek készülő recepciós szoftverhez készítetteünk egy loginoltató alkalmazást, mely ellenőrzi az adott felhasználónevet
 és jelszót és ha megfelelőek, akkor meghívja a főalkalmazást. Ha a login név, vagy a jelszó nem egyezik a szoftver által tárolt adatokkal,
-akkor a szoftver hibaüzenetet küld és nem hvja meg a főprogramot. Ebben a verzióban a felhasználó egy az általunk kapott termékkulccsal
+akkor a szoftver hibaüzenetet küld és nem hívja meg a főprogramot. Ebben a verzióban a felhasználó egy az általunk kapott termékkulccsal
 tud regisztrálni, létrehozhat felhasználónevet és jelszót. A prototípus egy leegyszerűsített verzió, nem használ kódolást.
 
 Jellemzők:

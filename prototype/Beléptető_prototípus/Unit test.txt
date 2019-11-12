@@ -1,0 +1,6 @@
+2019.11.12
+A programot teszt alá vetettük.
+Főbb tesztelési területek:
+	1. teljesítmény
+	2. elvárt működés
+
