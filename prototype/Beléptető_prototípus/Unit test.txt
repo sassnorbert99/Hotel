@@ -15,3 +15,9 @@ tesztelve:
 - Windows PC
 - Windows notebook
 
+2.) A szoftver teszteltük mind megfelelő, mind fals bejelentkezési információkkal. Mind két információ típusnak helyt állt és
+megfelelően működött. Abban az esetben ha a regisztráció sikeres volt, akkor a meglfelelő adatokkal a felhasználó be tudott lépni,
+és a loginoló alkalmazás meghívta a főalkalmazást. A következő esetekben a szoftver hiba üzenetet dobott:
+	-Ha a termékkulcs hibás volt
+	-Ha hiányzott a termékkulcs, felhasználói név, jelszó hármas valamelyike. 
+	-Ha a regisztráció sikeresnek bizonyult, azonban a felhasználói név-jelszó páros nem egyezett 
