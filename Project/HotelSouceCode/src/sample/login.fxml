@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
@@ -28,7 +29,8 @@
                   <Font name="Times New Roman" size="15.0" />
                </font>
             </Text>
-            <Button layoutX="291.0" layoutY="292.0" mnemonicParsing="false" text="Belépés" />
+          <Button fx:id="Enter" layoutX="291.0" layoutY="292.0" mnemonicParsing="false" text="Belépés" />
+            <Label layoutX="63.0" layoutY="192.0" text="Label" />
       </children>
     </AnchorPane>
   </children>
