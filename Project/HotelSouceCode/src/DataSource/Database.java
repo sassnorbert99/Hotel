@@ -85,7 +85,7 @@ public class Database {
                     Database.MEZO_FOGLALASOK_CONTACT + " VARCHAR(100) NOT NULL, " +
                     Database.MEZO_FOGLALASOK_BANKKARTYA + " VARCHAR(50) NOT NULL, " +
                     Database.MEZO_FOGLALASOK_MEGJEGYZES + " VARCHAR(100) NOT NULL, " +
-                    " FOREIGN  KEY (" + Database.MEZO_FOGLALASOK_SZOBAID + ")" +
+                    " FOREIGN KEY (" + Database.MEZO_FOGLALASOK_SZOBAID + ")" +
                     " REFERENCES " + Database.TABLA_SZOBAK + "(" + Database.MEZO_SZOBAK_ID +")"
                     + ")"
             );
@@ -172,10 +172,10 @@ public class Database {
                     Database.MEZO_SZOBASZAMLAK_FOGLALASID + " INTEGER FOREIGN KEY NOT NULL, " +
                     Database.MEZO_SZOBASZAMLAK_FOGYASZTASDATUM + " DATE NOT NULL, " +
                     Database.MEZO_SZOBASZAMLAK_OSSZEG + " REAL NOT NULL, "+
-                    " FOREIGN  KEY (" + Database.MEZO_SZOBASZAMLAK_SZOLGALTATASID + ")" +
-                    " REFERENCES " + Database.TABLA_SZOLGALTATASOK + "(" + Database.MEZO_SZOLGALTATASOK_ID +")"+
+                    " FOREIGN KEY (" + Database.MEZO_SZOBASZAMLAK_SZOLGALTATASID + ")" +
+                    " REFERENCES " + Database.TABLA_SZOLGALTATASOK + "(" + Database.MEZO_SZOLGALTATASOK_ID +"), "+
 
-                    " FOREIGN  KEY (" + Database.MEZO_SZOBASZAMLAK_FOGLALASID + ")" +
+                    " FOREIGN KEY (" + Database.MEZO_SZOBASZAMLAK_FOGLALASID + ")" +
                     " REFERENCES " + Database.TABLA_FOGALASOK + "(" + Database.MEZO_FOGLALASOK_ID +")"
                     + ")"
             );
@@ -230,6 +230,25 @@ public class Database {
                 System.out.println("HIBA: " + e.getMessage());
             }
         }
+
+        String a = "CREATE TABLE IF NOT EXISTS " + Database.TABLA_SZOBASZAMLAK + " (" +
+                Database.MEZO_SZOBASZAMLAK_ID + " INTEGER NOT NULL PRIMARY KEY, " +
+                Database.MEZO_SZOBASZAMLAK_FOGLALASID + " INTEGER FOREIGN KEY NOT NULL, " +
+                Database.MEZO_SZOBASZAMLAK_FOGYASZTASDATUM + " DATE NOT NULL, " +
+                Database.MEZO_SZOBASZAMLAK_OSSZEG + " REAL NOT NULL, "+
+                " FOREIGN  KEY (" + Database.MEZO_SZOBASZAMLAK_SZOLGALTATASID + ")" +
+                " REFERENCES " + Database.TABLA_SZOLGALTATASOK + "(" + Database.MEZO_SZOLGALTATASOK_ID +")"+
+
+                " FOREIGN KEY (" + Database.MEZO_SZOBASZAMLAK_FOGLALASID + ")" +
+                " REFERENCES " + Database.TABLA_FOGALASOK + "(" + Database.MEZO_FOGLALASOK_ID +")"
+                + ")";
+        System.out.println(a);
+
+
     }
+
+
+
+
 
 }
