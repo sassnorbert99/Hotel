@@ -12,13 +12,24 @@ import java.sql.Connection;
 
 public class Main extends Application {
 
+
+
+
     @Override
     public void start(Stage primaryStage) throws Exception {
+        Stage login=new Stage();
+        Parent loginer=FXMLLoader.load(getClass().getResource("view.fxml"));
+        login.setTitle("HotelLite®");
+        login.setScene(new Scene(loginer, 600, 400));
+        login.show();
 
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+
+
+        Parent root = FXMLLoader.load(getClass().getResource("view.fxml"));
+        primaryStage.setTitle("HotelLite®");
+        primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
+
 
 
         Database.CreateVendégek();
