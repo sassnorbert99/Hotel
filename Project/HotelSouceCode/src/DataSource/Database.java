@@ -20,7 +20,7 @@ public class Database {
     public static final String MEZO_VENDEGEK_ORSZAG = "orszag";
     public static final String MEZO_VENDEGEK_VAROS = "varos";
 
-    public static void CreateVendégek() {
+    public static void CreateVendegek() {
 
         Connection conn = null;
         Statement statement = null;
@@ -32,12 +32,11 @@ public class Database {
             statement.execute( "CREATE TABLE IF NOT EXISTS " + Database.TABLA_VENDEGEK + " (" +
                     Database.MEZO_VENDEGEK_ID + " INTEGER NOT NULL PRIMARY KEY, " +
                     Database.MEZO_VENDEGEK_NEV + " VARCHAR(30) NOT NULL, " +
+                    Database.MEZO_VENDEGEK_SZULIDO + " DATE NOT NULL, " +
                     Database.MEZO_VENDEGEK_ORSZAG + " VARCHAR(50) NOT NULL, " +
-                    Database.MEZO_VENDEGEK_VAROS + " VARCHAR(50) NOT NULL, " +
-                    Database.MEZO_VENDEGEK_SZULIDO + " DATE NOT NULL "
-                    + ");"
+                    Database.MEZO_VENDEGEK_VAROS + " VARCHAR(50) NOT NULL "
+                    + ")"
             );
-
         }
         catch (SQLException e){
 
@@ -80,6 +79,7 @@ public class Database {
                     Database.MEZO_FOGLALASOK_FOGLALONEV + " VARCHAR(30) NOT NULL, " +
                     Database.MEZO_FOGLALASOK_ERKEZES + " DATE NOT NULL, " +
                     Database.MEZO_FOGLALASOK_TAVOZAS + " DATE NOT NULL, " +
+                    Database.MEZO_FOGLALASOK_SZOBAID + " INTEGER NOT NULL, " +
                     Database.MEZO_FOGLALASOK_VENDEGEKSZAMA + " INTEGER NOT NULL, " +
                     Database.MEZO_FOGLALASOK_ARPERNAP + " REAL NOT NULL, " +
                     Database.MEZO_FOGLALASOK_CONTACT + " VARCHAR(100) NOT NULL, " +
@@ -89,11 +89,8 @@ public class Database {
                     " REFERENCES " + Database.TABLA_SZOBAK + "(" + Database.MEZO_SZOBAK_ID +")"
                     + ");"
             );
-
-
         }
         catch (SQLException e){
-
             System.out.println("HIBA A FOGLALÁSOK TÁBLA LÉTREHOZÁSÁNÁL: " + e.getMessage());
         }
         finally {
@@ -129,16 +126,14 @@ public class Database {
                     Database.MEZO_SZOBAK_ID + " INTEGER NOT NULL PRIMARY KEY, " +
                     Database.MEZO_SZOBAK_SZOBASZAM + " INTEGER NOT NULL, " +
                     Database.MEZO_SZOBAK_EMELET + " VARCHAR(20) NOT NULL, " +
-                    Database.MEZO_SZOBAK_MAXVENDEG + " TINYINT NOT NULL, " +
-                    Database.MEZO_SZOBAK_LEIRAS + " VARCHAR(250) FOREIGN KEY NOT NULL, " +
+                    Database.MEZO_SZOBAK_MAXVENDEG + " INTEGER NOT NULL, " +
+                    Database.MEZO_SZOBAK_LEIRAS + " VARCHAR(250) NOT NULL, " +
                     Database.MEZO_SZOBAK_ERKELY + " DECIMAL(0,1) NOT NULL, " +
                     Database.MEZO_SZOBAK_DOHANYZO + " DECIMAL(0,1) NOT NULL "
-                    + ");"
+                    + ")"
             );
-
         }
         catch (SQLException e){
-
             System.out.println("HIBA A SZOBA TÁBLA LÉTREHOZÁSÁNÁL: " + e.getMessage());
         }
         finally {
@@ -170,23 +165,17 @@ public class Database {
 
             statement.execute( "CREATE TABLE IF NOT EXISTS " + Database.TABLA_SZOBASZAMLAK + " (" +
                     Database.MEZO_SZOBASZAMLAK_ID + " INTEGER NOT NULL PRIMARY KEY, " +
-                    Database.MEZO_SZOBASZAMLAK_FOGLALASID + " INTEGER FOREIGN KEY NOT NULL, " +
                     Database.MEZO_SZOBASZAMLAK_FOGYASZTASDATUM + " DATE NOT NULL, " +
+                    Database.MEZO_SZOBASZAMLAK_FOGLALASID + " INTEGER NOT NULL, " +
+                    Database.MEZO_SZOBASZAMLAK_SZOLGALTATASID + " INTEGER NOT NULL, " +
                     Database.MEZO_SZOBASZAMLAK_OSSZEG + " REAL NOT NULL, "+
                     " FOREIGN KEY (" + Database.MEZO_SZOBASZAMLAK_SZOLGALTATASID + ")" +
                     " REFERENCES " + Database.TABLA_SZOLGALTATASOK + "(" + Database.MEZO_SZOLGALTATASOK_ID +"), "+
 
                     " FOREIGN KEY (" + Database.MEZO_SZOBASZAMLAK_FOGLALASID + ")" +
                     " REFERENCES " + Database.TABLA_FOGALASOK + "(" + Database.MEZO_FOGLALASOK_ID +")"
-                    + ");"+
-                    " FOREIGN  KEY (" + Database.MEZO_SZOBASZAMLAK_SZOLGALTATASID + ")" +
-                    " REFERENCES " + Database.TABLA_SZOLGALTATASOK + "(" + Database.MEZO_SZOLGALTATASOK_ID +");"+
-
-                    " FOREIGN  KEY (" + Database.MEZO_SZOBASZAMLAK_FOGLALASID + ")" +
-                    " REFERENCES " + Database.TABLA_FOGALASOK + "(" + Database.MEZO_FOGLALASOK_ID +");"
-                    + ");"
+                    + ")"
             );
-
         }
         catch (SQLException e){
 
@@ -208,7 +197,7 @@ public class Database {
     public static final String MEZO_SZOLGALTATASOK_SZOLTIPUS = "szolgtipus";
     public static final String MEZO_SZOLGALTATASOK_AFAKULCS = "afaKulcs";
 
-    public static void CreateSzolgáltatások() {
+    public static void CreateSzolgaltatasok() {
 
         Connection conn = null;
         Statement statement = null;
@@ -219,11 +208,10 @@ public class Database {
 
             statement.execute( "CREATE TABLE IF NOT EXISTS " + Database.TABLA_SZOLGALTATASOK + " (" +
                     Database.MEZO_SZOLGALTATASOK_ID + " INTEGER NOT NULL PRIMARY KEY, " +
-                    Database.MEZO_SZOLGALTATASOK_SZOLTIPUS + " VARCHAR(100) FOREIGN KEY NOT NULL, " +
-                    Database.MEZO_SZOLGALTATASOK_AFAKULCS + " REAL NOT NULL, "
-                    + ");"
+                    Database.MEZO_SZOLGALTATASOK_SZOLTIPUS + " VARCHAR(100) NOT NULL, " +
+                    Database.MEZO_SZOLGALTATASOK_AFAKULCS + " REAL NOT NULL "
+                    + ")"
             );
-
         }
         catch (SQLException e){
 
@@ -237,25 +225,5 @@ public class Database {
                 System.out.println("HIBA: " + e.getMessage());
             }
         }
-
-        String a = "CREATE TABLE IF NOT EXISTS " + Database.TABLA_SZOBASZAMLAK + " (" +
-                Database.MEZO_SZOBASZAMLAK_ID + " INTEGER NOT NULL PRIMARY KEY, " +
-                Database.MEZO_SZOBASZAMLAK_FOGLALASID + " INTEGER FOREIGN KEY NOT NULL, " +
-                Database.MEZO_SZOBASZAMLAK_FOGYASZTASDATUM + " DATE NOT NULL, " +
-                Database.MEZO_SZOBASZAMLAK_OSSZEG + " REAL NOT NULL, "+
-                " FOREIGN  KEY (" + Database.MEZO_SZOBASZAMLAK_SZOLGALTATASID + ")" +
-                " REFERENCES " + Database.TABLA_SZOLGALTATASOK + "(" + Database.MEZO_SZOLGALTATASOK_ID +")"+
-
-                " FOREIGN KEY (" + Database.MEZO_SZOBASZAMLAK_FOGLALASID + ")" +
-                " REFERENCES " + Database.TABLA_FOGALASOK + "(" + Database.MEZO_FOGLALASOK_ID +")"
-                + ")";
-        System.out.println(a);
-
-
     }
-
-
-
-
-
 }

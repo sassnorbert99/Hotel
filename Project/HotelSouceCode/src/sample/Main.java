@@ -29,8 +29,6 @@ public class Main extends Application {
 
 
     @Override
-
-
     public void start(Stage primaryStage) throws Exception {
        // primaryStage.hide();
         Login();
@@ -46,11 +44,11 @@ public class Main extends Application {
 
 
 
-        Database.CreateVendégek();
+        Database.CreateVendegek();
         Database.CreateSzobak();
         Database.CreateFoglalasok();
         Database.CreateSzobaSzamla();
-        Database.CreateSzolgáltatások();
+        Database.CreateSzolgaltatasok();
     }
 
 
