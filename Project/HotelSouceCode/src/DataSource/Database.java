@@ -12,6 +12,7 @@ public class Database {
     /*connect to MacOS*/
     public static final String CONNECTION_STRING_MAC = "jdbc:sqlite:Project/Database/" + DB_NAME;
 
+    //region Vendégek tábla
     /*Vendég tábla mezői*/
     public static final String TABLA_VENDEGEK = "vendegek";
     public static final String MEZO_VENDEGEK_ID = "id";
@@ -51,7 +52,9 @@ public class Database {
             }
         }
     }
+    //endregion
 
+    //region Foglalások tábla
     /*Foglalás tábla mezői*/
     public static final String TABLA_FOGALASOK = "foglalasok";
     public static final String MEZO_FOGLALASOK_ID = "id";
@@ -102,7 +105,9 @@ public class Database {
             }
         }
     }
+    //endregion
 
+    //region Szobák tábla
     /*Szobák tábla mezői*/
     public static final String TABLA_SZOBAK = "szobak";
     public static final String MEZO_SZOBAK_ID = "id";
@@ -145,7 +150,9 @@ public class Database {
             }
         }
     }
+    //endregion
 
+    //region Számla tábla
     /*SzobaSzamla tábla mezői*/
     public static final String TABLA_SZOBASZAMLAK = "szobaSzamlak";
     public static final String MEZO_SZOBASZAMLAK_ID = "id";
@@ -190,7 +197,9 @@ public class Database {
             }
         }
     }
+    //endregion
 
+    //region Szolgáltatások tábla
     /*Szolgáltatások tábla mezői*/
     public static final String TABLA_SZOLGALTATASOK = "szolgaltatasok";
     public static final String MEZO_SZOLGALTATASOK_ID = "id";
@@ -226,4 +235,41 @@ public class Database {
             }
         }
     }
+    //endregion
+
+    //region Adminok tábla
+    public static final String TABLA_ADMINOK = "adminok";
+    public static final String MEZO_ADMINOK_ID = "id";
+    public static final String MEZO_ADMINOK_FELHASZNALONEV = "felhasznaloNev";
+    public static final String MEZO_ADMINOK_JELSZO = "jelszo";
+
+    public static void CreateAdminok() {
+        Connection conn = null;
+        Statement statement = null;
+
+        try {
+            conn = DBConnection.Open();
+            statement = conn.createStatement();
+
+            statement.execute( "CREATE TABLE IF NOT EXISTS " + Database.TABLA_ADMINOK + " (" +
+                    Database.MEZO_ADMINOK_ID + " INTEGER NOT NULL PRIMARY KEY, " +
+                    Database.MEZO_ADMINOK_FELHASZNALONEV + " VARCHAR(100) NOT NULL, " +
+                    Database.MEZO_ADMINOK_JELSZO + " VARCHAR (50) NOT NULL "
+                    + ")"
+            );
+        }
+        catch (SQLException e){
+
+            System.out.println("HIBA AZ ADMINOK TÁBLA LÉTREHOZÁSÁNÁL: " + e.getMessage());
+        }
+        finally {
+            try {
+                statement.close();
+                conn.close();
+            } catch (SQLException e) {
+                System.out.println("HIBA: " + e.getMessage());
+            }
+        }
+    }
+    //endregion
 }

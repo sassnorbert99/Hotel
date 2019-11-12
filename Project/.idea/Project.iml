@@ -3,9 +3,9 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="11" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="sqlite-jdbc-3.27.2.1" level="project" />
-    <orderEntry type="library" name="javafx-swt" level="project" />
+    <orderEntry type="library" exported="" name="sqlite-jdbc-3.27.2.1" level="project" />
+    <orderEntry type="library" exported="" name="javafx-swt" level="project" />
   </component>
 </module>

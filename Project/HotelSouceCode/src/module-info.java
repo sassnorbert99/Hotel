@@ -4,5 +4,5 @@ module Hotel {
     requires java.sql;
     requires jdk.compiler;
 
-    opens sample;
+    opens Main;
 }
