@@ -1,3 +1,6 @@
-Oravecz Zsolt
+﻿Oravecz Zsolt
 A projekt és az adatbázis közötti kapcsolat hibáinak javítása.
 ------------------------------------------------------------------
+
+Sass-Gyarmati Norbert
+A projekt hibáinak javítása, illetve kiegészítése.
