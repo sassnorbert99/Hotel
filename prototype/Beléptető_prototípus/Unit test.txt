@@ -4,3 +4,14 @@ Főbb tesztelési területek:
 	1. teljesítmény
 	2. elvárt működés
 
+1.) A prototípus teljesítmény használatot tekintve kiegyensúlyozottan működik. Nem terheli a számítógépet.
+Ez annak is köszönhető hogy a loginoltató alkalmazás hátterében nem áll túl kombinált kód. Egyszerűbb összehasonlítsokat végez,
+illetve megfelelő üzenettel, esetenként hibaüzenettel tájékoztatja a felhasználót a műveletek eredményességéről. 
+
+Megfigyeltük tobábbá, hogy a memória igénye dinamikusan fejlődik,
+ezáltal a teljes szoftver memória igénye körülbelül kevesebb lesz, mint 200MB.
+	
+tesztelve:
+- Windows PC
+- Windows notebook
+
