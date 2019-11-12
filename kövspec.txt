@@ -37,8 +37,10 @@ mely megkönnyíti és elõsegíti a recepciós feladatokat, vendégek és a hotel közöt
 3.Vágyálom rendszer:
 
 Célunk az, hogy egy olyan rendszert teremtsünk, mellyel alapvetõen segítjük és gördülékenyebbé tesszük a kissebb 
-vendéglátó egységek mûködését. Specifikációnk alapján szeretnénk olyan árat biztosítani, mely számukra is elérhetõ.
-a szoftver képes arra, hogy a vendégekrõl a legtöbb számunkra jelentõs információt struktúráltan tárolja. 
+vendéglátó egységek mûködését. Az adatfelvitel egyszerûbbé válik és nagyban felgyorsul, ezáltal a vendégek is elégedettebbek lesznek és a forgalom is növekedhet.
+Specifikációnk alapján szeretnénk olyan árat biztosítani, mely számukra is elérhetõ.
+Mivel ez a rendszer fõként kisebb vendéglátó egységek számára lesz készítve, így az árat is hozzájuk kell szabni.
+A szoftver képes arra, hogy a vendégekrõl a legtöbb számunkra jelentõs információt struktúráltan tárolja. 
 Mivel a szoftvert a legtöbb korosztály számára tervezzük, így ügyelnünk kell arra hogy minden korosztály számára érthetõ és 
 használható legyen.
 Ha arra törekedünk, hogy a modern informatikai világban fejlõdjenek a a kisebb hotelek, szállodák és más vendéglátó egységek is akkor ez a késõbbi
