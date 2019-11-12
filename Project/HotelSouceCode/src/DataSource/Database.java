@@ -173,12 +173,21 @@ public class Database {
                     Database.MEZO_SZOBASZAMLAK_FOGLALASID + " INTEGER FOREIGN KEY NOT NULL, " +
                     Database.MEZO_SZOBASZAMLAK_FOGYASZTASDATUM + " DATE NOT NULL, " +
                     Database.MEZO_SZOBASZAMLAK_OSSZEG + " REAL NOT NULL, "+
+<<<<<<< HEAD
+                    " FOREIGN KEY (" + Database.MEZO_SZOBASZAMLAK_SZOLGALTATASID + ")" +
+                    " REFERENCES " + Database.TABLA_SZOLGALTATASOK + "(" + Database.MEZO_SZOLGALTATASOK_ID +"), "+
+
+                    " FOREIGN KEY (" + Database.MEZO_SZOBASZAMLAK_FOGLALASID + ")" +
+                    " REFERENCES " + Database.TABLA_FOGALASOK + "(" + Database.MEZO_FOGLALASOK_ID +")"
+                    + ")"
+=======
                     " FOREIGN  KEY (" + Database.MEZO_SZOBASZAMLAK_SZOLGALTATASID + ")" +
                     " REFERENCES " + Database.TABLA_SZOLGALTATASOK + "(" + Database.MEZO_SZOLGALTATASOK_ID +");"+
 
                     " FOREIGN  KEY (" + Database.MEZO_SZOBASZAMLAK_FOGLALASID + ")" +
                     " REFERENCES " + Database.TABLA_FOGALASOK + "(" + Database.MEZO_FOGLALASOK_ID +");"
                     + ");"
+>>>>>>> 9e7fe3da5b415e82248e6718521109ac85b531a1
             );
 
         }
@@ -231,6 +240,25 @@ public class Database {
                 System.out.println("HIBA: " + e.getMessage());
             }
         }
+
+        String a = "CREATE TABLE IF NOT EXISTS " + Database.TABLA_SZOBASZAMLAK + " (" +
+                Database.MEZO_SZOBASZAMLAK_ID + " INTEGER NOT NULL PRIMARY KEY, " +
+                Database.MEZO_SZOBASZAMLAK_FOGLALASID + " INTEGER FOREIGN KEY NOT NULL, " +
+                Database.MEZO_SZOBASZAMLAK_FOGYASZTASDATUM + " DATE NOT NULL, " +
+                Database.MEZO_SZOBASZAMLAK_OSSZEG + " REAL NOT NULL, "+
+                " FOREIGN  KEY (" + Database.MEZO_SZOBASZAMLAK_SZOLGALTATASID + ")" +
+                " REFERENCES " + Database.TABLA_SZOLGALTATASOK + "(" + Database.MEZO_SZOLGALTATASOK_ID +")"+
+
+                " FOREIGN KEY (" + Database.MEZO_SZOBASZAMLAK_FOGLALASID + ")" +
+                " REFERENCES " + Database.TABLA_FOGALASOK + "(" + Database.MEZO_FOGLALASOK_ID +")"
+                + ")";
+        System.out.println(a);
+
+
     }
+
+
+
+
 
 }
