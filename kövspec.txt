@@ -40,11 +40,16 @@ Célunk az, hogy egy olyan rendszert teremtsünk, mellyel alapvetõen segítjük és g
 vendéglátó egységek mûködését. Specifikációnk alapján szeretnénk olyan árat biztosítani, mely számukra is elérhetõ.
 a szoftver képes arra, hogy a vendégekrõl a legtöbb számunkra jelentõs információt struktúráltan tárolja. 
 Mivel a szoftvert a legtöbb korosztály számára tervezzük, így ügyelnünk kell arra hogy minden korosztály számára érthetõ és 
-használható legyen. 
+használható legyen.
+Ha arra törekedünk, hogy a modern informatikai világban fejlõdjenek a a kisebb hotelek, szállodák és más vendéglátó egységek is akkor ez a késõbbi
+életükre is kifog hatni.
+A rendszer a kliens igényeit helyezi középpontba azáltal, hogy egy letisztult, egyszerûen kezelhetõ felületet biztosít számukra.
+A rendszerünk arra fog törekedni, hogy minél pontosabb, megbízhatóbb legyen a fogyasztók számára, a kliens ne érezze hibával elvétett terméknek.
 A program javafx grafikus felületén használható, amelyhez tartozik egy adatbázis is, melyben az ügyfelek tulajdonságait 
 tároljuk. Ha bármilyen információra van szükségünk, akkor ezeket az adatokat természetesen le is tudjuk kérni. Abból kiindulva,
 hogy bizalmas adatok vannak a birtokunkban, azokat megfelelõen kell kezelnünk és nem szabad engednünk, hogy illetéktelen kezekbe
- kerüljenek.
+ kerüljenek.Ezáltal egy letisztult egységes rendszert fogunk kínálni a fogyasztók számára.
+
 
 	
 
