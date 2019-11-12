@@ -36,6 +36,16 @@ mely megkönnyíti és elõsegíti a recepciós feladatokat, vendégek és a hotel közöt
 
 3.Vágyálom rendszer:
 
+Célunk az, hogy egy olyan rendszert teremtsünk, mellyel alapvetõen segítjük és gördülékenyebbé tesszük a kissebb 
+vendéglátó egységek mûködését. Specifikációnk alapján szeretnénk olyan árat biztosítani, mely számukra is elérhetõ.
+a szoftver képes arra, hogy a vendégekrõl a legtöbb számunkra jelentõs információt struktúráltan tárolja. 
+Mivel a szoftvert a legtöbb korosztály számára tervezzük, így ügyelnünk kell arra hogy minden korosztály számára érthetõ és 
+használható legyen. 
+A program javafx grafikus felületén használható, amelyhez tartozik egy adatbázis is, melyben az ügyfelek tulajdonságait 
+tároljuk. Ha bármilyen információra van szükségünk, akkor ezeket az adatokat természetesen le is tudjuk kérni. Abból kiindulva,
+hogy bizalmas adatok vannak a birtokunkban, azokat megfelelõen kell kezelnünk és nem szabad engednünk, hogy illetéktelen kezekbe
+ kerüljenek.
+
 	
 
 4.Feltételek:
