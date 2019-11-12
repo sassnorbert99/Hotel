@@ -35,7 +35,7 @@ public class Database {
                     Database.MEZO_VENDEGEK_ORSZAG + " VARCHAR(50) NOT NULL, " +
                     Database.MEZO_VENDEGEK_VAROS + " VARCHAR(50) NOT NULL, " +
                     Database.MEZO_VENDEGEK_SZULIDO + " DATE NOT NULL "
-                    + ")"
+                    + ");"
             );
 
         }
@@ -75,7 +75,7 @@ public class Database {
             conn = DBConnection.Open();
             statement = conn.createStatement();
 
-            statement.execute( "CREATE TABLE IF NOT EXISTS " + Database.TABLA_FOGALASOK + " (" +
+            statement.execute( "CREATE TABLE  IF NOT EXISTS " + Database.TABLA_FOGALASOK + " (" +
                     Database.MEZO_FOGLALASOK_ID + " INTEGER NOT NULL PRIMARY KEY, " +
                     Database.MEZO_FOGLALASOK_FOGLALONEV + " VARCHAR(30) NOT NULL, " +
                     Database.MEZO_FOGLALASOK_ERKEZES + " DATE NOT NULL, " +
@@ -85,10 +85,11 @@ public class Database {
                     Database.MEZO_FOGLALASOK_CONTACT + " VARCHAR(100) NOT NULL, " +
                     Database.MEZO_FOGLALASOK_BANKKARTYA + " VARCHAR(50) NOT NULL, " +
                     Database.MEZO_FOGLALASOK_MEGJEGYZES + " VARCHAR(100) NOT NULL, " +
-                    " FOREIGN  KEY (" + Database.MEZO_FOGLALASOK_SZOBAID + ")" +
+                    " FOREIGN KEY (" + Database.MEZO_FOGLALASOK_SZOBAID + ")" +
                     " REFERENCES " + Database.TABLA_SZOBAK + "(" + Database.MEZO_SZOBAK_ID +")"
-                    + ")"
+                    + ");"
             );
+
 
         }
         catch (SQLException e){
@@ -131,8 +132,8 @@ public class Database {
                     Database.MEZO_SZOBAK_MAXVENDEG + " TINYINT NOT NULL, " +
                     Database.MEZO_SZOBAK_LEIRAS + " VARCHAR(250) FOREIGN KEY NOT NULL, " +
                     Database.MEZO_SZOBAK_ERKELY + " DECIMAL(0,1) NOT NULL, " +
-                    Database.MEZO_SZOBAK_DOHANYZO + " DECIMAL(0,1) NOT NULL, "
-                    + ")"
+                    Database.MEZO_SZOBAK_DOHANYZO + " DECIMAL(0,1) NOT NULL "
+                    + ");"
             );
 
         }
@@ -173,11 +174,11 @@ public class Database {
                     Database.MEZO_SZOBASZAMLAK_FOGYASZTASDATUM + " DATE NOT NULL, " +
                     Database.MEZO_SZOBASZAMLAK_OSSZEG + " REAL NOT NULL, "+
                     " FOREIGN  KEY (" + Database.MEZO_SZOBASZAMLAK_SZOLGALTATASID + ")" +
-                    " REFERENCES " + Database.TABLA_SZOLGALTATASOK + "(" + Database.MEZO_SZOLGALTATASOK_ID +")"+
+                    " REFERENCES " + Database.TABLA_SZOLGALTATASOK + "(" + Database.MEZO_SZOLGALTATASOK_ID +");"+
 
                     " FOREIGN  KEY (" + Database.MEZO_SZOBASZAMLAK_FOGLALASID + ")" +
-                    " REFERENCES " + Database.TABLA_FOGALASOK + "(" + Database.MEZO_FOGLALASOK_ID +")"
-                    + ")"
+                    " REFERENCES " + Database.TABLA_FOGALASOK + "(" + Database.MEZO_FOGLALASOK_ID +");"
+                    + ");"
             );
 
         }
@@ -214,7 +215,7 @@ public class Database {
                     Database.MEZO_SZOLGALTATASOK_ID + " INTEGER NOT NULL PRIMARY KEY, " +
                     Database.MEZO_SZOLGALTATASOK_SZOLTIPUS + " VARCHAR(100) FOREIGN KEY NOT NULL, " +
                     Database.MEZO_SZOLGALTATASOK_AFAKULCS + " REAL NOT NULL, "
-                    + ")"
+                    + ");"
             );
 
         }
