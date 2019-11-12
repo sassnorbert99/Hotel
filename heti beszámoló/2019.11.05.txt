@@ -9,7 +9,10 @@ véglegesítettem.
 
 ************************************************************************
 Oravecz Zsolt:
-
+-prototípus loginoltatásának winformjának késszítése
+- kód készítése a loginoláshoz
+- képernyõtervet kiegészítettem
+-teszteltem a prototípust, ahoz dokumentációt készítettem.
 ************************************************************************
 
 Deák Ádám:
