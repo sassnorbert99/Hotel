@@ -31,7 +31,7 @@ public class Database {
             statement = conn.createStatement();
 
             statement.execute( "CREATE TABLE IF NOT EXISTS " + Database.TABLA_VENDEGEK + " (" +
-                    Database.MEZO_VENDEGEK_ID + " INTEGER NOT NULL PRIMARY KEY, " +
+                    Database.MEZO_VENDEGEK_ID + " INTEGER PRIMARY KEY, " +
                     Database.MEZO_VENDEGEK_NEV + " VARCHAR(30) NOT NULL, " +
                     Database.MEZO_VENDEGEK_SZULIDO + " DATE NOT NULL, " +
                     Database.MEZO_VENDEGEK_ORSZAG + " VARCHAR(50) NOT NULL, " +
@@ -78,7 +78,7 @@ public class Database {
             statement = conn.createStatement();
 
             statement.execute( "CREATE TABLE  IF NOT EXISTS " + Database.TABLA_FOGALASOK + " (" +
-                    Database.MEZO_FOGLALASOK_ID + " INTEGER NOT NULL PRIMARY KEY, " +
+                    Database.MEZO_FOGLALASOK_ID + " INTEGER PRIMARY KEY, " +
                     Database.MEZO_FOGLALASOK_FOGLALONEV + " VARCHAR(30) NOT NULL, " +
                     Database.MEZO_FOGLALASOK_ERKEZES + " DATE NOT NULL, " +
                     Database.MEZO_FOGLALASOK_TAVOZAS + " DATE NOT NULL, " +
@@ -128,7 +128,7 @@ public class Database {
             statement = conn.createStatement();
 
             statement.execute( "CREATE TABLE IF NOT EXISTS " + Database.TABLA_SZOBAK + " (" +
-                    Database.MEZO_SZOBAK_ID + " INTEGER NOT NULL PRIMARY KEY, " +
+                    Database.MEZO_SZOBAK_ID + " INTEGER PRIMARY KEY, " +
                     Database.MEZO_SZOBAK_SZOBASZAM + " INTEGER NOT NULL, " +
                     Database.MEZO_SZOBAK_EMELET + " VARCHAR(20) NOT NULL, " +
                     Database.MEZO_SZOBAK_MAXVENDEG + " INTEGER NOT NULL, " +
@@ -171,7 +171,7 @@ public class Database {
             statement = conn.createStatement();
 
             statement.execute( "CREATE TABLE IF NOT EXISTS " + Database.TABLA_SZOBASZAMLAK + " (" +
-                    Database.MEZO_SZOBASZAMLAK_ID + " INTEGER NOT NULL PRIMARY KEY, " +
+                    Database.MEZO_SZOBASZAMLAK_ID + " INTEGER PRIMARY KEY, " +
                     Database.MEZO_SZOBASZAMLAK_FOGYASZTASDATUM + " DATE NOT NULL, " +
                     Database.MEZO_SZOBASZAMLAK_FOGLALASID + " INTEGER NOT NULL, " +
                     Database.MEZO_SZOBASZAMLAK_SZOLGALTATASID + " INTEGER NOT NULL, " +
@@ -216,7 +216,7 @@ public class Database {
             statement = conn.createStatement();
 
             statement.execute( "CREATE TABLE IF NOT EXISTS " + Database.TABLA_SZOLGALTATASOK + " (" +
-                    Database.MEZO_SZOLGALTATASOK_ID + " INTEGER NOT NULL PRIMARY KEY, " +
+                    Database.MEZO_SZOLGALTATASOK_ID + " INTEGER PRIMARY KEY, " +
                     Database.MEZO_SZOLGALTATASOK_SZOLTIPUS + " VARCHAR(100) NOT NULL, " +
                     Database.MEZO_SZOLGALTATASOK_AFAKULCS + " REAL NOT NULL "
                     + ")"
@@ -252,7 +252,7 @@ public class Database {
             statement = conn.createStatement();
 
             statement.execute( "CREATE TABLE IF NOT EXISTS " + Database.TABLA_ADMINOK + " (" +
-                    Database.MEZO_ADMINOK_ID + " INTEGER NOT NULL PRIMARY KEY, " +
+                    Database.MEZO_ADMINOK_ID + " INTEGER PRIMARY KEY, " +
                     Database.MEZO_ADMINOK_FELHASZNALONEV + " VARCHAR(100) NOT NULL, " +
                     Database.MEZO_ADMINOK_JELSZO + " VARCHAR (50) NOT NULL "
                     + ")"
