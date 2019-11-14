@@ -8,3 +8,8 @@ A projekt hibáinak javítása, illetve kiegészítése.
 
 Deák Ádám
 Az adatbázis táblák létrehozva
+
+------------------------------------------------------------------
+
+Járomi Dávid Antal
+Követelmény specifikáció vágyálom rendszer elkezdve
