@@ -6,21 +6,19 @@ import javafx.fxml.FXML;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class Entry {
+public static boolean Correct=true;
 
     @FXML
-    static Button Enter;
+    private TextField userFiled;
+
     @FXML
+    private TextField pwField;
 
-    public static void Success(Stage Primary)
-    {
-        Enter.setOnAction(new EventHandler<ActionEvent>() {
-            @Override public void handle(ActionEvent e) {
 
-            }
-        });
 
-    }
+
 }

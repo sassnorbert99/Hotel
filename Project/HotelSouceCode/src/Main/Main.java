@@ -13,24 +13,33 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class Main extends Application {
+
+    public static Stage stage;
+    public static Stage Loginer;
+
     public static void Login() throws IOException {
+
         Stage login = new Stage();
+        Loginer=login;
         Parent loginer = FXMLLoader.load(Main.class.getResource("login.fxml"));
         login.setTitle("HotelLite®");
         login.setScene(new Scene(loginer, 600, 400));
         login.show();
     }
 
-    @FXML
-    private void OnClickLogin(ActionEvent e,Stage primaryStage) {
-        primaryStage.show();
-    }
+
+
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        stage=primaryStage;
+
+
        // primaryStage.hide();
         Login();
         //Entry.Success(primaryStage);
+
+
 
         Parent root = FXMLLoader.load(getClass().getResource("view.fxml"));
         primaryStage.setTitle("HotelLite®");

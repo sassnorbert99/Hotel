@@ -3,9 +3,11 @@ package Main;
 import Crypting.MD5;
 import DataSource.DBConnection;
 import DataSource.Database;
+import DataSource.Entry;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -36,8 +38,16 @@ public class Controller implements  Initializable {
     @FXML
     private TextField pwField;
 
+    @FXML
+    private Button login;
+
     public void OnClickLogin(){
         System.out.println("Logging In...");
+        if (Entry.Correct){
+            Main.stage.show();
+            Main.Loginer.hide();
+        }
+
         Connection conn =  null;
         Statement statement = null;
 
