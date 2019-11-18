@@ -1,9 +1,13 @@
 package Main;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -17,6 +21,10 @@ public class Main extends Application {
         login.show();
     }
 
+    @FXML
+    private void OnClickLogin(ActionEvent e,Stage primaryStage) {
+        primaryStage.show();
+    }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -28,6 +36,8 @@ public class Main extends Application {
         primaryStage.setTitle("HotelLite®");
         primaryStage.setScene(new Scene(root, 600, 400));
         //primaryStage.show();
+
+
     }
 
 

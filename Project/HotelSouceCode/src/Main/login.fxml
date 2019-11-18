@@ -33,10 +33,10 @@
                </font>
             </Text>
 
-          <Button layoutX="291.0" layoutY="292.0" mnemonicParsing="false" text="Belépés"
+          <Button fx:id="login" layoutX="291.0" layoutY="292.0" mnemonicParsing="false" text="Belépés"
                   onAction="#OnClickLogin" />
 
-            <Label layoutX="63.0" layoutY="192.0" text="Label" />
+
       </children>
     </AnchorPane>
   </children>

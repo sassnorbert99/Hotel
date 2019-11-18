@@ -13,7 +13,7 @@ public class Entry {
     @FXML
     static Button Enter;
     @FXML
-    static Label Label;
+
     public static void Success(Stage Primary)
     {
         Enter.setOnAction(new EventHandler<ActionEvent>() {
