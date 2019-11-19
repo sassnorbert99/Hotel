@@ -20,6 +20,7 @@ import java.util.ResourceBundle;
 
 public class Controller implements  Initializable {
 
+
     //region Ez a metódus 1x fut le a program betöltődésekor
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -29,21 +30,36 @@ public class Controller implements  Initializable {
             Database.CreateSzolgaltatasok();
             Database.CreateFoglalasok();
             Database.CreateSzobaSzamla();
+
+
+
+
     }
     //endregion
 
 
     @FXML
-    private TextField userFiled;
+    private  TextField userFiled;
     @FXML
     private TextField pwField;
+
 
     @FXML
     private Button login;
 
+
+
+
     public void OnClickLogin(){
+
         System.out.println("Logging In...");
-        if (Entry.Correct){
+
+
+        Entry entry1=new Entry();
+        entry1.OK(userFiled,pwField);
+
+
+        if (entry1.Correct){
             Main.stage.show();
             Main.Loginer.hide();
         }
