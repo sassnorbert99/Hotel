@@ -59,7 +59,7 @@ public class Controller implements  Initializable {
         Entry entry1=new Entry();
         entry1.OK(userFiled,pwField);
 
-        System.out.println( entry1.getPassword().hashCode());
+
         if (entry1.Correct){
             Main.stage.show();
             Main.Loginer.hide();

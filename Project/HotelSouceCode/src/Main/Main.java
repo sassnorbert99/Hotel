@@ -22,6 +22,7 @@ public class Main extends Application {
 
         Stage login = new Stage();
         Loginer=login;
+        login.setResizable(false);
         Parent loginer = FXMLLoader.load(Main.class.getResource("login.fxml"));
         login.setTitle("HotelLite®");
         login.setScene(new Scene(loginer, 600, 400));

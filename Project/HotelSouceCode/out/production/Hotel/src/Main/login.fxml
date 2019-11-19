@@ -10,9 +10,9 @@
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Controller">
   <children>
-    <AnchorPane fx:id="valami" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane fx:id="valami" focusTraversable="true" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" styleClass="bodybg" stylesheets="@../DataSource/Style.css" VBox.vgrow="ALWAYS">
       <children>
-          <Text layoutX="182.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HotelLite® bejelentkezés">
+          <Text fill="WHITE" layoutX="182.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HotelLite® bejelentkezés">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
@@ -20,12 +20,12 @@
 
           <TextField fx:id="userFiled" layoutX="231.0" layoutY="135.0" prefHeight="25.0" prefWidth="178.0" />
 
-          <Text layoutX="269.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználói név">
+          <Text fill="WHITE" layoutX="269.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználói név">
                <font>
                   <Font name="Times New Roman" size="15.0" />
                </font>
             </Text>
-          <Text layoutX="302.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó">
+          <Text fill="WHITE" layoutX="302.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó">
                <font>
                   <Font name="Times New Roman" size="15.0" />
                </font>
