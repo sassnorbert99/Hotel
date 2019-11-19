@@ -1,0 +1,2 @@
+Login name: Hotel
+Password  : Password
