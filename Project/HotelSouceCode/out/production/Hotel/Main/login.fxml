@@ -18,7 +18,7 @@
                </font>
             </Text>
 
-          <TextField fx:id="userFiled" alignment="CENTER" layoutX="231.0" layoutY="135.0" prefHeight="25.0" prefWidth="178.0" />
+          <TextField fx:id="userFiled" layoutX="231.0" layoutY="135.0" prefHeight="25.0" prefWidth="178.0" />
 
           <Text layoutX="269.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználói név">
                <font>
@@ -32,7 +32,7 @@
             </Text>
 
           <Button fx:id="login" layoutX="291.0" layoutY="292.0" mnemonicParsing="false" onAction="#OnClickLogin" text="Belépés" />
-            <PasswordField fx:id="pwField" alignment="CENTER" layoutX="232.0" layoutY="200.0" prefHeight="25.0" prefWidth="178.0" />
+            <PasswordField fx:id="pwField" layoutX="232.0" layoutY="200.0" prefHeight="25.0" prefWidth="178.0" />
 
 
       </children>

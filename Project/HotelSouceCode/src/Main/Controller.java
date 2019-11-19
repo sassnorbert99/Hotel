@@ -65,7 +65,7 @@ public class Controller implements  Initializable {
             Main.Loginer.hide();
         }
         else {
-            
+
             pwField.clear();
             JOptionPane.showMessageDialog(null,"Hibás bejelentkezési adatok!");
         }
