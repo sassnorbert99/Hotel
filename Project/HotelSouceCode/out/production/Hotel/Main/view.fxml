@@ -8,26 +8,19 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
-        fx:controller="Main.Controller">
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Controller">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
         <Menu mnemonicParsing="false" text="Fájl">
           <items>
-            <MenuItem mnemonicParsing="false" text="Quit" />
+                  <MenuItem fx:id="Logouter" mnemonicParsing="false" onAction="#Logout" text="Kijelentkezés" />
+            <MenuItem fx:id="ExitButton" mnemonicParsing="false" onAction="#Exit" text="Kilépés" />
           </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Műveletek">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Foglalás rögzítés" />
-                  <MenuItem mnemonicParsing="false" text="Jelenlegi foglalók" />
-                  <MenuItem mnemonicParsing="false" text="Szabad szobák" />
-               </items>
         </Menu>
         <Menu mnemonicParsing="false" text="Help">
           <items>
-            <MenuItem mnemonicParsing="false" text="Készítők" />
+            <MenuItem id="Creators" mnemonicParsing="false" onAction="#CreatorsList" text="Készítők" />
                   <MenuItem mnemonicParsing="false" text="Segítség" />
           </items>
         </Menu>

@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -17,7 +18,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 public class Controller implements  Initializable {
 
@@ -47,7 +48,28 @@ public class Controller implements  Initializable {
 
     @FXML
     private Button login;
+    @FXML
+    private MenuItem ExitButton;
+    private MenuItem Logouter;
+    private MenuItem Creators;
 
+    public void Exit(){
+        System.exit(0);
+    }
+
+    private String creatorsMessage="Készítették:\n- Oravecz Zsolt\n- Gyarmati- Sass Norbert\n- Deák Ádám\n- Járomi Dávid\n- Nagy Bálint";
+    public void CreatorsList(){
+
+        JOptionPane.showMessageDialog(null,creatorsMessage);
+    }
+
+
+    public void Logout(){
+        Main.stage.hide();
+        Main.Loginer.show();
+
+        JOptionPane.showMessageDialog(null,"Sikeres kijelentkezés!");
+    }
 
 
 
@@ -61,8 +83,12 @@ public class Controller implements  Initializable {
 
 
         if (entry1.Correct){
-            Main.stage.show();
             Main.Loginer.hide();
+            pwField.clear();
+            Main.stage.show();
+            Main.stage.setResizable(false);
+            Main.stage.setMaximized(true);
+
         }
         else {
 
