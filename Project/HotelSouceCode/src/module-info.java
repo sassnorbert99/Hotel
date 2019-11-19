@@ -3,6 +3,7 @@ module Hotel {
     requires javafx.controls;
     requires java.sql;
     requires jdk.compiler;
+    requires java.desktop;
 
 
     opens Main;

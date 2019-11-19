@@ -1,23 +1,35 @@
 package DataSource;
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.fxml.FXML;
-import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
 public class Entry {
-public static boolean Correct=true;
+public  boolean Correct=false;
+private String Username="Hotel";
+private Integer Password=1281629883;
 
-    @FXML
-    private TextField userFiled;
 
-    @FXML
-    private TextField pwField;
+//region Setters and Getters
+public String getUsername(){
+    return Username;
+}
 
+public Integer getPassword(){
+    return Password;
+}
+
+//endregion
+
+    public void OK(TextField username,TextField pw){
+
+    if(username.getText().matches(getUsername()) && pw.getText().hashCode()==getPassword()){
+        Correct=true;
+    }
+    else{
+        Correct=false;
+    }
+
+
+}
 
 
 

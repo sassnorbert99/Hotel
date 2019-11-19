@@ -17,6 +17,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
+import javax.swing.JOptionPane;
 
 public class Controller implements  Initializable {
 
@@ -58,10 +59,15 @@ public class Controller implements  Initializable {
         Entry entry1=new Entry();
         entry1.OK(userFiled,pwField);
 
-
+        System.out.println( entry1.getPassword().hashCode());
         if (entry1.Correct){
             Main.stage.show();
             Main.Loginer.hide();
+        }
+        else {
+            
+            pwField.clear();
+            JOptionPane.showMessageDialog(null,"Hibás bejelentkezési adatok!");
         }
 
         Connection conn =  null;
