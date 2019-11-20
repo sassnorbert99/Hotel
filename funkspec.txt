@@ -127,9 +127,11 @@ Példának okáért, ha a felhasználó egy olyan személyt próbál regisztrál
 	
 
 **Az szoftver működésének áttekintése
-	A szoftver
+	A felhasználók a szoftvert használva egy letisztult szoftver felületen található bejelentkezéssel találkoznak. A bejelentkezés során meg kell adni egy 
+általunk adott felhasználói nevet és jelszót. A jelszó titkosítva van a szoftverben. A jelszó beviteli mezője is titkosítja a beírt jelszót és a két titkosítási érték
+kerül összehasonlításra. Így a jelszó valós formája sehol sem tárolódik a szoftverben. 
 
-**Dizájn terv
+
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 fogalomtár:
