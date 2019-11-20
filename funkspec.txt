@@ -136,6 +136,12 @@ ahol elvégezheti a vendéglátó egységgel kapcsolatos műveleteket. Egy helye
 melyik szobában melyik vendég tartózkodik.
  	
 	
+ **Dizájn terv
+	Ha a bejelentkezés sikeres, akkor megynyílik a főprogram, mely teljesképernyőre van állítva, későbbi átméretezése nem lehetséges. Csakúgy, mint a bejelentkezési
+képernyőn itt is az egyszerű küllemre törekedtünk. Figyeltünk a megfelelő betűtípus és méret kiválasztására, hogy az ablak részletei kellően láthatóak legyenek.
+A főprogramon található menüsor, mellyel a felhasználó kijelentkezhet a programból, vagy be is zárhatja azt, de akár információt nyerhet a készítőkről, és a 
+munkájával kapcsolatban segítséget is kaphat. A főprogram háttértől mentes egy színű, melyen különböző vezérlők lettek elhelyezve, a menüket kiválasztva a szoftver
+további felugró ablakokat jelenít meg.
  	
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
