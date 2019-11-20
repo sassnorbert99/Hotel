@@ -131,6 +131,10 @@ Példának okáért, ha a felhasználó egy olyan személyt próbál regisztrál
 általunk adott felhasználói nevet és jelszót. A jelszó titkosítva van a szoftverben. A jelszó beviteli mezője is titkosítja a beírt jelszót és a két titkosítási érték
 kerül összehasonlításra. Így a jelszó valós formája sehol sem tárolódik a szoftverben. 
 
+	Az adatellenőrzést követően a felhasználó beléphet a "főprogram" felületére, 
+ahol elvégezheti a vendéglátó egységgel kapcsolatos műveleteket. Egy helyen tud új foglalást rögzíteni, ellenőrizheti a szabad szobák listáját, megtekintheti
+melyik szobában melyik vendég tartózkodik.
+ 	
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
