@@ -135,7 +135,8 @@ kerül összehasonlításra. Így a jelszó valós formája sehol sem tárolódi
 ahol elvégezheti a vendéglátó egységgel kapcsolatos műveleteket. Egy helyen tud új foglalást rögzíteni, ellenőrizheti a szabad szobák listáját, megtekintheti
 melyik szobában melyik vendég tartózkodik.
  	
-
+	
+ 	
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 fogalomtár:
