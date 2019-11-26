@@ -64,4 +64,60 @@ szoftver egyedi ötletekkel, igényeknek megfelelõ eszközökkel tárul majd eléjük, 
 	- tárhely: <1GB
 	- RAM: <500MB
 	- fejlesztõi környezet: Windows alapú hordozható számítógép
-	
+
+
+
+5. Üzleti folyamatok modellje
+	- Üzleti szereplõk
+  	- Üzleti folyamatok
+  	- Üzleti entitások
+
+
+6. Funkcionális terv
+	- Rendszerszereplõk
+ 	- Rendszerhasználati esetek és lefutásaik
+ 	- Határosztályok
+ 	- Menü-hierarchiák
+ 	- Képernyõtervek
+
+
+7. Fizikai környezet
+ 	- Vásárolt softwarekomponensek és külsõ rendszerek
+ 	- Hardver és hálózati topológia
+ 	- Fizikai alrendszerek
+ 	- Fejlesztõ eszközök
+ 	- Keretrendszer
+
+
+8. Absztrakt domain modell
+ 	- Domain specifikáció, fogalmak
+ 	- Absztrakt komponensek, ezek kapcsolatai
+
+
+
+9. Architekturális terv
+ 	- Egy architekturális tervezési minta (pl. MVC, 3-rétegû alkalmazás, …)
+ 	- Az alkalmazás rétegei, fõ komponensei, ezek kapcsolatai
+ 	- Változások kezelése
+ 	- Rendszer bõvíthetõsége
+ 	- Biztonsági funkciók
+
+
+
+10. Adatbázis terv
+ 	- Logikai adatmodell
+ 	- Tárolt eljárások
+ 	- Fizikai adatmodellt legeneráló SQL szkript
+
+
+
+11. Implementációs terv
+ 	- Perzisztencia-osztályok
+ 	- Üzleti logika osztályai
+	- Kliensoldal osztályai
+
+
+12. Teszt
+	- Tesztterv
+	- Telepítési terv
+	- Karbantartási terv	
