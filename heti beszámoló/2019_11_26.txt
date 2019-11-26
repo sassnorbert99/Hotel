@@ -1,0 +1,31 @@
+﻿2019.11.20
+
+Oravecz Zsolt
+A projektünk beléptető képernyőjének javítása. Hashelés javítása
+A projektünk beléptető képernyőjének véglegesítése
+Kód hibái javítva
+szoftver működésének megbeszélése
+Néhány hiba javítva a rendszertervben
+	Átbeszéltük a szoftver működését,
+össze hangolva a grafikai működést a háttérfolyamatokkal.
+
+------------------------------------------------------------
+
+Járomi Dávid Antal
+
+Kövspec. jelenlegi helyzet, hibákat javítottam
+Kövspec. jelenlegi helyzet, véglegesítettem
+Néhány hiba javítva a köv.specben
+
+-------------------------------------------------------------
+Sass-Gyarmati Norbert
+
+projekt: Oravecz Zsoltnak segítettem, hibákat javítottuk
+további hibákat javítottunk, valamint véglegesítésre került 
+a beléptető képernyője
+funkspec hibák javítva
+dokumentáció tovább írása
+A csapattal közösen átbeszéltük a működési funkciókat
+Dokumentációban hibákat javítottam
+
+--------------------------------------------------------------

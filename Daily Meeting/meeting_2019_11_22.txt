@@ -1,0 +1,14 @@
+﻿2019.11.22
+
+Oravecz Zsolt
+Kód hibái javítva
+
+------------------------------------------------------------
+
+Járomi Dávid Antal
+
+Néhány hiba javítva a köv.specben
+
+-------------------------------------------------------------
+Sass-Gyarmati Norbert
+funkspec hibák javítva
