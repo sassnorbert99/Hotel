@@ -4,10 +4,18 @@ Rendszerterv:
 
 		
 1. Bevezetés: 
+
 	A rendszer célja a következõk:
 	
-	- A program fõ funkciója, hogy a kliensek a szoftver szolgáltatásait igénybe véve egy letisztult felület tárul eléjük, valamint a hagyományos és megszokott
-szoftver egyedi ötletekkel, igényeknek megfelelõ eszközökkel tárul majd eléjük, mellyel élvezetesebbé válik a szolgáltatás.
+		A program fõ funkciója, hogy a kliensek a szoftver szolgáltatásait igénybe véve egy letisztult felület tárul eléjük, valamint a hagyományos és megszokott
+		szoftver egyedi ötletekkel, igényeknek megfelelõ eszközökkel tárul majd eléjük, mellyel élvezetesebbé válik a szolgáltatás.
+		Célunk az, hogy egy olyan rendszert teremtsünk, mellyel alapvetõen segítjük és gördülékenyebbé tesszük a kissebb 
+		vendéglátó egységek mûködését. Specifikációnk alapján szeretnénk olyan árat biztosítani, mely számukra is elérhetõ.
+		a szoftver képes arra, hogy a vendégekrõl a legtöbb számunkra jelentõs információt struktúráltan tárolja.
+		A program javafx grafikus felületén használható, amelyhez tartozik egy adatbázis is, melyben az ügyfelek tulajdonságait 
+		tároljuk. Ha bármilyen információra van szükségünk, akkor ezeket az adatokat természetesen le is tudjuk kérni. Abból kiindulva,
+		hogy bizalmas adatok vannak a birtokunkban, azokat megfelelõen kell kezelnünk és nem szabad engednünk, hogy illetéktelen kezekbe
+		kerüljenek.
 
 2. Projekt Terv:
 
@@ -22,7 +30,7 @@ szoftver egyedi ötletekkel, igényeknek megfelelõ eszközökkel tárul majd eléjük, 
 	- Funkcionális specifikáció vezetõ: Oravecz Zsolt
 	- Rendszerterv vezetõ: Járomi Dávid Antal
 	- Illusztráció vezetõ: 
-	- Ütemterv: Az alkalmazásnak a hónap(2019.december) elejére kész kell lennie
+	- Ütemterv: Az alkalmazásnak 2019. december 10-re kész kell lennie.
 
 
 3 Követelmények:
@@ -68,7 +76,7 @@ szoftver egyedi ötletekkel, igényeknek megfelelõ eszközökkel tárul majd eléjük, 
 
 5. Üzleti folyamatok modellje:
 
-	- Üzleti szereplõk
+	- Üzleti szereplõk : 
   	- Üzleti folyamatok
   	- Üzleti entitások
 
@@ -79,7 +87,7 @@ szoftver egyedi ötletekkel, igényeknek megfelelõ eszközökkel tárul majd eléjük, 
  	- Rendszerhasználati esetek és lefutásaik
  	- Határosztályok
  	- Menü-hierarchiák
- 	- Képernyõtervek
+ 	- Képernyõtervek 
 
 
 7. Fizikai környezet:
