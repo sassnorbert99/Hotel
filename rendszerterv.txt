@@ -24,11 +24,8 @@ szoftver egyedi ötletekkel, igényeknek megfelelõ eszközökkel tárul majd eléjük, 
 	- Illusztráció vezetõ: 
 	- Ütemterv: Az alkalmazásnak a hónap(2019.december) elejére kész kell lennie
 
-	
 
-3. Üzleti folyamatok modellje:
-
-3.5 Követelmények:
+3 Követelmények:
 
  	Funkcionális követelmények:
 
