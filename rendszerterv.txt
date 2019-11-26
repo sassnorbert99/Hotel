@@ -76,9 +76,9 @@ Rendszerterv:
 
 5. Üzleti folyamatok modellje:
 
-	- Üzleti szereplõk : 
-  	- Üzleti folyamatok
-  	- Üzleti entitások
+	- Üzleti szereplõk : Megrendelõ: Tajti Tibor, Forgalmazók és tulajdonosok: Deák Ádám, Sass-Gyarmati Norbert, Nagy Bálint,Járomi Dávid Antal, Oravecz Zsolt
+  	- Üzleti folyamatok : Standard software bevezetése, egyedi szoftver fejlesztése, üzleti folyamat optimalizálása, tevékenység alapú költség számítás
+  	- Üzleti entitások : 
 
 
 6. Funkcionális terv:
