@@ -1,4 +1,10 @@
-2019.11.26
+﻿2019.11.26
 Oravecz Zsolt
 
 A mai nap folyamán átbeszéltük a szoftver működését, össze hangolva a grafikai működést a háttérfolyamatokkal.
+
+--------------------------------------------------------------------
+Sass-Gyarmati Norbert
+
+A csapattal közösen átbeszéltük a működési funkciókat
+Dokumentációban hibákat javítottam
