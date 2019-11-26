@@ -19,7 +19,7 @@ namespace HotelLite
            
         }
 
-        private string passwd;
+        private string passwd= "-231202094";
         public string Passwd
         {
             get

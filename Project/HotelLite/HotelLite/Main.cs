@@ -12,6 +12,7 @@ namespace HotelLite
 {
     public partial class Main : Form
     {
+         static Main main1 = new Main();
         public Main()
         {
             this.Hide();

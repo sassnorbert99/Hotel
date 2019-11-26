@@ -12,8 +12,10 @@ namespace HotelLite
 {
     public partial class Login : Form
     {
+        
         public Login()
         {
+            
             
             InitializeComponent();
         }
@@ -41,6 +43,30 @@ namespace HotelLite
         private void Label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button_enter_Click(object sender, EventArgs e)
+        {
+            Entry entry = new Entry();
+            if (textBox_loginname.Text==entry.LoginName && Convert.ToString(textBox_passwd.Text.GetHashCode())==entry.Passwd)
+            {
+                MessageBox.Show("Sikeres bejelentkezés!");
+                textBox_passwd.Clear();
+                Login login1 = new Login();
+                this.Visible = false;
+                
+                
+
+                
+
+            }
+
+            else
+            {
+                MessageBox.Show("Hibás bejelentkezési adatok!");
+                textBox_passwd.Clear();
+            }
+            
         }
     }
 }
