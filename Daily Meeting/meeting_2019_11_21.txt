@@ -1,0 +1,15 @@
+﻿2019.11.21
+
+Oravecz Zsolt
+A projektünk beléptető képernyőjének véglegesítése
+
+------------------------------------------------------------
+
+Járomi Dávid Antal
+
+Kövspec. jelenlegi helyzet, véglegesítettem
+
+-------------------------------------------------------------
+Sass-Gyarmati Norbert
+projekt: további hibákat javítottunk, valamint véglegesítésre került 
+a beléptető képernyője
