@@ -8,3 +8,9 @@ Sass-Gyarmati Norbert
 
 A csapattal közösen átbeszéltük a működési funkciókat
 Dokumentációban hibákat javítottam
+
+--------------------------------------------------------------------
+
+Járomi Dávid Antal
+
+Kövspec befejezve, rendszerterv vázlatosan megtervezve
