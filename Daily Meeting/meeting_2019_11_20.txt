@@ -1,0 +1,15 @@
+﻿2019.11.19
+
+Oravecz Zsolt
+A projektünk beléptető képernyőjének javítása. Hashelés javítása
+
+------------------------------------------------------------
+
+Járomi Dávid Antal
+
+Kövspec. jelenlegi helyzet, hibákat javítottam
+
+-------------------------------------------------------------
+Sass-Gyarmati Norbert
+
+projekt: Oravecz Zsoltnak segítettem, hibákat javítottuk
