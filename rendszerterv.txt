@@ -59,8 +59,9 @@ szoftver egyedi ötletekkel, igényeknek megfelelõ eszközökkel tárul majd eléjük, 
 	- támogatott operációs rendszer: multiplatform
 	- támogatott eszközök: PC, laptop
 	- nem támogatott eszközök: mobileszközök(mobil, pda, tablet)
-	- programozási nyelv: 
-	- adatbázis-kezelõ rendszerek: 
+	- programozási nyelv: java
+	- prototípus: c# - windows form application
+	- adatbázis-kezelõ rendszerek: SQLite
 	- tárhely: <1GB
 	- RAM: <500MB
 	- fejlesztõi környezet: Windows alapú hordozható számítógép
