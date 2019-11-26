@@ -1,0 +1,26 @@
+﻿Oravecz Zsolt
+A projekt és az adatbázis közötti kapcsolat hibáinak javítása.
+A beléptető prototype elkészítése
+------------------------------------------------------------------
+
+Sass-Gyarmati Norbert
+A projekt hibáinak javítása, illetve kiegészítése.
+projekt:
+- hibákat javítottam, majd véglegesítettem.
+- képernyőképeket elkészítettem
+- képernyőterv leírását vázlatosan elkészítettem
+- prototípus kódjában hibákat javítottam.
+-----------------------------------------------------------------
+
+------------------------------------------------------------------
+
+Deák Ádám
+Az adatbázis táblák létrehozva
+
+------------------------------------------------------------------
+
+Járomi Dávid Antal
+Követelmény specifikáció vágyálom rendszer elkezdve
+
+
+
