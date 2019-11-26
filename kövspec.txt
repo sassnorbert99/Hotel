@@ -31,7 +31,12 @@ mely megkönnyíti és elõsegíti a recepciós feladatokat, vendégek és a hotel közöt
 
 2. Jelenlegi helyzet leírása:(üzleti környezet)
 
-	
+Manapság még mindig sok olyan kisebb vendéglátó egység van, ahol a vendégek kezelése problémákba ütközik vagy nem megy kellõen gördülékenyen.
+Közülük többen is excel táblázat segítségével próbálják megoldani a helyzetet.Ez kezdetben jó megoldásnak bizonyult, azonban fél év elteltével
+a több száz felvitt adat miatt, a program egyre lassabnak bizonyul, növekszik a várakozási idõ, az ügyfelek türelmetlenebbek lesznek.
+Erre az a megoldás született, hogy bizonyos idõközönként az adatok egy része törlésre kerül.Az excel így újra gyorsan tud mûködni és
+tudja tartani azt a gyorsaságot, amit elvárnak tõle.Habár az excel táblázattal is el lehet boldogulni, a Hotel Lite egy sokkal felhasználó barátabb,
+letisztultabb és idõtakarékosabb program, amivel tovább lehet csökkenteni a beregisztrálás idõtartamát.
 
 
 3.Vágyálom rendszer:

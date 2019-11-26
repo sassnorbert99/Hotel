@@ -32,7 +32,19 @@ szoftver egyedi ötletekkel, igényeknek megfelelõ eszközökkel tárul majd eléjük, 
 
  	Funkcionális követelmények:
 
- 		-Menü: 
+ 		-Menü: -Regisztráció:
+				- név
+				- tajszám
+				- lakcím
+				- szabad szoba
+				- (Termékkulcs)
+			- Belépés:
+				- felhasználónév
+				- jelszó
+			- Menüsáv
+				- vendégek
+				- szobák
+				- kivett szobák
 
  	Nemfunkcionális követelmények: 
 
