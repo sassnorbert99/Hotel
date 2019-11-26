@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bedsException.cs" />
     <Compile Include="Entry.cs" />
     <Compile Include="identityException.cs" />
     <Compile Include="Login.cs">
@@ -62,8 +63,15 @@
     </Compile>
     <Compile Include="nationalityException.cs" />
     <Compile Include="Person.cs" />
+<<<<<<< HEAD
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+=======
+    <Compile Include="priceLessException.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="room.cs" />
+>>>>>>> 4af35206d1e854b348326485d96f7b770160d036
     <Compile Include="tinException.cs" />
     <EmbeddedResource Include="Form1.resx" />
     <EmbeddedResource Include="Login.resx">
@@ -93,6 +101,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="exceptions.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
