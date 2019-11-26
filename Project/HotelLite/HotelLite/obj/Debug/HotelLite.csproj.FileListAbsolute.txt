@@ -1,0 +1,11 @@
+C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.csprojAssemblyReference.cache
+C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.Properties.Resources.resources
+C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.csproj.GenerateResource.cache
+C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.csproj.CoreCompileInputs.cache
+C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\bin\Debug\HotelLite.exe.config
+C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\bin\Debug\HotelLite.exe
+C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\bin\Debug\HotelLite.pdb
+C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.exe
+C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.pdb
+C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.Login.resources
+C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.Main.resources
