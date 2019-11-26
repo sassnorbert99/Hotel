@@ -78,7 +78,8 @@ Rendszerterv:
 
 	- Üzleti szereplõk : Megrendelõ: Tajti Tibor, Forgalmazók és tulajdonosok: Deák Ádám, Sass-Gyarmati Norbert, Nagy Bálint,Járomi Dávid Antal, Oravecz Zsolt
   	- Üzleti folyamatok : Standard software bevezetése, egyedi szoftver fejlesztése, üzleti folyamat optimalizálása, tevékenység alapú költség számítás
-  	- Üzleti entitások : 
+			      - Vásárlás, - Szolgáltatás lefoglalása, - Megrendelés, - Reklámozás, - Értékesítés, - Szolgáltatás, - Könyvelés, - Üzemeltetés
+  	- Üzleti entitások :  - Áru, - Pénz, - Iroda, - Üzlethelység, - Reklám
 
 
 6. Funkcionális terv:
@@ -95,8 +96,8 @@ Rendszerterv:
  	- Vásárolt softwarekomponensek és külsõ rendszerek
  	- Hardver és hálózati topológia
  	- Fizikai alrendszerek
- 	- Fejlesztõ eszközök
- 	- Keretrendszer
+ 	- Fejlesztõ eszközök: Visual studio, MySQL Workbench
+ 	- Keretrendszer: .NET keretrendszer
 
 
 8. Absztrakt domain modell:
@@ -110,7 +111,12 @@ Rendszerterv:
  	- Az alkalmazás rétegei, fõ komponensei, ezek kapcsolatai
  	- Változások kezelése
  	- Rendszer bõvíthetõsége
- 	- Biztonsági funkciók
+ 	- Biztonsági funkciók: - Csoportunk kifejezetten ügyel rá, hogy a felhasználó biztonságban érezhesse magát a szoftver által tárolt adatokkal 
+				 kapcsolatban. Ebbõl kifolyólag kell olyan intézkedéseket csinálni, amely véd az adatlopás ellen: pl. a bejelenztkezés, illetve az offline mûködés.
+
+			       - A legáltalánosabb biztonsági követelmény a végfelhasználók és a középsõ réteghez tartozó szerverek hitelesítése.
+				 A biztonsági architektúra kiválasztásakor igyekszünk megfelelni az üzleti követelményeknek, de kerüljük a többletterheléssel járó megoldásokat.
+				 Vegyük figyelembe, hogy nem minden szolgáltatást és interakciót kell aláírni vagy titkosítani. Ezzel javíthatunk a szoftver teljesítményén.
 
 
 
