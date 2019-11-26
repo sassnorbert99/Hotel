@@ -1,0 +1,13 @@
+﻿2019.11.25
+
+Oravecz Zsolt
+Kód hibái javítva, szoftver működésének megbeszélése
+------------------------------------------------------------
+
+Járomi Dávid Antal
+
+Néhány hiba javítva a rendszertervben
+
+-------------------------------------------------------------
+Sass-Gyarmati Norbert
+dokumentáció tovább írása
