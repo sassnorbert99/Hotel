@@ -63,7 +63,7 @@
     </Compile>
     <Compile Include="nationalityException.cs" />
     <Compile Include="Person.cs" />
-<<<<<<< HEAD
+>>>>>>> HEAD
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
 =======
