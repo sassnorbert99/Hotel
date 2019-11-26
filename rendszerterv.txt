@@ -53,6 +53,7 @@ szoftver egyedi ötletekkel, igényeknek megfelelõ eszközökkel tárul majd eléjük, 
 		-Az alkalmazásban nem jelenhetnek meg felnõtt tartalmak.
 
 4. Fizikai környezetek:
+
 	- támogatott operációs rendszer: multiplatform
 	- támogatott eszközök: PC, laptop
 	- nem támogatott eszközök: mobileszközök(mobil, pda, tablet)
@@ -65,13 +66,15 @@ szoftver egyedi ötletekkel, igényeknek megfelelõ eszközökkel tárul majd eléjük, 
 
 
 
-5. Üzleti folyamatok modellje
+5. Üzleti folyamatok modellje:
+
 	- Üzleti szereplõk
   	- Üzleti folyamatok
   	- Üzleti entitások
 
 
-6. Funkcionális terv
+6. Funkcionális terv:
+
 	- Rendszerszereplõk
  	- Rendszerhasználati esetek és lefutásaik
  	- Határosztályok
@@ -79,7 +82,8 @@ szoftver egyedi ötletekkel, igényeknek megfelelõ eszközökkel tárul majd eléjük, 
  	- Képernyõtervek
 
 
-7. Fizikai környezet
+7. Fizikai környezet:
+
  	- Vásárolt softwarekomponensek és külsõ rendszerek
  	- Hardver és hálózati topológia
  	- Fizikai alrendszerek
@@ -87,14 +91,14 @@ szoftver egyedi ötletekkel, igényeknek megfelelõ eszközökkel tárul majd eléjük, 
  	- Keretrendszer
 
 
-8. Absztrakt domain modell
+8. Absztrakt domain modell:
+
  	- Domain specifikáció, fogalmak
  	- Absztrakt komponensek, ezek kapcsolatai
 
+9. Architekturális terv:
 
-
-9. Architekturális terv
- 	- Egy architekturális tervezési minta (pl. MVC, 3-rétegû alkalmazás, …)
+ 	- Egy architekturális tervezési minta
  	- Az alkalmazás rétegei, fõ komponensei, ezek kapcsolatai
  	- Változások kezelése
  	- Rendszer bõvíthetõsége
@@ -102,7 +106,8 @@ szoftver egyedi ötletekkel, igényeknek megfelelõ eszközökkel tárul majd eléjük, 
 
 
 
-10. Adatbázis terv
+10. Adatbázis terv:
+
  	- Logikai adatmodell
  	- Tárolt eljárások
  	- Fizikai adatmodellt legeneráló SQL szkript
