@@ -1,3 +1,0 @@
-﻿tinException: az adó azonosító csak számokat tartalmazhat
-identityException: 11 hosszú lehet a személyi azonosító
-nationalityException: túl hosszú a mező értéke
