@@ -1,6 +1,7 @@
 ﻿2019.11.27
 Oravecz Zsolt
-
+	Az sql developerben létrehoztam a táblákat, a köztük lévő függőségeket és tulajdonságokat.
+Módosítottam a programban a hitelesítő adatokat.
 
 --------------------------------------------------------------------
 Sass-Gyarmati Norbert
