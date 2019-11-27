@@ -34,5 +34,10 @@ namespace HotelLite
             Login login1 = new Login();
             login1.Show();
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
