@@ -17,7 +17,7 @@ namespace HotelLite.Tables
             OracleConnection oc = new OracleConnection();
 
             //beállítom a kapcsolat tulajdonságait
-            string connectionString = @"Data Source=193.225.33.71;User Id=KBROMP;Password=1234;";
+            string connectionString = @"Data Source=193.225.33.71;User Id=RE1D25;Password=szelektcsillag;";
 
             oc.ConnectionString = connectionString;
             return oc;

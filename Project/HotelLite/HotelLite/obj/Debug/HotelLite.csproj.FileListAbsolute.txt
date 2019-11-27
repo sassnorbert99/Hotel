@@ -22,3 +22,5 @@ C:\Users\Norbert\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.c
 C:\Users\Norbert\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.csproj.CopyComplete
 C:\Users\Norbert\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.exe
 C:\Users\Norbert\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.pdb
+C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.csproj.CopyComplete
