@@ -1,4 +1,7 @@
 					Adatbázisterv
 
 1.Bevezetés:
-	
+	A projektünk a megbízó igényeit kielégítve az Oracle által kibocsátott SQLDeveloper
+nevû adatbázissal lesz kapcsolatban.
+	A szoftver lokális elérésû lesz, mely azt jelenti, hogy az adatbázist, csak 
+egy megadott hálózato lehet elérni.
