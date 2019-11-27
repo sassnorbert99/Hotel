@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Oracle.ManagedDataAccess.Client;
 
 namespace HotelLite
 {
@@ -42,6 +43,11 @@ namespace HotelLite
             {
                 MessageBox.Show("Hibás bejelentkezési adatok!");
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

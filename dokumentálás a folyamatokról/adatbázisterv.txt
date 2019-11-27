@@ -1,0 +1,8 @@
+Sass-Gyarmati Norbert
+Az adatbázis package-t beleraktam a projektbe, valamint létrehoztam a personTable.cs osztályt is,
+ahol tároltam az updat, insert, delete és select függvényeket is, ami kelleni fog majd a 
+szoftverhez
+----------------------------------------------------------------------------------------------
+Sass-Gyarmati Norbert
+A MySQLWorkbench-ben létrehoztam a táblákat
+----------------------------------------------------------------------------------------------

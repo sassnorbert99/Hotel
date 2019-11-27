@@ -1,0 +1,15 @@
+﻿2019.11.27
+Oravecz Zsolt
+
+
+--------------------------------------------------------------------
+Sass-Gyarmati Norbert
+
+	Az adatbázis package-t beleraktam a projektbe, valamint létrehoztam a personTable.cs
+osztályt is, ahol tároltam az updat, insert, delete és select függvényeket is, ami
+kelleni fog majd a szoftverhez.
+	sqlworkbench-ben elkészítettem az alap táblákat
+--------------------------------------------------------------------
+
+Járomi Dávid Antal
+
