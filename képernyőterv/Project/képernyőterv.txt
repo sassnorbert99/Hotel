@@ -1,0 +1,74 @@
+				Képernyõterv
+
+
+
+1. Bevezetés:
+
+	A mellékelten csatolt "kepernyokep_1.png" képen megtekinthetõ a megbízó
+igényeit kielégítõ panel elrendezései, funkciói. Amint a képen is látható,
+vannak legördülõ menük, melyek kényelmesebbé és praktikussá teszi majd a 
+felhasználók számára az értelmezés, illetve használatát. Továbbá minden mezõnek
+lesznek textbox-ok, melybe a felhasználó -más értelemben kliens- könnyen és 
+egyszerûen tud adatokat bevinni a rendszerbe. 
+	A megbízó igényeit figyelembe véve létre lett hozva a szoftverben a fõbb
+funkciók, melyet a képen lehet látni. Lehet majd külön listázni a vendégeket, a 
+szabad szobákat, valamint a már kivett szobákat, melyek legördülõ sávban jelennek 
+meg, ezáltal a kliens nem kell nyomon kövesse az adott szobák használatát.
+	Továbbá, a vendégek sikeres regisztrálása után automatikusan megjelenik
+a vendégeket tartalmazó legördülõ sávban.
+
+2. Menüsáv:
+
+	A menüsáv a megbízó igényeit kielégítve készül, mely meghatározott pontokat
+követ nyomon. Ennek hatására a szoftver menüsávjainak felépítése a következõképp
+fog megvalósulni:
+	- "menusav.png" képen látható
+	- legfelelül a vendégek listája látható, mely minden sikeres vendég
+beregisztrálása után dinamikusan bõvül, reális mennyiségû vendégek számára biztosít 
+helyet.
+	- középen található a szobáknak készült menüsáv, melyben a kliens feltölti
+a hotel összes szobáját, és azok tulajdonságait, majd ezeket tárolja dinamikusan,
+reális értékekkel.
+	- alul található a kivett szobáknak készült menüsáv, mely abban az esetben 
+változik, ha a vendég kivesz egy szobát, azaz a vendég a szobák listából talál egy
+még fel nem használt szobát. A kliens ebben a menüsávban nem kap engedélyt a 
+módosításra, hiszen ez a menüsáv az elõzõ két menüsáv ok-okozata, mely az alapján
+bõvül, valamint csökken, hogy a vendég mikor vesz ki, hagy el egy adott szobát.
+
+3.adatbevitel:
+	
+	Az adatbevitel elengedhetetlen lesz majd a szoftverünkben, hiszen a megbízó
+igényeit is figyelembe véve a kliens a panelen keresztül tudjon kommunikálni a 
+programmal és ne pedig a programkódban kelljen statikusan adatokat bevinni a 
+rendszerbe.
+	A szoftver vendégeket tud majd regisztráltatni, melyben a vendég különféle
+adatokkal kell szolgáljon a kliens számára. Ahogyan az megfigyelhetõ az "adatbevitel.png"
+képernyõképen, elõször a vendég teljes nevét kell megadnia, majd ezek után a taj
+számot kell megadnia, mely szigorúan 9 numerikus karakterbõl állhat. 
+Továbbá a vendégnek szolgáltatnia kell a lakcímével, melynek nem lesznek külön 
+megszorítások a terjedlemmel kapcsolatban. Ha a személyes adatait kielégíti, választhat a 
+szabad szobák közül, mely dinamikusan bõvül, illetve csökken.
+	Amint a vendég minden feltételnek eleget tesz, a kép jobb oldalán látható
+"beküld" gombbal a kliens feltölti az adatbázisba a vendég által létrehozott adat-
+tömbböt. Ez az adattömb természetesen a többi sávban is frissül, ezáltal
+dinamikusan fognak a menüsávok mozogni.
+	Beküldés után nem csak a menüsávok fognak változni, de ismét lehet majd további
+vendégek adatait bevinni, a beviteli mezõk ismét üresek lesznek.
+
+4. Beléptetés:
+	A beléptetés panel megelõzi az adatbeviteli panelt. A képernyõkép megtekinthetõ
+a "Bejelentkezesi_keperny.png" képen megetkinthetõ. A panel grafikai beállításait a megbízó
+igényeihez igazítottuk, melynek a panel közepén lett a bejelentkezés.
+
+5. login:
+	
+	A Bejelentkezesi_keperny.png nevû képen látható a bejelentkezéshez szükséges adatok.
+A bejelentkezés hagyományos módszereken alapul, kell hozzá egy felhasználónév,
+valamint egy hozzá tartozó jelszó, melyet a szoftver vásárlása után tudunk 
+biztosítani a klienseknek. Sikertelen próbálkozás során egy külön panelban jelenik
+meg a "sikertelen bejelentkezés" szöveg(login_error.png), sikeres bejelentkezés
+esetén pedig a "sikeres bejelentkezés" ablak jelenik meg, mely
+ezután elõhozza az adatbeviteli panelt.
+
+
+
