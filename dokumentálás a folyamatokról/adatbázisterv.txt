@@ -6,3 +6,7 @@ szoftverhez
 Sass-Gyarmati Norbert
 A MySQLWorkbench-ben létrehoztam a táblákat
 ----------------------------------------------------------------------------------------------
+Oravecz Zsolt:
+Az sql developerben létrehoztam a táblákat, a köztük lévõ függõségeket és tulajdonságokat.
+Módosítottam a programban a hitelesítõ adatokat.
+-----------------------------------------------------------------------------------------------
