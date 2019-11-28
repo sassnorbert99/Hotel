@@ -32,7 +32,7 @@ namespace HotelLite.Tables
 
             OracleCommand command = new OracleCommand();
             command.CommandType = System.Data.CommandType.Text; //SQL utasítás: szöveges
-            command.CommandText = "SELECT neptun_code, first_name FROM students ORDER BY last_name"; //parancs szövege
+            command.CommandText = "SELECT name FROM quest ORDER BY last_name"; //parancs szövege
 
             OracleConnection connection = getOracleConnection(); //egy kapcsolatot kérek a metóduson keresztül
             connection.Open(); //kapcsolat megnyitása
@@ -67,7 +67,7 @@ namespace HotelLite.Tables
             OracleTransaction oracleTransaction = oracleConnection.BeginTransaction(System.Data.IsolationLevel.ReadCommitted);
             OracleCommand oracleCommand = new OracleCommand();
             oracleCommand.CommandType = System.Data.CommandType.Text;
-            oracleCommand.CommandText = "DELETE FROM person WHERE name = :name";
+            oracleCommand.CommandText = "DELETE FROM quest WHERE name = :name";
             //:neptuncode= dinamikus paraméter
             OracleParameter nameParameter = new OracleParameter();
             nameParameter.DbType = System.Data.DbType.String;
@@ -103,7 +103,7 @@ namespace HotelLite.Tables
             OracleTransaction oracleTransaction = oracleConnection.BeginTransaction(System.Data.IsolationLevel.ReadCommitted);
             OracleCommand oracleCommand = new OracleCommand();
             oracleCommand.CommandType = System.Data.CommandType.Text;
-            oracleCommand.CommandText = "UPDATE person WHERE name = :name";
+            oracleCommand.CommandText = "UPDATE quest WHERE name = :name";
             //:neptuncode= dinamikus paraméter
             OracleParameter nameParameter = new OracleParameter();
             nameParameter.DbType = System.Data.DbType.String;
