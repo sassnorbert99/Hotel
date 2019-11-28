@@ -1,17 +1,17 @@
 				Képernyõterv
 
-
+FEJLESZTÉS ALATT
 
 1. Bevezetés:
 
 	A mellékelten csatolt "kepernyokep_1.png" képen megtekinthetõ a megbízó
 igényeit kielégítõ panel elrendezései, funkciói. Amint a képen is látható,
 vannak legördülõ menük, melyek kényelmesebbé és praktikussá teszi majd a 
-felhasználók számára az értelmezés, illetve használatát. Továbbá minden mezõnek
-lesznek textbox-ok, melybe a felhasználó -más értelemben kliens- könnyen és 
+felhasználók számára az értelmezést, illetve használatát. Továbbá minden mezõnek
+vannak textbox-ok, melybe a felhasználó -más értelemben kliens- könnyen és 
 egyszerûen tud adatokat bevinni a rendszerbe. 
 	A megbízó igényeit figyelembe véve létre lett hozva a szoftverben a fõbb
-funkciók, melyet a képen lehet látni. Lehet majd külön listázni a vendégeket, a 
+funkciók, melyet a képeken lehet látni. Lehet külön listázni a vendégeket, a 
 szabad szobákat, valamint a már kivett szobákat, melyek legördülõ sávban jelennek 
 meg, ezáltal a kliens nem kell nyomon kövesse az adott szobák használatát.
 	Továbbá, a vendégek sikeres regisztrálása után automatikusan megjelenik
@@ -19,10 +19,10 @@ a vendégeket tartalmazó legördülõ sávban.
 
 2. Menüsáv:
 
-	A menüsáv a megbízó igényeit kielégítve készül, mely meghatározott pontokat
-követ nyomon. Ennek hatására a szoftver menüsávjainak felépítése a következõképp
-fog megvalósulni:
-	- "menusav.png" képen látható
+	A menüsáv a megbízó igényeit kielégítve készült, mely meghatározott pontokat
+követ nyomon. Ennek hatására a szoftver menüsávjainak felépítése a következõképpen
+valósult meg:
+	- "" képen látható
 	- legfelelül a vendégek listája látható, mely minden sikeres vendég
 beregisztrálása után dinamikusan bõvül, reális mennyiségû vendégek számára biztosít 
 helyet.
@@ -37,11 +37,11 @@ bõvül, valamint csökken, hogy a vendég mikor vesz ki, hagy el egy adott szobát.
 
 3.adatbevitel:
 	
-	Az adatbevitel elengedhetetlen lesz majd a szoftverünkben, hiszen a megbízó
+	Az adatbevitel elengedhetetlen a szoftverünkben, hiszen a megbízó
 igényeit is figyelembe véve a kliens a panelen keresztül tudjon kommunikálni a 
 programmal és ne pedig a programkódban kelljen statikusan adatokat bevinni a 
 rendszerbe.
-	A szoftver vendégeket tud majd regisztráltatni, melyben a vendég különféle
+	A szoftver vendégeket tud regisztráltatni, melyben a vendég különféle
 adatokkal kell szolgáljon a kliens számára. Ahogyan az megfigyelhetõ az "adatbevitel.png"
 képernyõképen, elõször a vendég teljes nevét kell megadnia, majd ezek után a taj
 számot kell megadnia, mely szigorúan 9 numerikus karakterbõl állhat. 
