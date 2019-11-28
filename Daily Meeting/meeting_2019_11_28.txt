@@ -1,0 +1,14 @@
+﻿2019.11.28
+Oravecz Zsolt
+	Az sql developerben létrehoztam a táblákat, a köztük lévő függőségeket és tulajdonságokat.
+Módosítottam a programban a hitelesítő adatokat.
+
+--------------------------------------------------------------------
+Sass-Gyarmati Norbert
+
+	Oravecz Zsolttal közösen fejlesztettük az adatbázis és a program közti kapcsolatokat,
+valamint a programban néhány hibát javítottam
+--------------------------------------------------------------------
+
+Járomi Dávid Antal
+
