@@ -16,6 +16,7 @@ namespace HotelLite
         {
             InitializeComponent();
             this.Activate();
+            List<Person> quest = new List<Person>();
         }
 
         private void TextBox2_TextChanged(object sender, EventArgs e)
@@ -43,6 +44,17 @@ namespace HotelLite
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonRegister_Click(object sender, EventArgs e)
+        {
+            //Person a = new Person(nameTextBox.Text,);
+        }
+
+        private void button_view_Click(object sender, EventArgs e)
+        {
+            //nem biztos, hogy jó
+            checkedListBoxReserved.Show();
         }
     }
 }
