@@ -14,6 +14,26 @@ namespace HotelLite
         string address; //lakcím
         string birthDate; //születési dátum
         string nationality; //nemzetiség
+        int checkedRoom; //kivenni kívánt szoba
+
+        public int CheckedRoom
+        {
+            get
+            {
+                return checkedRoom;
+            }
+            set
+            {
+                if (value > 100)
+                {
+                    throw new tooMuchRoomException("nincs ennyi szoba a hotelban");
+                }
+                else
+                {
+                    checkedRoom = value;
+                }
+            }
+        }
 
        
 
@@ -108,5 +128,21 @@ namespace HotelLite
                 }
             }
         }
+
+        public Person(string Name, string Tin, string Identity, string Address, string Birthday, string Nationality)
+        {
+            this.name = Name;
+            this.tin = Tin;
+            this.identity = Identity;
+            this.address = Address;
+            this.birthDate = Birthday;
+            this.nationality = Nationality;
+        }
+        /*
+        public override string ToString()
+        {
+            return "név: " + name + " személyi száma: " + identity + " lakcíme: " + address + " kivett szoba: " + checkedRoom;
+        }
+        */
     }
 }
