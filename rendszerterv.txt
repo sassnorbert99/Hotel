@@ -84,35 +84,43 @@ Rendszerterv:
 
 6. Funkcionális terv:
 
-	- Rendszerszereplõk
- 	- Rendszerhasználati esetek és lefutásaik
- 	- Határosztályok
- 	- Menü-hierarchiák
- 	- Képernyõtervek 
+	- Rendszerszereplõk : A rendszer a hotel és szállodatulajdonosok részére lesz készítve
+ 	- Rendszerhasználati esetek és lefutásaik : A vendégek beregisztrálásakor, illetve azok távozásakor használható a rendszer, a szoba('k) kiválasztása is ezen rendszer segítségével történik.
+ 	- Határosztályok : bedsException, Entry, identityException, Login, Login.Designer, Main, Main.Designer, nationalityException, Person, priceLessException, Program, room, tinException, tooMuchRoomException
+ 	- Menü-hierarchiák : regisztráció/belépés + menüsáv 
+ 	- Képernyõtervek : A program nem fog tartalmazni a külso kapcsolatokat biztosító interfészeket, mivel az adatbázis lokálisan elérhetõ,így  nem kell majd hálózati adatkapcsolat a forások eléréséhez.
+			   Felhasználói interfész (GUI) terv – ahogy az alkalmazás „kinéz” majd (lehet vázlatos is, részben ez alapján készülnek majd a részletes képernyotervek)
+			   kezdetben a felhasználó egy teljesen letisztult képernyovel fog találkozni, mely hagyományos színeket és felépítést, felbontást fog tartalmazni
+			   Ha a kliens a szolgáltatást meg akarja szakítani, esetleg késobb igénybe venni, ehhez rendelkezni fog egy "kilépés" gomb, mely rákattintás után
+			   megszakítja, majd kilép a programból, ezzel együtt kijelentkezik. Az alkalmazás bezárása után ismét meg kell adnia adatait.
+			   
 
 
 7. Fizikai környezet:
 
- 	- Vásárolt softwarekomponensek és külsõ rendszerek
- 	- Hardver és hálózati topológia
- 	- Fizikai alrendszerek
+ 	- Vásárolt softwarekomponensek és külsõ rendszerek: nincsenek vásárolt softwarek
+ 	- Hardver és hálózati topológia : hálózati adatkapcsolatra nincs szükség, mivel a program offline lesz.
+ 	- Fizikai alrendszerek : A program felhasználóbarát, nincs szükség a személyzet képzésére, hogy tudja használni azt.
  	- Fejlesztõ eszközök: Visual studio, MySQL Workbench
  	- Keretrendszer: .NET keretrendszer
 
 
 8. Absztrakt domain modell:
 
- 	- Domain specifikáció, fogalmak
- 	- Absztrakt komponensek, ezek kapcsolatai
+ 	- Domain specifikáció, fogalmak : Az általunk készített szoftver a felhasználó és az adatbázis között fog egy közös réteget biztosítani. A szoftver segít a felhasználónak
+			   		  rafikus úton  menedzselni az adatbázist, könnyíti az átláthatóságot, illetve megakadályozza, hogy az adatbázisban redundancia keletkezzen.
+			   		  Példának okáért, ha a felhasználó egy olyan személyt próbál regisztrálni, aki már jelen van az adatbázisban, akkor õt egy hibaüzenettel tájékoztatja errõl.
+
+ 	- Absztrakt komponensek, ezek kapcsolatai : A program javafx grafikus felületén használható, amelyhez adatbázist kapcsoltunk.
 
 9. Architekturális terv:
 
- 	- Egy architekturális tervezési minta
- 	- Az alkalmazás rétegei, fõ komponensei, ezek kapcsolatai
- 	- Változások kezelése
- 	- Rendszer bõvíthetõsége
+ 	- Egy architekturális tervezési minta : MVC
+ 	- Az alkalmazás rétegei, fõ komponensei, ezek kapcsolatai : A fõoldalon megtalálható a bejelentkezés illetve a regisztráció, sikeres belépést követõen megjelenik a menü.
+ 	- Változások kezelése : A rendszer könnyen átalakítható, mivel rendkívül átlátható.
+ 	- Rendszer bõvíthetõsége : A rendszer egyszerûsége miatt, könnyen bõvíthetõ.
  	- Biztonsági funkciók: - Csoportunk kifejezetten ügyel rá, hogy a felhasználó biztonságban érezhesse magát a szoftver által tárolt adatokkal 
-				 kapcsolatban. Ebbõl kifolyólag kell olyan intézkedéseket csinálni, amely véd az adatlopás ellen: pl. a bejelenztkezés, illetve az offline mûködés.
+				 kapcsolatban. Ebbõl kifolyólag kell olyan intézkedéseket csinálni, amely véd az adatlopás ellen: pl. a bejelentkezés, illetve az offline mûködés.
 
 			       - A legáltalánosabb biztonsági követelmény a végfelhasználók és a középsõ réteghez tartozó szerverek hitelesítése.
 				 A biztonsági architektúra kiválasztásakor igyekszünk megfelelni az üzleti követelményeknek, de kerüljük a többletterheléssel járó megoldásokat.
@@ -122,19 +130,51 @@ Rendszerterv:
 
 10. Adatbázis terv:
 
- 	- Logikai adatmodell
- 	- Tárolt eljárások
- 	- Fizikai adatmodellt legeneráló SQL szkript
+ 	- Logikai adatmodell: - Vendég tábla:
+					      Ahogy a mellékelt fájl is mutatja -QUEST_CREATE- tartalmaz egy id-t, mely kulcsként
+					      szolgál, amivel a vendég táblát össze tudjuk kapcsolni a szoba táblával. Ezen kívül van a 
+					      vendég táblának név, születési dátum-város, személyi szám, taj-illetve cím mezõi.
+				Szoba tábla:
+					      A szoba tábla hasonlóképp épül fel, mint a vendég tábla, meglehet tekinteni a mellékelt 
+					      fájlban -ROOM_CREATE-. A tábla tartalmaz egy id mezõt, mely kapcsolóként (kulcsként) szolgál,
+					      mely összekapcsolja a vendég táblát a szoba táblával. Ezen kívül tartalmaz zoba szám, ágy 
+					      szám, szabad-e, illetve vendég id mezõt is.
+
+
+ 	- Tárolt eljárások :  GUESTS_DATA, LOGIN
+
+ 	- Fizikai adatmodellt legeneráló SQL szkript : 
+							CREATE TABLE GUEST(
+ 							ID NUMBER NOT NULL, 
+							NAME VARCHAR2(40) NOT NULL, 
+ 							BIRTH_DATE DATE NOT NULL, 
+ 							BIRTH_CITY VARCHAR2(40) NOT NULL,
+ 							TAX_NUMBER NUMBER NOT NULL, 
+ 							SSN VARCHAR2(10) NOT NULL, 
+ 							ADDRESS VARCHAR2(50) NOT NULL, 
+ 							CONSTRAINT GUEST_PK PRIMARY KEY(ID) ENABLE 
+							);
+
+							CREATE TABLE ROOM(
+  							ID NUMBER NOT NULL, 
+ 							ROOM_NUMBER NUMBER NOT NULL, 
+ 							BED_NUMBER NUMBER NOT NULL, 
+ 							FREE CHAR(1 BYTE) NOT NULL, 
+ 							GUEST_ID NUMBER NOT NULL, 
+ 							CONSTRAINT ROOM_PK PRIMARY KEY(ID) ENABLE 
+							);
 
 
 
 11. Implementációs terv
+
  	- Perzisztencia-osztályok
  	- Üzleti logika osztályai
 	- Kliensoldal osztályai
 
 
 12. Teszt
+
 	- Tesztterv
 	- Telepítési terv
 	- Karbantartási terv	
