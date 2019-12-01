@@ -129,5 +129,106 @@ namespace HotelLite.Tables
             }
             return affectedRows;
         }
+
+        /*
+        public int Insert(StudentRecord record)
+        {
+            // adatbázis kapcsolat megszerzése
+            OracleConnection oc = GetOracleConnection();
+            oc.Open();
+
+            OracleTransaction ot = oc.BeginTransaction(System.Data.IsolationLevel.ReadCommitted);
+
+            OracleCommand oracleCommand = oc.CreateCommand(); // egy lépésben példányosít és odaadja a kapcsolatot
+            oracleCommand.CommandType = System.Data.CommandType.StoredProcedure; // tárolt eljárást szeretnék hívni
+            oracleCommand.CommandText = "spInsert_person";
+
+            // paraméterek létrehozása
+            OracleParameter neptunCodeParameter = new OracleParameter();
+            neptunCodeParameter.DbType = System.Data.DbType.String;
+            neptunCodeParameter.ParameterName = "p_name"; // név szerinti kötés van, fontos, hogy mi a neve
+            neptunCodeParameter.Direction = System.Data.ParameterDirection.Input;
+            neptunCodeParameter.Value = record.Name;
+            oracleCommand.Parameters.Add(nameCodeParameter);
+
+            OracleParameter addressParameter = new OracleParameter()
+            {
+                DbType = System.Data.DbType.String,
+                ParameterName = "p_address",
+                Direction = System.Data.ParameterDirection.Input,
+                Value = record.Address
+            };
+            oracleCommand.Parameters.Add(addressParameter);
+
+            OracleParameter tinParameter = new OracleParameter()
+            {
+                DbType = System.Data.DbType.String,
+                ParameterName = "p_tax_in",
+                Direction = System.Data.ParameterDirection.Input,
+                Value = record.TIN
+            };
+            oracleCommand.Parameters.Add(tinParameter);
+
+            OracleParameter ssnParameter = new OracleParameter()
+            {
+                DbType = System.Data.DbType.String,
+                ParameterName = "p_social_sn",
+                Direction = System.Data.ParameterDirection.Input,
+                Value = record.SSN
+            };
+            oracleCommand.Parameters.Add(ssnParameter);
+
+            OracleParameter birthDateParameter = new OracleParameter()
+            {
+                DbType = System.Data.DbType.Date,
+                ParameterName = "p_birth_date",
+                Direction = System.Data.ParameterDirection.Input,
+                Value = record.BirthDate
+            };
+            oracleCommand.Parameters.Add(birthDateParameter);
+
+            OracleParameter birthCityParameter = new OracleParameter()
+            {
+                DbType = System.Data.DbType.String,
+                ParameterName = "p_birth_city",
+                Direction = System.Data.ParameterDirection.Input,
+                Value = record.BirthCity
+            };
+            oracleCommand.Parameters.Add(birthCityParameter);
+
+            OracleParameter sexParameter = new OracleParameter()
+            {
+                DbType = System.Data.DbType.String,
+                ParameterName = "p_sex",
+                Direction = System.Data.ParameterDirection.Input,
+                Value = record.Sex
+            };
+            oracleCommand.Parameters.Add(sexParameter);
+
+            OracleParameter rowCountParameter = new OracleParameter()
+            {
+                DbType = System.Data.DbType.Int32,
+                ParameterName = "p_out_rowcnt",
+                Direction = System.Data.ParameterDirection.Output, // kimenő paraméter
+                // kifelé közvetít adatot
+            };
+            oracleCommand.Parameters.Add(rowCountParameter);
+
+            try
+            {
+                oracleCommand.ExecuteNonQuery();
+                int affectedRows = int.Parse(rowCountParameter.Value.ToString());
+
+                ot.Commit();
+                return affectedRows;
+            }
+            catch (Exception e)
+            {
+                ot.Rollback();
+                return 0;
+            }
+        }
+        */
+
     }
 }
