@@ -24,3 +24,11 @@ C:\Users\Norbert\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.e
 C:\Users\Norbert\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.pdb
 C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\bin\Debug\Oracle.ManagedDataAccess.dll
 C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.csproj.CopyComplete
+C:\Users\Dávid\Desktop\afplabor\afpx2\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.csprojAssemblyReference.cache
+C:\Users\Dávid\Desktop\afplabor\afpx2\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.Login.resources
+C:\Users\Dávid\Desktop\afplabor\afpx2\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.Main.resources
+C:\Users\Dávid\Desktop\afplabor\afpx2\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.Properties.Resources.resources
+C:\Users\Dávid\Desktop\afplabor\afpx2\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.csproj.GenerateResource.cache
+C:\Users\Dávid\Desktop\afplabor\afpx2\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.csproj.CoreCompileInputs.cache
+C:\Users\Dávid\Desktop\afplabor\afpx2\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.exe
+C:\Users\Dávid\Desktop\afplabor\afpx2\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.pdb

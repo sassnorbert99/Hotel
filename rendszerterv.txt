@@ -168,13 +168,14 @@ Rendszerterv:
 
 11. Implementációs terv
 
- 	- Perzisztencia-osztályok
- 	- Üzleti logika osztályai
-	- Kliensoldal osztályai
+Perzisztencia-osztályok, Üzleti logika osztályai, Kliensoldal osztályai: bedsException, Entry, identityException, Login, Login.Designer, Main,Main.Designer, nationalityException,
+ 									 Person, priceLessException, Program, room, tinException, tooMuchRoomException
 
 
 12. Teszt
 
-	- Tesztterv
-	- Telepítési terv
-	- Karbantartási terv	
+	- Tesztterv : A prototípusunk unit tesztelésen esett át, melyben fõbb feladatunk volt,
+		      hogy a program kapacitása nagyobb mennyiségnél ne omljon össze, melyet 
+		      metódusok segítségével tudtunk létrehozni.
+	- Telepítési terv: telepító csomag elkészítése, megszorítások megadása
+	- Karbantartási terv: Következõ verziót jelenleg még nem tervezünk készíteni.
