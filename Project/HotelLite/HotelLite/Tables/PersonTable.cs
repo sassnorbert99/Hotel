@@ -169,6 +169,14 @@ namespace HotelLite.Tables
             };
             oracleCommand.Parameters.Add(tinParameter);
 
+            OracleParameter nationalityParameter = new OracleParameter()
+            {
+                DbType = System.Data.DbType.String,
+                ParameterName = "p_nationality_in",
+                Direction = System.Data.ParameterDirection.Input,
+                Value = record.Nationality
+            };
+            oracleCommand.Parameters.Add(nationalityParameter);
 
             OracleParameter identityParameter = new OracleParameter()
             {
