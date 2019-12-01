@@ -169,6 +169,16 @@ namespace HotelLite.Tables
             };
             oracleCommand.Parameters.Add(tinParameter);
 
+
+            OracleParameter identityParameter = new OracleParameter()
+            {
+                DbType = System.Data.DbType.String,
+                ParameterName = "p_identity_in",
+                Direction = System.Data.ParameterDirection.Input,
+                Value = record.Identity
+            };
+            oracleCommand.Parameters.Add(identityParameter);
+
             OracleParameter ssnParameter = new OracleParameter()
             {
                 DbType = System.Data.DbType.String,
