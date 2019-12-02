@@ -1,0 +1,44 @@
+A HotelLite programot teszt alá vetettük.
+Fõbb tesztelési területek:
+	1. teljesítmény
+	2. elvárt mûködés
+
+1.) A szoftvert teljesítmény használatot tekintve kiegyensúlyozottan mûködik. Nem terheli a számítógépet.
+Ez annak is köszönhetõ hogy a loginoltató alkalmazás hátterében nem áll túl kombinált kód. Egyszerûbb összehasonlítsokat végez,
+illetve megfelelõ üzenettel, esetenként hibaüzenettel tájékoztatja a felhasználót a mûveletek eredményességérõl. 
+
+Egyedi hibák megnevezése:
+	-tinException: az adó azonosító csak számokat tartalmazhat
+	-identityException: 11 hosszú lehet a személyi azonosító
+	-nationalityException: túl hosszú a mezõ értéke
+	-bedsException: 10-nél több ágy nem lehet egy szobában
+	-priceLessException: nem lehet mínusz értékû a szoba
+
+Megfigyeltük tobábbá, hogy a memória igénye dinamikusan fejlõdik,
+ezáltal a teljes szoftver memória igénye körülbelül kevesebb lesz, mint 200MB.
+	
+tesztelve:
+- Windows PC
+- Windows notebook
+
+2.) A szoftver teszteltük mind megfelelõ, mind fals bejelentkezési információkkal. Mind két információ típusnak helyt állt és
+megfelelõen mûködött. Abban az esetben ha a regisztráció sikeres volt, akkor a meglfelelõ adatokkal a felhasználó be tudott lépni,
+és a loginoló alkalmazás meghívta a fõalkalmazást. A következõ esetekben a szoftver hiba üzenetet dobott:
+	-Ha a termékkulcs hibás volt
+	-Ha hiányzott a termékkulcs, felhasználói név, jelszó hármas valamelyike. 
+	-Ha a regisztráció sikeresnek bizonyult, azonban a felhasználói név-jelszó páros nem egyezett 
+
+
+Jellemzõk:
+- operációs rendszer: windows
+- programozási nyelv: c# - winform application
+- adatok szerkezete: statikus
+- adatbázis: nincs
+- RAM: <100MB
+- tesztelt eszközök: PC, notebook
+
+Fõbb funkciói:
+- vendégek felvétele a jegyzékbe
+- vendégek datainak listázása
+- szobák és azok funkcióinak listázása
+- vendégek által lefoglalt szobák listázása
