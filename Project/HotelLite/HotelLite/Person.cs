@@ -8,14 +8,42 @@ namespace HotelLite
 {
     class Person
     {
-      private string name; //név
-      private string tin; //adóazonosító szám
-      private string birthCity;
-      private string ssn; //személyi szám
-      private string address; //lakcím
-      private string birthDate; //születési dátum
-      private int checkedRoom; //kivenni kívánt szoba
+        private string name; //név
+        private string tin; //adóazonosító szám
+        private string birthCity;
+        private string ssn; //személyi szám
+        private string address; //lakcím
+        private string birthDate; //születési dátum
+        private int checkedRoom; //kivenni kívánt szoba
+        private string sex;
+        private int room;
 
+        public int Room
+        {
+            get
+            {
+                return room;
+            }
+            set
+            {
+                room = value;
+            }
+        }
+
+
+    
+           public string Sex
+        {
+            get
+            {
+                return sex;
+            }
+
+            set
+            {
+                sex = value;
+            }
+        }
 
         public string BirthCity
         {
@@ -69,15 +97,7 @@ namespace HotelLite
             }
             set
             {
-                bool isIntString = tin.All(char.IsDigit);
-                if (isIntString == true)
-                {
-                    tin = value;
-                }
-                else
-                {
-                    throw new tinException("Az adószám csak számokat tartalmazhat");
-                }
+                tin = value;
             }
 
         }
@@ -90,14 +110,7 @@ namespace HotelLite
             }
             set
             {
-                if (value.Length != 11)
-                {
-                    throw new identityException("11 hosszú lehet a személyi azonosító");
-                }
-                else
-                {
-                    ssn = value;
-                }
+                ssn = value;
             }
         }
 
@@ -134,7 +147,7 @@ namespace HotelLite
         }
 
 
-        public Person(string Name, string Tin, string Identity, string Address, string Birthday,string BirthCity, string Nationality)
+        public Person(string Name, string Tin, string Identity, string Address, string Birthday,string BirthCity, string Nationality,string sex)
         {
             this.name = Name;
             this.tin = Tin;
@@ -142,6 +155,8 @@ namespace HotelLite
             this.address = Address;
             this.birthDate = Birthday;
             this.birthCity = BirthCity;
+            this.sex = sex;
+            
             
         }
         /*

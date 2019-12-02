@@ -1,7 +1,10 @@
 ﻿2019_12_02
 
 Oravecz Zsolt
-A programunk fejlesztése
+A programunk tovább fejlesztése:
+-Oracle Kapcsolat kiépítése
+-az adatok sikeres lekérése a programból.
+-Az adatok kiíratásának felépítése
 ----------------------------------------------------------------------------------------------
 
 Sass-Gyarmati Norbert:

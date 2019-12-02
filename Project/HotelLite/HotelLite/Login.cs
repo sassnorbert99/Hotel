@@ -36,7 +36,7 @@ namespace HotelLite
                 MessageBox.Show("Sikeres bejelentkezés!");
                 
                 
-                Main main = new Main();
+                ListForm main = new ListForm();
                 main.ShowDialog();
                 this.Close();
             }

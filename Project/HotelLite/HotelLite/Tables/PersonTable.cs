@@ -36,7 +36,7 @@ namespace HotelLite.Tables
 
             OracleCommand command = new OracleCommand();
             command.CommandType = System.Data.CommandType.Text; //SQL utasítás: szöveges
-            command.CommandText = "SELECT name FROM GUEST ORDER BY last_name"; //parancs szövege
+            command.CommandText = "SELECT * FROM GUEST ORDER BY NAME"; //parancs szövege
 
             OracleConnection connection = getOracleConnection(); //egy kapcsolatot kérek a metóduson keresztül
             connection.Open(); //kapcsolat megnyitása
@@ -55,6 +55,8 @@ namespace HotelLite.Tables
                 record.SSN = reader["SSN"].ToString();
                 record.Tin = reader["TAX_NUMBER"].ToString();
                 record.BirthCity = reader["BIRTH_CITY"].ToString();
+                record.Sex = reader["SEX"].ToString();
+                record.Room = int.Parse(reader["ROOM"].ToString()); 
 
 
                  
