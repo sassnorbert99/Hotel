@@ -118,9 +118,17 @@ Legyen megvalósítható, ehhez fontos: -erõforrások,
 
 5. Jelenlegi üzleti folyamatok modellje:
 
+	A jelenlegi üzleti folyamatok modellje megtekinthetõ az 1.sz. mellékleten. A képen látható, hogy a szoftverünk célja egy régebbrõl
+származó hiba javítása, melyekre eddig még csak demó verziókat alkottak. A probléma a vendégek kezelése egyes hotelekben, ahol a 
+vendégek kezelésére nincs kiépítve egy azt kezelõ szolgáltatás, minden statikusan elérhetõ. Célunk a csoporttal, hogy a kliensek 
+munkáját megkönnyítve kiépítsünk egy adat kezelõ szoftvert, mely sokkal praktikusabb és gyorsabb, kényelmesebb szolgáltatást
+biztosít a kliensek számára. A mellékleten továbbá az is látható, hogy a kezelõ felület kapcsolatát egy adatbázis, vagy egy hagyományos
+fájlkezelés fogja megvalósítani, mely lokális módon lesz elérhetõ.
+	Hatékonyság szempontából a szoftver minden egyes kliens -a szövegben:hotel- feladatát megkönnyíti, hatékonyabbá teszi
+a hotelek számára a vendégek kezelését, regisztráltatását, mely pozitív tapasztalatok során újabb kliensekkel fog gyarapodni.
 
 	
-6. Igényelt üzleti folyamatok modellje:(vágyálom rendszerben leírt dolgokat modellezzük)
+6. Igényelt üzleti folyamatok modellje:
 
 	Az igényelt üzleti folyamatok megtekinthetõek a 2.sz. mellékleten. A képen látható, hogy a projekt egy régebbi idõkbõl származó
 problémára akar megoldást adni, ez a probléma pedig a hotelek vendégkezelõi felülete, melyen minden egy helyen megtalálható, pár perc alatt 
@@ -131,12 +139,12 @@ A szoftver elsõsorban a hotelek számára készül, melyben a recepciósok tudnak maj
 	
 	
 
-7. Követelmény Lista:(példaként marad)
+7. Követelmény Lista:
 
 	Modul		ID		Név		Verzió		Leírás
 
-	Motor		F1		Hotel		0.1		A 0.1-es verzió tartalmazni fogja az alap szoftvert, mely az IntelliJ IDEA által támogatott
-									Javafx programozási nyelven készül, valamint egy szöveges dobozt, melyben a kliens megbízásokat
+	Motor		F1		Hotel		0.1		A 0.1-es verzió tartalmazni fogja az alap szoftvert, mely az Visual Studio által támogatott
+									windows forms c# programozási nyelven készül, valamint egy szöveges dobozt, melyben a kliens megbízásokat
 									tud létesíteni.
 
 	Motor		F2		Hotel		0.2		A szoftver tartalmazni fog további funkciót, mely a kliens számára könnyítést teljesít, dinamikusan
