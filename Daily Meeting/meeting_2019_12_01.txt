@@ -1,0 +1,11 @@
+﻿2019.12.01
+Oravecz Zsolt
+	
+--------------------------------------------------------------------
+Sass-Gyarmati Norbert
+
+	A programban való hibákat javítottam, néhány dokumentációt véglegesítettem
+--------------------------------------------------------------------
+
+Járomi Dávid Antal
+
