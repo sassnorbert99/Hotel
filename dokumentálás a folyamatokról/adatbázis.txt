@@ -1,0 +1,36 @@
+Adatbázis felépítés:
+
+ 	- Logikai adatmodell: - Vendég tábla:
+					      Ahogy a mellékelt fájl is mutatja -QUEST_CREATE- tartalmaz egy id-t, mely kulcsként
+					      szolgál, amivel a vendég táblát össze tudjuk kapcsolni a szoba táblával. Ezen kívül van a 
+					      vendég táblának név, születési dátum-város, személyi szám, taj-illetve cím mezõi.
+				Szoba tábla:
+					      A szoba tábla hasonlóképp épül fel, mint a vendég tábla, meglehet tekinteni a mellékelt 
+					      fájlban -ROOM_CREATE-. A tábla tartalmaz egy id mezõt, mely kapcsolóként (kulcsként) szolgál,
+					      mely összekapcsolja a vendég táblát a szoba táblával. Ezen kívül tartalmaz zoba szám, ágy 
+					      szám, szabad-e, illetve vendég id mezõt is.
+
+
+ 	- Tárolt eljárások :  GUESTS_DATA, LOGIN
+
+ 	- Fizikai adatmodellt legeneráló SQL szkript : 
+							CREATE TABLE GUEST(
+ 							ID NUMBER NOT NULL, 
+							NAME VARCHAR2(40) NOT NULL, 
+ 							BIRTH_DATE DATE NOT NULL, 
+ 							BIRTH_CITY VARCHAR2(40) NOT NULL,
+ 							TAX_NUMBER NUMBER NOT NULL, 
+ 							SSN VARCHAR2(10) NOT NULL, 
+ 							ADDRESS VARCHAR2(50) NOT NULL, 
+ 							CONSTRAINT GUEST_PK PRIMARY KEY(ID) ENABLE 
+							);
+
+							CREATE TABLE ROOM(
+  							ID NUMBER NOT NULL, 
+ 							ROOM_NUMBER NUMBER NOT NULL, 
+ 							BED_NUMBER NUMBER NOT NULL, 
+ 							FREE CHAR(1 BYTE) NOT NULL, 
+ 							GUEST_ID NUMBER NOT NULL, 
+ 							CONSTRAINT ROOM_PK PRIMARY KEY(ID) ENABLE 
+							);
+
