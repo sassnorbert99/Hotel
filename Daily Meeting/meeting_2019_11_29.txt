@@ -1,0 +1,10 @@
+﻿2019.11.29
+Oravecz Zsolt
+	
+--------------------------------------------------------------------
+Sass-Gyarmati Norbert
+
+	Fejlesztettem a projektet, létrehoztam újabb osztályokat, valamint a dokumentációkat
+is átnéztem, javítottam
+--------------------------------------------------------------------
+
