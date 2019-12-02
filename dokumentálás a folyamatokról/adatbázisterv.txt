@@ -10,3 +10,24 @@ Oravecz Zsolt:
 Az sql developerben létrehoztam a táblákat, a köztük lévõ függõségeket és tulajdonságokat.
 Módosítottam a programban a hitelesítõ adatokat.
 -----------------------------------------------------------------------------------------------
+Sass-Gyarmati Norbert:
+1.Bevezetésrésze elkezdve:
+	A projektünk a megbízó igényeit kielégítve az Oracle által kibocsátott SQLDeveloper
+nevû adatbázissal lesz kapcsolatban.
+-----------------------------------------------------------------------------------------------
+Sass-Gyarmati Norbert
+bevezetés része folytatva: A szoftver lokális elérésû lesz, mely azt jelenti, hogy az adatbázist, csak 
+egy megadott hálózatot lehet elérni.
+------------------------------------------------------------------------------------------------
+Sass-Gyarmati Norbert:
+Vendég tábla:
+	Ahogy a mellékelt fájl is mutatja -QUEST_CREATE- tartalmaz egy id-t, mely kulcsként
+szolgál, amivel a vendég táblát össze tudjuk kapcsolni a szoba táblával. Ezen kívül van a 
+vendég táblának név, születési dátum-város, személyi szám, taj-illetve cím mezõi.
+	
+3. Szoba tábla:
+	A szoba tábla hasonlóképp épül fel, mint a vendég tábla, meglehet tekinteni a mellékelt 
+fájlban -ROOM_CREATE-. A tábla tartalmaz egy id mezõt, mely kapcsolóként (kulcsként) szolgál,
+mely összekapcsolja a vendég táblát a szoba táblával. Ezen kívül tartalmaz zoba szám, ágy 
+szám, szabad-e, illetve vendég id mezõt is.
+
