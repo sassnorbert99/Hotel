@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelLite.Tables;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,20 @@ namespace HotelLite
 {
     public partial class Main : Form
     {
+        PersonTable tablaManager;
+        List<Person> record_PersonLista;
+        BackgroundWorker bgWorker;
+
         public Main()
         {
             InitializeComponent();
             this.Activate();
             List<Person> quest = new List<Person>();
+            tablaManager = new PersonTable();
+            record_PersonLista = new List<Person>();
+            bgWorker = new BackgroundWorker();
+
+
         }
 
         private void TextBox2_TextChanged(object sender, EventArgs e)
@@ -38,7 +48,19 @@ namespace HotelLite
 
         private void Main_Load(object sender, EventArgs e)
         {
+            bgWorker.WorkerSupportsCancellation = true;
+            bgWorker.DoWork += BgWorker_DoWork;
+            bgWorker.RunWorkerCompleted += BgWorker_RunWorkerCompleted; ;
+        }
 
+        private void BgWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BgWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            record_PersonLista = tablaManager.Select();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

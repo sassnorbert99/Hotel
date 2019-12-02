@@ -17,11 +17,15 @@ namespace HotelLite.Tables
             OracleConnection oc = new OracleConnection();
 
             //beállítom a kapcsolat tulajdonságait
-            string connectionString = @"Data Source=193.225.33.71;User Id=RE1D25;Password=szelektcsillag;";
+            string connectionString = @"Data Source=193.225.33.71;User Id=kbromp;Password=aA1234;";
 
             oc.ConnectionString = connectionString;
             return oc;
         }
+
+
+
+
 
         public List<Person> Select()
         {
@@ -53,10 +57,24 @@ namespace HotelLite.Tables
                 record.Tin = reader["tin"].ToString();
 
                 records.Add(record);
+
+                //Person a = new Person()
+                //{
+                //    Name = reader["name"].ToString(),
+                //    Address = reader["address"].ToString(),
+                //    BirthDate = reader["birth_date"].ToString(),
+                //    Identity = reader["identity"].ToString(),
+                //    Nationality = reader["nationality"].ToString(),
+                //    Tin = reader["tin"].ToString()
+                //};
             }
             connection.Close();
             return records;
         }
+
+
+
+
 
         public int Delete(Person record)
         {
@@ -93,6 +111,10 @@ namespace HotelLite.Tables
             }
             return affectedRows;
         }
+
+
+
+
 
         public int Update(Person record)
         {

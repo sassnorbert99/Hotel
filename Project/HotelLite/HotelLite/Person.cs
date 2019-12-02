@@ -129,6 +129,12 @@ namespace HotelLite
             }
         }
 
+        public Person()
+        {
+
+        }
+
+
         public Person(string Name, string Tin, string Identity, string Address, string Birthday, string Nationality)
         {
             this.name = Name;
