@@ -76,10 +76,29 @@ Rendszerterv:
 
 5. Üzleti folyamatok modellje:
 
-	- Üzleti szereplõk : Megrendelõ: Tajti Tibor, Forgalmazók és tulajdonosok: Deák Ádám, Sass-Gyarmati Norbert, Nagy Bálint,Járomi Dávid Antal, Oravecz Zsolt
-  	- Üzleti folyamatok : Standard software bevezetése, egyedi szoftver fejlesztése, üzleti folyamat optimalizálása, tevékenység alapú költség számítás
-			      - Vásárlás, - Szolgáltatás lefoglalása, - Megrendelés, - Reklámozás, - Értékesítés, - Szolgáltatás, - Könyvelés, - Üzemeltetés
-  	- Üzleti entitások :  - Áru, - Pénz, - Iroda, - Üzlethelység, - Reklám
+	- Üzleti szereplõk : Megrendelõ: Tajti Tibor
+			     Forgalmazók és tulajdonosok: Deák Ádám, Sass-Gyarmati Norbert, Nagy Bálint,Járomi Dávid Antal, Oravecz Zsolt
+  	- Üzleti folyamatok : Standard software bevezetése: Nagy Bálint
+			      Egyedi szoftver fejlesztése: Sass-Gyarmati Norbert, Oravecz Zsolt
+			      Üzleti folyamat optimalizálása: Sass-Gyarmati Norbert
+			      Tevékenység alapú költség számítás: Oravecz Zsolt
+			      - Vásárlás: Tajti Tibor
+			      - Szolgáltatás lefoglalása: Tajti Tibor
+			      - Reklámozás: Nincs szponzor, nem engedélyezett
+			      - Értékesítés: nem értékesíthetõ
+			      - Szolgáltatás: a szoftver tartalmazhat frissítéseket, melyet a kliens hálózaton keresztül igényelhet
+			      - Könyvelés: Sass-Gyarmati Norbert
+			      - Üzemeltetés: Sass-Gyarmati Norbert
+					     Oravecz Zsolt
+					     Járomi Dávid Antal
+					     Deák Ádám
+					     Nagy Bálint
+					     
+  	- Üzleti entitások :  - Áru: nem forgalmazható
+			      - Pénz: üzleti célokra nem bocsátható
+			      - Iroda: Eszterházy Károly Egyetem C épülete-aula-
+			      - Üzlethelység: Eszterházy Károly Egyetem
+			      - Reklám: Nem engedélyezett
 
 
 6. Funkcionális terv:
@@ -111,7 +130,7 @@ Rendszerterv:
 			   		  rafikus úton  menedzselni az adatbázist, könnyíti az átláthatóságot, illetve megakadályozza, hogy az adatbázisban redundancia keletkezzen.
 			   		  Példának okáért, ha a felhasználó egy olyan személyt próbál regisztrálni, aki már jelen van az adatbázisban, akkor õt egy hibaüzenettel tájékoztatja errõl.
 
- 	- Absztrakt komponensek, ezek kapcsolatai : A program javafx grafikus felületén használható, amelyhez adatbázist kapcsoltunk.
+ 	- Absztrakt komponensek, ezek kapcsolatai : A program c# windows forms grafikus felületén használható, amelyhez adatbázist kapcsoltunk.
 
 9. Architekturális terv:
 
