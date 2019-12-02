@@ -8,7 +8,6 @@ C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\bin\Debug\HotelLite.p
 C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.exe
 C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.pdb
 C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.Login.resources
-C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.Main.resources
 C:\Users\Norbert\Desktop\Hotel\Project\HotelLite\HotelLite\bin\Debug\HotelLite.exe.config
 C:\Users\Norbert\Desktop\Hotel\Project\HotelLite\HotelLite\bin\Debug\HotelLite.exe
 C:\Users\Norbert\Desktop\Hotel\Project\HotelLite\HotelLite\bin\Debug\HotelLite.pdb
@@ -32,3 +31,4 @@ C:\Users\Dávid\Desktop\afplabor\afpx2\Hotel\Project\HotelLite\HotelLite\obj\Deb
 C:\Users\Dávid\Desktop\afplabor\afpx2\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.csproj.CoreCompileInputs.cache
 C:\Users\Dávid\Desktop\afplabor\afpx2\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.exe
 C:\Users\Dávid\Desktop\afplabor\afpx2\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.pdb
+C:\Users\O.Zsolt\Desktop\Hotel\Project\HotelLite\HotelLite\obj\Debug\HotelLite.ListForm.resources
