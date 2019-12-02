@@ -122,6 +122,12 @@ Legyen megvalósítható, ehhez fontos: -erõforrások,
 	
 6. Igényelt üzleti folyamatok modellje:(vágyálom rendszerben leírt dolgokat modellezzük)
 
+	Az igényelt üzleti folyamatok megtekinthetõek a 2.sz. mellékleten. A képen látható, hogy a projekt egy régebbi idõkbõl származó
+problémára akar megoldást adni, ez a probléma pedig a hotelek vendégkezelõi felülete, melyen minden egy helyen megtalálható, pár perc alatt 
+regisztráltatni lehet a vendégeket. Erre hozzuk létre majd a HotelLite® nevû jogvédett*1 szoftvert.
+	A projektünk egy adatbázissal lesz kapcsolatban, mely lokális módon lesz majd elérhetõ, egy adott hálózaton keresztül.
+A mellékleten látható, hogy programunk kifejezetten fog ügyelni a biztonsági intézkedésekrõl, melyet a késõbbiekben részletezni fogunk.
+A szoftver elsõsorban a hotelek számára készül, melyben a recepciósok tudnak majd könnyen és gyorsan vendégeket regisztráltatni.
 	
 	
 
@@ -163,7 +169,8 @@ Az Early Bird magyarul tükörfordításban, „Korai madarat” jelent.
 	
 
 	szaknyelvek:
-
+	-*1jogvédett: A magyar jog nem követeli meg ezen jelzések használatát, de nem is tiltja (az Egyesült Államokban ellenben a védett jelleg feltüntetése kötelezõ),
+így inkább marketing szempontból van jelentõsége. Magyarországon a ® szimbólumot használják, vagy a “Törv. védve” (értsd: törvény által védve) feliratot.
 	
 
 	rövidítések:
