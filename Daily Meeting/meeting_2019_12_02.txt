@@ -1,5 +1,14 @@
-2019_12_02
+﻿2019_12_02
 
 Oravecz Zsolt
 A programunk fejlesztése
------------------
+----------------------------------------------------------------------------------------------
+
+Sass-Gyarmati Norbert:
+-programunk újabb osztályokkal bővítése
+-adatbázis fejlesztése
+-kövspec.txt véglegesítése, hibák javítása
+-mellékletek létrehozása, véglegesítése
+-rendszerterv.txt kidolgozása, véglegesítése
+-tesztelési folyamatok kidolgozva, hibák javítva
+----------------------------------------------------------------------------------------------

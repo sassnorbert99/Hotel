@@ -1,0 +1,27 @@
+Sass-Gyarmati Norbert:
+
+- A követelmény specifikációnak a bevezetés részét vállalltam el elsõ feladatként, azon dolgoztam, valamint vázlatosan kidolgoztam, szaknyelveket, illetve kifejezéseket
+definiáltam. 
+- Az elõzõ meeting témáját a csoport leszavazta, így új ötletet vetettünk fel, mely hoteleknek készül, a recepciósok munkáját könnyítik meg.
+-rendszerterv: A rendszertervet elkezdtem vázlatosan kidolgozni
+- leírásokat adtam egyes metódusok mûködéséhez, valamint kiegészítettem néhány hasznos 
+ötlettel
+- követelmény specifikáció: Vázlatosan kidolgozva a követelmény lista
+- Követelmény Specifikáció
+	-követelmény lista: hibák javítva
+- követelmény specifikáció:
+- követelmény listát véglegesítettem
+************************************************************************
+Oravecz Zsolt:
+- Feladatként a funkcionalitás specifikációt vállaltam el. És a mai nap folyamán ennek létrehozásán dolgoztam.
+- A funkspec. további kidolgozása, egyéb részleteken való ötltelés.
+- Funkcionális specifikáció
+	-nem funkcionális követelmények
+	-interfészek
+	-fogalomtár bõvítés
+	-szoftver mûködésének áttekintése
+************************************************************************
+
+Deák Ádám:
+- SQLite adatbázis létrehozva és test adattal feltöltve
+*************************************************************************

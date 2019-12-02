@@ -1,0 +1,22 @@
+﻿2019.12.03
+
+Oravecz Zsolt
+
+A programunk fejlesztése
+------------------------------------------------------------
+
+Járomi Dávid Antal
+
+
+-------------------------------------------------------------
+Sass-Gyarmati Norbert
+-Fejlesztettem a projektet, létrehoztam újabb osztályokat, valamint a dokumentációkat
+is átnéztem, javítottam
+-A programban való hibákat javítottam, néhány dokumentációt véglegesítettem
+-programunk újabb osztályokkal bővítése
+-adatbázis fejlesztése
+-kövspec.txt véglegesítése, hibák javítása
+-mellékletek létrehozása, véglegesítése
+-rendszerterv.txt kidolgozása, véglegesítése
+-tesztelési folyamatok kidolgozva, hibák javítva
+--------------------------------------------------------------

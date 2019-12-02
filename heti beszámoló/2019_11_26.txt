@@ -1,4 +1,4 @@
-﻿2019.11.20
+﻿2019.11.26
 
 Oravecz Zsolt
 A projektünk beléptető képernyőjének javítása. Hashelés javítása
