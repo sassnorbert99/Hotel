@@ -1,6 +1,6 @@
 ﻿2019.12.01
 Oravecz Zsolt
-	
+	A programban való adatbáziskapcsolat létrehozásán fáradoztam.
 --------------------------------------------------------------------
 Sass-Gyarmati Norbert
 
