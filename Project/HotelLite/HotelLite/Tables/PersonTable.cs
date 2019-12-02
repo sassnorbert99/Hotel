@@ -17,7 +17,7 @@ namespace HotelLite.Tables
             OracleConnection oc = new OracleConnection();
 
             //beállítom a kapcsolat tulajdonságait
-            string connectionString = @"Data Source=193.225.33.71;User Id=kbromp;Password=aA1234;";
+            string connectionString = @"Data Source=193.225.33.71;User Id=JIQ9DC;Password=aA123456;";
 
             oc.ConnectionString = connectionString;
             return oc;
@@ -36,7 +36,7 @@ namespace HotelLite.Tables
 
             OracleCommand command = new OracleCommand();
             command.CommandType = System.Data.CommandType.Text; //SQL utasítás: szöveges
-            command.CommandText = "SELECT name FROM quest ORDER BY last_name"; //parancs szövege
+            command.CommandText = "SELECT name FROM GUEST ORDER BY last_name"; //parancs szövege
 
             OracleConnection connection = getOracleConnection(); //egy kapcsolatot kérek a metóduson keresztül
             connection.Open(); //kapcsolat megnyitása
@@ -49,12 +49,15 @@ namespace HotelLite.Tables
             {
                 //readeren soronként végig iterálok
                 Person record = new Person();
-                record.Name = reader["name"].ToString();
-                record.Address = reader["address"].ToString();
-                record.BirthDate = reader["birth_date"].ToString();
-                record.Identity = reader["identity"].ToString();
-                record.Nationality = reader["nationality"].ToString();
-                record.Tin = reader["tin"].ToString();
+                record.Name = reader["NAME"].ToString();
+                record.Address = reader["ADDRESS"].ToString();
+                record.BirthDate = reader["BIRTH_DATE"].ToString();
+                record.SSN = reader["SSN"].ToString();
+                record.Tin = reader["TAX_NUMBER"].ToString();
+                record.BirthCity = reader["BIRTH_CITY"].ToString();
+
+
+                 
 
                 records.Add(record);
 

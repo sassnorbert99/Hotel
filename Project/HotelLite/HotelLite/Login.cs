@@ -35,9 +35,10 @@ namespace HotelLite
                 textBox_passwd.Clear();
                 MessageBox.Show("Sikeres bejelentkezés!");
                 
-
+                
                 Main main = new Main();
-                main.Show();
+                main.ShowDialog();
+                this.Close();
             }
             else
             {

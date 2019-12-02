@@ -8,14 +8,26 @@ namespace HotelLite
 {
     class Person
     {
-        string name; //név
-        string tin; //adóazonosító szám
-        string identity; //személyi szám
-        string address; //lakcím
-        string birthDate; //születési dátum
-        string nationality; //nemzetiség
-        int checkedRoom; //kivenni kívánt szoba
+      private string name; //név
+      private string tin; //adóazonosító szám
+      private string birthCity;
+      private string ssn; //személyi szám
+      private string address; //lakcím
+      private string birthDate; //születési dátum
+      private int checkedRoom; //kivenni kívánt szoba
 
+
+        public string BirthCity
+        {
+            get
+            {
+                return birthCity;
+            }
+            set
+            {
+                birthCity = value;
+            }
+        }
         public int CheckedRoom
         {
             get
@@ -70,11 +82,11 @@ namespace HotelLite
 
         }
 
-        public string Identity
+        public string SSN
         {
             get
             {
-                return identity;
+                return ssn;
             }
             set
             {
@@ -84,7 +96,7 @@ namespace HotelLite
                 }
                 else
                 {
-                    identity = value;
+                    ssn = value;
                 }
             }
         }
@@ -114,20 +126,7 @@ namespace HotelLite
             }
         }
 
-        public string Nationality
-        {
-            get
-            {
-                return nationality;
-            }
-            set
-            {
-                if (value.Length > 20)
-                {
-                    throw new nationalityException("túl hosszú a mező értéke");
-                }
-            }
-        }
+        
 
         public Person()
         {
@@ -135,14 +134,15 @@ namespace HotelLite
         }
 
 
-        public Person(string Name, string Tin, string Identity, string Address, string Birthday, string Nationality)
+        public Person(string Name, string Tin, string Identity, string Address, string Birthday,string BirthCity, string Nationality)
         {
             this.name = Name;
             this.tin = Tin;
-            this.identity = Identity;
+            this.ssn = Identity;
             this.address = Address;
             this.birthDate = Birthday;
-            this.nationality = Nationality;
+            this.birthCity = BirthCity;
+            
         }
         /*
         public override string ToString()

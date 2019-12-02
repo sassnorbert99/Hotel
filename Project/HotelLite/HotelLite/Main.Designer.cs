@@ -36,7 +36,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.checkedListBoxReserved = new System.Windows.Forms.CheckedListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button_view = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -49,6 +48,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -117,14 +118,6 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(10, 409);
             this.label4.TabIndex = 9;
-            // 
-            // checkedListBoxReserved
-            // 
-            this.checkedListBoxReserved.FormattingEnabled = true;
-            this.checkedListBoxReserved.Location = new System.Drawing.Point(622, 42);
-            this.checkedListBoxReserved.Name = "checkedListBoxReserved";
-            this.checkedListBoxReserved.Size = new System.Drawing.Size(150, 319);
-            this.checkedListBoxReserved.TabIndex = 10;
             // 
             // label5
             // 
@@ -240,11 +233,20 @@
             this.label10.TabIndex = 22;
             this.label10.Text = "foglalni kívánt szoba";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(627, 59);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(403, 287);
+            this.dataGridView1.TabIndex = 23;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1135, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -257,7 +259,6 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button_view);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.checkedListBoxReserved);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -270,6 +271,7 @@
             this.Text = "HotelLite";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Main_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,7 +286,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckedListBox checkedListBoxReserved;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button_view;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -297,5 +298,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

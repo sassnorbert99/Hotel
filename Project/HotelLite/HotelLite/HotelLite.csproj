@@ -74,6 +74,7 @@
     <Compile Include="room.cs" />
     <Compile Include="Tables\PersonTable.cs" />
     <Compile Include="tinException.cs" />
+    <Compile Include="tooMuchRoomException.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
