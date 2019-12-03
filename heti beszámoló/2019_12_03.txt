@@ -2,7 +2,13 @@
 
 Oravecz Zsolt
 
-A programunk fejlesztése
+A programunk fejlesztése:
+-osztályok létrehozása
+-adatbázis létrehozás és managelése
+-adatbázis feltöltése minta adatokkal
+-programban adatok lekérdezése
+-funkciók létrehozás, illetve ezek fejlesztése
+funkspec véglegesítése.
 ------------------------------------------------------------
 
 Járomi Dávid Antal
