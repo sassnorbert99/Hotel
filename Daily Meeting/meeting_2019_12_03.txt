@@ -1,0 +1,13 @@
+﻿2019_12_03
+
+Oravecz Zsolt
+
+----------------------------------------------------------------------------------------------
+
+Sass-Gyarmati Norbert:
+tesztelés elkezdve
+-tesztterv kidolgozva
+-unit teszt kidolgozva
+-hibák javítva
+-integrációs teszt elkezdve
+----------------------------------------------------------------------------------------------
