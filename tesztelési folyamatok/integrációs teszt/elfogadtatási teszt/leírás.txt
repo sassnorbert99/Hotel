@@ -1,0 +1,38 @@
+				Leírás az elfogadtatási tesztrõl
+
+
+	Az egyes rendszerek és interfészek egymással összekapcsolva integrált rendszerként viselkednek.
+A felhasználói tesztelés fázisában nyílik lehetõség end-to-end tesztelésre, amikor a teljes
+megváltozott üzleti folyamat tesztelhetõ.
+A rendszer funkcionális és technikai tesztelésén túl szükség van olyan tesztekre is, amelyeknek fõ
+célja az üzemszerû mûködés során elõforduló tevékenység-sorozatok szimulálásával a
+rendszerben még esetlegesen meglévõ hibák kiszûrése. A felhasználói teszt az elsõ olyan lépés a
+rendszer bevezetéséhez, amikor a felhasználók kipróbálhatják a rendszert, vagyis a tesztelést
+teljes mértékben õk végzik (a fejlesztõk csak a hibajavítással foglalkoznak).
+Ennek következtében nagyon fontos a felhasználói teszt megtervezése, folyamatainak
+kidolgozása, végrehajtás során a hibák megfelelõen történõ regisztrálása és kezelése.
+Ebben a fázisban tudatosan kell tervezni azonos felhasználói tevékenységek párhuzamos
+végrehajtását (részben/egészben) átfedõ adatkörökkel.
+A felhasználói tesztek sikeres lezárásakor a rendszer felhasználók általi formális elfogadásáról és
+annak dokumentálásáról gondoskodni kell.
+	Elõfeltétele:
+- amennyiben van különálló funkcionális teszt: a funkcionális tesztek sikeresen lezárultak;
+- amennyiben nincs megelõzõ funkcionális teszt, vagy a funkcionális teszteket is a
+felhasználók végzik az elfogadási tesztek keretében: a rendszerfejlesztõi és integrációs
+teszt lezárult, a fejlesztést a Szállító a Megrendelõnek átadta. 
+
+	Felhasználói tesztek tervezésekor fontos, hogy nem csak a rendszer egyes moduljainak
+tesztelését kell megtervezni, hanem a modulokon (és végrehajtás szempontjából az egyes
+szervezeti egységeken) is átívelõ folyamatok (end-to-end) tesztelésére is ki kell térni. Abban az
+esetben, ha a tesztek megtervezését a leendõ felhasználók végzik (akik elsõsorban saját
+szakterületük rendszerben való leképezését ismerik), érdemes külön szerepkör keretében
+(esetleg a minõségbiztosító bevonásával) gondoskodni arról, hogy a tesztesetek áttekintése
+folyamatszemlélettel is megtörténjen.
+	A felhasználói tesztek lebonyolításakor gondoskodni kell a Szállító-függetlenségrõl. A rendszer
+Szállítójának a tesztben nem szabad részt vennie, a kommunikációnak elsõsorban
+formalizáltan, a rendelkezésre álló teszt-eszközön illetve projektfórumokon keresztül kell
+történnie.
+	Felhasználói tesztek során érdemes a felvett hibajegyeket rendszeresen áttekinteni, mielõtt
+azokat a Szállító felé kommunikálják. Gyakorlati tapasztalatok azt mutatják, hogy a többszörös
+hibarögzítésbõl eredõ konfliktusok, félreértelmezések gyakran vezetnek elhúzódó hibajavítási
+folyamatokhoz.
