@@ -60,25 +60,27 @@ Ez a fejezet a teszteléshez szükséges erõforrásokat fejti ki.
 Feladatkörök és felelõsségek
 Feladatkör	Felelõsség/tevékenység	Személy
 Tesztelõ: 	
-?	A teszt végrehajtása
-?	Észrevételek dokumentálása
+?	A teszt végrehajtása						Oravecz Zsolt
+?	Észrevételek dokumentálása					Sass-Gyarmati Norbert
 ?	Teszt dokumentáció archiválása					Sass-Gyarmati Norbert
-									Oravecz Zsolt
+									
 Szakértõ:	
-A szakértõ az észrevételek elemzi és megoldást javasol.			Sass-Gyarmati Norbert
+A szakértõ az észrevételek elemzi és megoldást javasol.			
 Teszt-koordinátor:	
-?	Teszt terv készítése
-?	A tesztterv jóváhagyatása a projektmenedzserrel
-?	Teszt forgatókönyvek létrehozása
-?	Inkonzisztenciák kezelése 
-?	Helyes és idõbeni hibakezelés 
-?	Szükség esetén problémák eszkalálása a projekt menedzsernek 
-?	Végsõ riport készítése
-?	Teszt dokumentum archiválása
+?	Teszt terv készítése						Sass-Gyarmati Norbert
+?	A tesztterv jóváhagyatása a projektmenedzserrel			Sass-Gyarmati Norbert
+									Oravecz Zsolt
+?	Teszt forgatókönyvek létrehozása				Sass-Gyarmati Norbert
+?	Inkonzisztenciák kezelése 					Oravecz Zsolt
+?	Helyes és idõbeni hibakezelés 					Oravecz Zsolt
+?	Szükség esetén problémák eszkalálása a projekt menedzsernek 	Oravecz Zsolt
+?	Végsõ riport készítése						Sass-Gyarmati Norbert
+?	Teszt dokumentum archiválása					Járomi Dávid Antal
 ?	Az észrevételek státuszának követése, ill. dokumentálása	Sass-Gyarmati Norbert
 									Járomi Dávid Antal
 									Oravecz Zsolt
-Projektvezetõ:	
+
+Projektvezetõ:								Sass-Gyarmati Norbert
 ?	Teszt terv jóváhagyása 
 ?	Teszt forgatókönyv (testscript)					Sass-Gyarmati Norbert
 									Oravecz Zsolt
@@ -88,9 +90,11 @@ Projektvezetõ:
 Ebben a részben meg kell határozni, hogy a tesztelés milyen környezetben történjen (fejlesztõi vagy tesztkörnyezet), a környezetek hogyan érhetõek el, továbbá a tesztelõk milyen hozzáféréssel végezzék a tesztelést.
 
 Tesztkörnyezet
-Környezet neve és feladata		A hozzáférés módja		Konfiguráció			Kapcsolattartó személyek
+Környezet neve és feladata		A hozzáférés módja		Konfiguráció	
+		Kapcsolattartó személyek
 fejlesztõi				publikus			projekt módosítás		Sass-Gyarmati Norbert
 									Adatbázis módosítás
+
 teszt					publikus			projekt metódusok vizsgálata	Sass-Gyarmati Norbert
 													Oravecz Zsolt
 													Járomi Dávid Antal
@@ -122,13 +126,31 @@ Tesztelési jelentés:	Sass-Gyarmati Norbert		nincs				nincs
 	…hordozható számítógép
 	…számítógép(PC)
 
-
+****************************************************************************************************
 3	Tesztelési terv
 
 Ez a fejezet leírja a teszt típusát, a metodológiáját és a riport készítés módszerét. Emellett meghatározza a teszt elvárásokat, a teszt-esetek elvárt eredményeit, sikerességének kritériumait, a kockázatok kezelését és a hatáskörön kívül eseteket.
 3.1	Fejlesztõi teszt
 
-A fejlesztõi tesztelés célja a rendszer alapvetõ funkcióinak ellenõrzése, a hibakezelés és az alapvetõ funkciók mûködésének vizsgálata. Módszere:...
+A fejlesztõi tesztelés célja a rendszer alapvetõ funkcióinak ellenõrzése, a hibakezelés és az alapvetõ funkciók mûködésének vizsgálata. Módszere:
+
+Teszt kódja		Funkció			Teszter			Dátum		Megjegyzés
+000			bejelentkeztetés	Oravecz Zsolt		2019.11.29	a login rész kiválóan mûködik
+											hamis adatokkal használhatatlan 
+											a szoftver összes funkciója
+
+001			adatbevitel		Sass-Gyarmati Norbert	2019.12.02	Az adatbevitel részben volt sikeres,
+											melynek apróbb hibáit sikerült kijavítani
+
+002			adatbázis		Oravecz Zsolt		2019.12.03	Az adatbázis-kezelõ rendszer tesztelése
+											sikeres volt, adatokat csak különféle 
+											megszorításokkal lehet felvinni
+
+003			adatbevitel		Sass-Gyarmati Norbert	2019.12.04	Az adatbevitel csak egy elõre megadott hálózati
+											hozzáféréssel mûködik, ennek következményeképpen
+											intézményen belül tudtam a további hibákat javítani
+
+*************************************************************************************************
 3.2	Prototípus (modul) teszt
 
 A prototípustesztelés (vagy másik nevén modultesztelés) célja a rendszer már mûködõ moduljainak önálló tesztelése, a modulon belüli hibák azonosításának és kiküszöbölésének érdekében. Módszere:
@@ -151,7 +173,7 @@ szolgáltatni, ezáltal sikeres tesztelés volt.
 
 2.
 
-for (int i = 0; i < 999999999999999999; i++)
+for (int i = 0; i < 999999999999; i++)
             {
                 comboBox1.Items.Add("név: " + vendeglista[i].Nev + " taj száma: " + vendeglista[i].Taj + " lakcíme: " + vendeglista[i].Lakcim + " kivett szoba: " + vendeglista[i].KivettSzoba);
             }
@@ -174,21 +196,102 @@ ezáltal a teljes szoftver memória igénye körülbelül kevesebb lesz, mint 200MB.
 tesztelve:
 - Windows PC
 - Windows notebook
+**********************************************************************************************
 
 3.3	Integrációs teszt
 
-Az integrációs teszt célja a rendszer más rendszerekhez történõ illesztésének vizsgálata, a több rendszereken keresztül átívelõ funkciók tesztelésének érdekében. Az adatmigrációs tesztelés az integrációs teszteléshez tartozik, ennek lényege, hogy a bevezetendõ rendszerbe áttöltik azokat az adatokat, amelyekkel a rendszer dolgozni fog és letesztelik a betöltött adatok, illetve az adatokat kezelõ funkciók helyességét. Módszere:...
+Az integrációs teszt célja a rendszer más rendszerekhez történõ illesztésének vizsgálata, a több rendszereken keresztül átívelõ
+funkciók tesztelésének érdekében. Az adatmigrációs tesztelés az integrációs teszteléshez tartozik, ennek lényege, hogy a
+bevezetendõ rendszerbe áttöltik azokat az adatokat, amelyekkel a rendszer dolgozni fog és letesztelik a betöltött adatok, illetve
+az adatokat kezelõ funkciók helyességét. Módszere:
+
+	A szoftverünk a megbízó igényeit kielégítve nem multiplatformos programozási nyelven készült, ennek
+hatására más operációs rendszerrel rendelkezõ személyi-illetve hordozható számítógépeken nem mûködik.
+Szoftverünk csak a Windows operációs rendszerrel rendelkezõ készülékeken fut.
+	Windows alapú számítógépeken megfelelõen és a megrendelõ igényeihez mérten mûködik.
+
+**************************************************************************************************
+
 3.4	Elfogadási teszt
 
-Az elfogadási teszt (angolul User Acceptance Test) célja a rendszer teljes funkcionalitásának vizsgálata a felhasználók szemszögébõl. Módszere:...
+Az elfogadási teszt (angolul User Acceptance Test) célja a rendszer teljes funkcionalitásának vizsgálata a felhasználók szemszögébõl. Módszere:
+
+	Béta verzió megnevezése		kód		felhasználó		funkció			megjegyzés
+	HotelLite Beta			001		Kiss Pista		login			regisztrálni egy fiókkal tudtam, melyet a csoport generált
+
+					002		Nagy Pista		adatfeltöltés		adatokat csak bejelentkezés után tudtam lekérni, illetve 
+													feltölteni
+	
+					003		Géza			adatbiztonság		Az adatokat csak akkor lehet kinyerni, ha arra jogosult
+													felhasználó teszi. A védet adatok egy hash függvény alatt
+													van kódolva, ezáltal nem lehet az eredetire visszafejteni.
+
+					005		Gizi			adatlekérés		Az adatokat dinamikusan és gyorsan lehet feltölteni, majd
+													azokat lekérni.
+
+					006		Béla			adatfeltöltés		A szoftver jelzi, ha helytelen adatot szeretne a kliens	
+													feltölteni, így nem áll le a program, hanem helytelen adatok
+													után is tovább tud futni.
+
+******************************************************************************************************************************************************************
 3.5	Terheléses teszt 
 A terheléses teszt célja a tervezett kapacitások, valamint a rendelkezésre álló növekedési potenciál meghatározása. Módszere:...
+
+	kód		teszter				mellék		megjegyzés
+
+	001		Sass-Gyarmati Norbert		01		A terheléses teszt sikeres volt, a feltételeknek eleget tett
+
+	002		Sass-Gyarmati Norbert		02		A terheléses teszt látszólag közepesen sikeres, a teljesítmény alacsonyabb lett,
+									a tárigény dinamikusan emelkedett, valamint az idõ megnõtt.
+
+	003		Oravecz Zsolt			03		A bejelentkeztetést 100 adattal próbáltam feltörni, mely sikertelen eredményt
+									hozott, ennek hatására a terheléses teszt sikeres lett.
+
+
+
+mellék:
+	-01:
+	for (int i = 0; i < 100000; i++)
+            {
+                comboBox1.Items.Add("név: " + vendeglista[i].Nev + " taj száma: " + vendeglista[i].Taj + " lakcíme: " + vendeglista[i].Lakcim + " kivett szoba: " + vendeglista[i].KivettSzoba);
+            }
+
+	-02:
+	for (int i = 0; i < 99999999999; i++)
+            {
+                comboBox1.Items.Add("név: " + vendeglista[i].Nev + " taj száma: " + vendeglista[i].Taj + " lakcíme: " + vendeglista[i].Lakcim + " kivett szoba: " + vendeglista[i].KivettSzoba);
+            }
+
+***********************************************************************************************************************************************************
 3.6	Biztonsági teszt (audit)
 
-Biztonsági tesztelésre akkor van szükség, ha a rendszer szenzitív (pl. személyes vagy pénzügyi) adatokat kezel, vagy szabadon elérhetõ az internetrõl. Módszere:...
-3.7	Go live teszt
+Biztonsági tesztelésre akkor van szükség, ha a rendszer szenzitív (pl. személyes vagy pénzügyi) adatokat kezel, vagy szabadon elérhetõ az internetrõl. Módszere:
 
-A go-live teszt egy próbaélesítés, melynek során a korábbi rendszerek továbbra is üzemelnek annak érdekében, hogy az élesítéskor keletkezõ problémák ne befolyásolják a normál üzemi mûködést. Módszere:...
+
+
+	Béta verzió megnevezése		kód		felhasználó			funkció			megjegyzés
+
+	HotelLite Beta			001		Oravezc Zsolt			adatbiztonság		regisztrálni egy fiókkal lehet, melyet a csoport generál
+
+					002		Sass-Gyarmati Norbert		adatfeltöltés		adatokat csak bejelentkezés után tudtam lekérni, illetve 
+														feltölteni
+	
+					003		Sass-Gyarmati Norbert		adatbiztonság		Az adatokat csak akkor lehet kinyerni, ha arra jogosult
+														felhasználó teszi. A védet adatok egy hash függvény alatt
+														van kódolva, ezáltal nem lehet az eredetire visszafejteni.
+
+					005		Oravezc Zsolt			adatlekérés		Az adatokat csak arra jogosult kliens kérhet le, adatbázis
+														szervert csak a szoftverkliens által lehet elérni
+
+					006		Sass-Gyarmati Norbert		adatfeltöltés		A szoftver jelzi, ha helytelen adatot szeretne a kliens	
+														feltölteni, így nem áll le a program, hanem helytelen adatok
+														után is tovább tud futni.
+
+					007		Oravezc Zsolt			adatbiztonság		Az adatok értékei hash függvény miatt nem olvasható,
+														ezáltal nem lehet visszafejteni.
+
+
+**********************************************************************************************************************************************************
 3.8	Tesztelési feladatok, teszt-esetek leírása
 
 A tesztelési feladat a következõ teszt-eseteket foglalja magában:
@@ -202,6 +305,8 @@ A teszt elvégzésének meghatározott sorrendjét és függõségeit tesztforgatókönyvbe
 
 
 4	Tesztelési jegyzõkönyv és tesztelési jelentés
+
+
 4.1	Tesztelési jegyzõkönyv
 
 A tesztelõk a tesztforgatókönyvnek megfelelõen elvégzik a tesztelést és az eredményt tesztjegyzõkönyvekben dokumentálják. A teszt kimenetelést minden esetben jelenteni kell a tesztkoordinátornak. A tesztkoordinátor a szakértõkkel együtt megoldást keres a problémákra, majd frissíti a tesztforgatókönyvet. Ha a problémát megoldották, a tesztelõ újrakezdheti a tesztelést, majd dokumentálja az eredményeket. Ha a hiba továbbra is fennáll, és harmadik félen múlik a megoldása eszkalálni kell a problémát a projekt menedzsernek. 
