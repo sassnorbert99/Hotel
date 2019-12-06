@@ -1,0 +1,10 @@
+2019_12_06
+
+Oravecz Zsolt
+
+-Új textvoxokat és gombokat hoztam létre
+-Létrehoztam a szobák listát
+-Létrehoztam a select műveletet
+-Elkészítettem a delete műveletet index alapján
+-Elkezdtem az Insert műveletet, de még nem működik megfelelően
+---------------------------------------------------------------------------------
