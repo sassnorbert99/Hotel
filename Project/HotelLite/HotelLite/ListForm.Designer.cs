@@ -148,6 +148,7 @@
             this.button_view.TabIndex = 12;
             this.button_view.Text = "Mutat";
             this.button_view.UseVisualStyleBackColor = true;
+            this.button_view.Click += new System.EventHandler(this.Button_view_Click);
             // 
             // dateTime_check_in
             // 

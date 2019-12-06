@@ -240,6 +240,8 @@ namespace HotelLite
             dataGridView_students.Rows.Clear();
             //A tömböt átadom a feltöltő metódusnak
             dataGridView_students.Rows.AddRange(rows);
+            listBox_rooms.Items.Clear();
+           
             fillList();
         }
 
@@ -326,7 +328,7 @@ namespace HotelLite
                 manager_studentsTable.Delete(dperson);
             manager_studentsTable = new PersonTable();
 
-            ListForm_Load(sender, e);
+            Button_view_Click(sender, e);
 
         }
 
@@ -334,6 +336,21 @@ namespace HotelLite
         {
             Person person = new Person("Zsolti", "2132213", "4651", "fsdf", "1997-10-12", "St", "F", "2019-05-05", "2020-05-05", 4);
             manager_studentsTable.Insert(person);
+            Button_view_Click(sender, e);
+        }
+
+        private void Button_view_Click(object sender, EventArgs e)
+        {
+            manager_studentsTable = new PersonTable();
+            // loadRecords(); javaslat 1: rossz, mivel kifagyasztja a programot 
+
+            bgWorker_studentsList = new BackgroundWorker();
+            ListForm_Load(sender, e);
+          
+            
+            filldataGridView_students2();
+            ListForm_Shown(sender,e);
+            
         }
     }
 }
