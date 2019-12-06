@@ -8,6 +8,7 @@ namespace HotelLite
 {
     class Person
     {
+        private int id;
         private string name; //név
         private string tin; //adóazonosító szám
         private string birthCity;
@@ -17,6 +18,30 @@ namespace HotelLite
         private int checkedRoom; //kivenni kívánt szoba
         private string sex;
         private int room;
+        private string check_IN;
+        private string check_OUT;
+
+
+
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        public string Check_IN
+        {
+            set { check_IN = value; }
+            get { return check_IN; }
+        }
+
+        public string Check_OUT
+        {
+            set
+            {
+                check_OUT = value;
+            }
+            get { return check_OUT; }
+        }
 
         public int Room
         {
@@ -147,15 +172,19 @@ namespace HotelLite
         }
 
 
-        public Person(string Name, string Tin, string Identity, string Address, string Birthday,string BirthCity, string Nationality,string sex)
+        public Person(string Name, string Tin, string ssn, string Address, string Birthday,string BirthCity, string sex,string check_out,string check_in,int room)
         {
             this.name = Name;
             this.tin = Tin;
-            this.ssn = Identity;
+            this.ssn = ssn;
             this.address = Address;
             this.birthDate = Birthday;
             this.birthCity = BirthCity;
             this.sex = sex;
+            this.check_IN = check_in;
+            this.check_OUT = check_out;
+            this.room = room;
+           
             
             
         }

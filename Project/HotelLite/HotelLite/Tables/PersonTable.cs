@@ -49,17 +49,20 @@ namespace HotelLite.Tables
             {
                 //readeren soronként végig iterálok
                 Person record = new Person();
+                record.Id = int.Parse(reader["ID"].ToString());
                 record.Name = reader["NAME"].ToString();
                 record.Address = reader["ADDRESS"].ToString();
-                record.BirthDate = reader["BIRTH_DATE"].ToString();
+                record.BirthDate = reader["BIRTH_DATE"].ToString().Substring(0,13);
                 record.SSN = reader["SSN"].ToString();
                 record.Tin = reader["TAX_NUMBER"].ToString();
                 record.BirthCity = reader["BIRTH_CITY"].ToString();
                 record.Sex = reader["SEX"].ToString();
-                record.Room = int.Parse(reader["ROOM"].ToString()); 
+                record.Room = int.Parse(reader["ROOM"].ToString());
+                record.Check_IN = reader["CHECK_IN"].ToString().Substring(0, 13);
+                record.Check_OUT = reader["CHECK_OUT"].ToString().Substring(0, 13);
 
 
-                 
+
 
                 records.Add(record);
 
@@ -90,13 +93,13 @@ namespace HotelLite.Tables
             OracleTransaction oracleTransaction = oracleConnection.BeginTransaction(System.Data.IsolationLevel.ReadCommitted);
             OracleCommand oracleCommand = new OracleCommand();
             oracleCommand.CommandType = System.Data.CommandType.Text;
-            oracleCommand.CommandText = "DELETE FROM quest WHERE name = :name";
+            oracleCommand.CommandText = "DELETE FROM GUEST WHERE ID = :ID";
             //:neptuncode= dinamikus paraméter
             OracleParameter nameParameter = new OracleParameter();
             nameParameter.DbType = System.Data.DbType.String;
-            nameParameter.ParameterName = ":name";
+            nameParameter.ParameterName = ":ID";
             nameParameter.Direction = System.Data.ParameterDirection.Input;
-            nameParameter.Value = record.Name;
+            nameParameter.Value = record.Id;
             oracleCommand.Parameters.Add(nameParameter);
             //odaadjuk a parancsnak a kapcsolatot
             oracleCommand.Connection = oracleConnection;
@@ -157,123 +160,111 @@ namespace HotelLite.Tables
             return affectedRows;
         }
 
-        /*
-        public int Insert(StudentRecord record)
+        
+        public int Insert(Person record)
         {
-            // adatbázis kapcsolat megszerzése
-            OracleConnection oc = GetOracleConnection();
-            oc.Open();
+            //kérek egy adatbázis kapcsolatot
+            OracleConnection oracleConnection = getOracleConnection();
+            oracleConnection.Open();
+            //mivel dml művelet lesz, létrehozok egy lokális tranzakciót, melyet a végén commit-olok
+            OracleTransaction oracleTransaction = oracleConnection.BeginTransaction(System.Data.IsolationLevel.ReadCommitted);
+            OracleCommand oracleCommand = new OracleCommand();
+            oracleCommand.CommandType = System.Data.CommandType.Text;
+            oracleCommand.CommandText = "Insert into GUEST(NAME,BIRTH_DATE,BIRTH_CITY,TAX_NUMBER,SSN,ADDRESS,SEX,ROOM,CHECK_IN,CHECK_OUT) values(':NAME',TO_DATE( ':BIRTHD' ,'YYYY-MM-DD'), ':BIRTH_CITY', :TAX, ':SSS',':ADDR',':SEX',:ROOM,TO_DATE(':CHECK_IN','YYYY-MM-DD'),TO_DATE(':CHECK_OUT','YYYY-MM-DD'));";
+            //:neptuncode= dinamikus paraméter
+            OracleParameter nameParameter = new OracleParameter();
+            nameParameter.DbType = System.Data.DbType.String;
+            nameParameter.ParameterName = ":NAME";
+            nameParameter.Direction = System.Data.ParameterDirection.Input;
+            nameParameter.Value = record.Name;
+            oracleCommand.Parameters.Add(nameParameter);
 
-            OracleTransaction ot = oc.BeginTransaction(System.Data.IsolationLevel.ReadCommitted);
+            OracleParameter birth_date = new OracleParameter();
+            birth_date.DbType = System.Data.DbType.String;
+            birth_date.ParameterName = ":BIRTHD";
+            birth_date.Direction = System.Data.ParameterDirection.Input;
+            birth_date.Value = record.BirthDate;
+            oracleCommand.Parameters.Add(birth_date);
 
-            OracleCommand oracleCommand = oc.CreateCommand(); // egy lépésben példányosít és odaadja a kapcsolatot
-            oracleCommand.CommandType = System.Data.CommandType.StoredProcedure; // tárolt eljárást szeretnék hívni
-            oracleCommand.CommandText = "spInsert_person";
 
-            // paraméterek létrehozása
-            OracleParameter neptunCodeParameter = new OracleParameter();
-            neptunCodeParameter.DbType = System.Data.DbType.String;
-            neptunCodeParameter.ParameterName = "p_name"; // név szerinti kötés van, fontos, hogy mi a neve
-            neptunCodeParameter.Direction = System.Data.ParameterDirection.Input;
-            neptunCodeParameter.Value = record.Name;
-            oracleCommand.Parameters.Add(nameCodeParameter);
+            OracleParameter birth_city = new OracleParameter();
+            birth_city.DbType = System.Data.DbType.String;
+            birth_city.ParameterName = ":BIRTH_CITY";
+            birth_city.Direction = System.Data.ParameterDirection.Input;
+            birth_city.Value = record.BirthCity;
+            oracleCommand.Parameters.Add(birth_city);
 
-            OracleParameter addressParameter = new OracleParameter()
-            {
-                DbType = System.Data.DbType.String,
-                ParameterName = "p_address",
-                Direction = System.Data.ParameterDirection.Input,
-                Value = record.Address
-            };
-            oracleCommand.Parameters.Add(addressParameter);
+            OracleParameter tax = new OracleParameter();
+            tax.DbType = System.Data.DbType.String;
+            tax.ParameterName = ":TAX";
+            tax.Direction = System.Data.ParameterDirection.Input;
+            tax.Value = record.Tin;
+            oracleCommand.Parameters.Add(tax);
 
-            OracleParameter tinParameter = new OracleParameter()
-            {
-                DbType = System.Data.DbType.String,
-                ParameterName = "p_tax_in",
-                Direction = System.Data.ParameterDirection.Input,
-                Value = record.TIN
-            };
-            oracleCommand.Parameters.Add(tinParameter);
 
-            OracleParameter nationalityParameter = new OracleParameter()
-            {
-                DbType = System.Data.DbType.String,
-                ParameterName = "p_nationality_in",
-                Direction = System.Data.ParameterDirection.Input,
-                Value = record.Nationality
-            };
-            oracleCommand.Parameters.Add(nationalityParameter);
+            OracleParameter ssn = new OracleParameter();
+            ssn.DbType = System.Data.DbType.String;
+            ssn.ParameterName = ":SSN";
+            ssn.Direction = System.Data.ParameterDirection.Input;
+            ssn.Value = record.SSN;
+            oracleCommand.Parameters.Add(ssn);
 
-            OracleParameter identityParameter = new OracleParameter()
-            {
-                DbType = System.Data.DbType.String,
-                ParameterName = "p_identity_in",
-                Direction = System.Data.ParameterDirection.Input,
-                Value = record.Identity
-            };
-            oracleCommand.Parameters.Add(identityParameter);
+            OracleParameter addr = new OracleParameter();
+            addr.DbType = System.Data.DbType.String;
+            addr.ParameterName = ":ADDR";
+            addr.Direction = System.Data.ParameterDirection.Input;
+            addr.Value = record.Address;
+            oracleCommand.Parameters.Add(addr);
 
-            OracleParameter ssnParameter = new OracleParameter()
-            {
-                DbType = System.Data.DbType.String,
-                ParameterName = "p_social_sn",
-                Direction = System.Data.ParameterDirection.Input,
-                Value = record.SSN
-            };
-            oracleCommand.Parameters.Add(ssnParameter);
 
-            OracleParameter birthDateParameter = new OracleParameter()
-            {
-                DbType = System.Data.DbType.Date,
-                ParameterName = "p_birth_date",
-                Direction = System.Data.ParameterDirection.Input,
-                Value = record.BirthDate
-            };
-            oracleCommand.Parameters.Add(birthDateParameter);
+            OracleParameter sex = new OracleParameter();
+            sex.DbType = System.Data.DbType.String;
+            sex.ParameterName = ":SEX";
+            sex.Direction = System.Data.ParameterDirection.Input;
+            sex.Value = record.Sex;
+            oracleCommand.Parameters.Add(sex);
 
-            OracleParameter birthCityParameter = new OracleParameter()
-            {
-                DbType = System.Data.DbType.String,
-                ParameterName = "p_birth_city",
-                Direction = System.Data.ParameterDirection.Input,
-                Value = record.BirthCity
-            };
-            oracleCommand.Parameters.Add(birthCityParameter);
+            OracleParameter room = new OracleParameter();
+            room.DbType = System.Data.DbType.String;
+            room.ParameterName = ":ROOM";
+            room.Direction = System.Data.ParameterDirection.Input;
+            room.Value = record.Room;
+            oracleCommand.Parameters.Add(room);
 
-            OracleParameter sexParameter = new OracleParameter()
-            {
-                DbType = System.Data.DbType.String,
-                ParameterName = "p_sex",
-                Direction = System.Data.ParameterDirection.Input,
-                Value = record.Sex
-            };
-            oracleCommand.Parameters.Add(sexParameter);
 
-            OracleParameter rowCountParameter = new OracleParameter()
-            {
-                DbType = System.Data.DbType.Int32,
-                ParameterName = "p_out_rowcnt",
-                Direction = System.Data.ParameterDirection.Output, // kimenő paraméter
-                // kifelé közvetít adatot
-            };
-            oracleCommand.Parameters.Add(rowCountParameter);
+            OracleParameter check_in = new OracleParameter();
+            check_in.DbType = System.Data.DbType.String;
+            check_in.ParameterName = ":CHECK_IN";
+            check_in.Direction = System.Data.ParameterDirection.Input;
+            check_in.Value = record.Check_IN;
+            oracleCommand.Parameters.Add(check_in);
 
+            OracleParameter check_out = new OracleParameter();
+            check_out.DbType = System.Data.DbType.String;
+            check_out.ParameterName = ":CHECK_OUT";
+            check_out.Direction = System.Data.ParameterDirection.Input;
+            check_out.Value = record.Check_OUT;
+            oracleCommand.Parameters.Add(check_out);
+
+            //odaadjuk a parancsnak a kapcsolatot
+            oracleCommand.Connection = oracleConnection;
+            //odaadjuk a tranzakciót is
+            oracleCommand.Transaction = oracleTransaction;
+
+            int affectedRows = 0;
             try
             {
-                oracleCommand.ExecuteNonQuery();
-                int affectedRows = int.Parse(rowCountParameter.Value.ToString());
-
-                ot.Commit();
-                return affectedRows;
+                affectedRows = oracleCommand.ExecuteNonQuery(); //futtatom a delete-t
+                oracleTransaction.Commit();
             }
             catch (Exception e)
             {
-                ot.Rollback();
-                return 0;
+                oracleTransaction.Rollback(); //ha gond van, visszapörgetem
+                //semmissé teszem a tranzakcióban végzett műveletet
             }
+            return affectedRows;
         }
-        */
+        
 
     }
 }

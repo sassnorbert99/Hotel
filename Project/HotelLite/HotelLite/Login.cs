@@ -48,7 +48,8 @@ namespace HotelLite
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            ListForm list = new ListForm();
+            list.Close();
         }
     }
 }
