@@ -251,16 +251,16 @@ namespace HotelLite.Tables
             //odaadjuk a tranzakciót is
             command.Transaction = oracleTransaction;
 
-            command.Parameters.Add(new OracleParameter(":NAME", "Zsolti"));
-            command.Parameters.Add(new OracleParameter(":BIRTHD", OracleDbType.Date)).Value=DateTime.Now;
-            command.Parameters.Add(new OracleParameter(":BIRTH_CITY", "Eger"));
-            command.Parameters.Add(new OracleParameter(":TAX", 655695));
-            command.Parameters.Add(new OracleParameter(":SSN", "541355"));
-            command.Parameters.Add(new OracleParameter(":ADDR", "fdsdfsd"));
-            command.Parameters.Add(new OracleParameter(":SEX", Char.Parse("F")));
-            command.Parameters.Add(new OracleParameter(":ROOM", 1));
-            command.Parameters.Add(new OracleParameter(":CHECK_IN", OracleDbType.Date)).Value= DateTime.Now;
-            command.Parameters.Add(new OracleParameter(":CHECK_OUT", OracleDbType.Date)).Value= DateTime.Now;
+            command.Parameters.Add(new OracleParameter(":NAME", record.Name));
+            command.Parameters.Add(new OracleParameter(":BIRTHD", OracleDbType.Date)).Value=DateTime.Parse(record.BirthDate);
+            command.Parameters.Add(new OracleParameter(":BIRTH_CITY", record.BirthCity));
+            command.Parameters.Add(new OracleParameter(":TAX", record.Tin));
+            command.Parameters.Add(new OracleParameter(":SSN", record.SSN));
+            command.Parameters.Add(new OracleParameter(":ADDR", record.Address));
+            command.Parameters.Add(new OracleParameter(":SEX", Char.Parse(record.Sex)));
+            command.Parameters.Add(new OracleParameter(":ROOM", record.Room));
+            command.Parameters.Add(new OracleParameter(":CHECK_IN", OracleDbType.Date)).Value= DateTime.Parse(record.Check_IN);
+            command.Parameters.Add(new OracleParameter(":CHECK_OUT", OracleDbType.Date)).Value= DateTime.Parse(record.Check_OUT);
 
             int affectedRows = 0;
             try

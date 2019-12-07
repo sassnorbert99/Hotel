@@ -34,11 +34,11 @@ namespace HotelLite
             {
                 textBox_passwd.Clear();
                 MessageBox.Show("Sikeres bejelentkezés!");
-                
-                
+
+                this.Hide();
                 ListForm main = new ListForm();
                 main.ShowDialog();
-                this.Close();
+                
             }
             else
             {
@@ -50,6 +50,22 @@ namespace HotelLite
         {
             ListForm list = new ListForm();
             list.Close();
+        }
+
+       
+
+private void CheckEnterKeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Return)
+
+            {
+                Button_Enter_Click(sender,e);
+            }
+        }
+
+        private void TextBox_passwd_TextChanged(object sender, EventArgs e)
+        {
+            this.textBox_passwd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(CheckEnterKeyPress);
         }
     }
 }

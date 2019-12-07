@@ -31,15 +31,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.nameTextBox = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.TextBox_name = new System.Windows.Forms.TextBox();
+            this.textBoxSSN = new System.Windows.Forms.TextBox();
+            this.textBoxAddress = new System.Windows.Forms.TextBox();
+            this.textBoxROOM = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button_view = new System.Windows.Forms.Button();
             this.dateTime_check_in = new System.Windows.Forms.DateTimePicker();
-            this.buttonRegister = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,7 +48,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView_students = new System.Windows.Forms.DataGridView();
             this.button_Delete = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxTIN = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -92,33 +91,33 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Regisztráció";
             // 
-            // nameTextBox
+            // TextBox_name
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(347, 73);
-            this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(179, 20);
-            this.nameTextBox.TabIndex = 4;
+            this.TextBox_name.Location = new System.Drawing.Point(347, 73);
+            this.TextBox_name.Name = "TextBox_name";
+            this.TextBox_name.Size = new System.Drawing.Size(179, 20);
+            this.TextBox_name.TabIndex = 4;
             // 
-            // textBox3
+            // textBoxSSN
             // 
-            this.textBox3.Location = new System.Drawing.Point(347, 242);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(178, 20);
-            this.textBox3.TabIndex = 6;
+            this.textBoxSSN.Location = new System.Drawing.Point(347, 242);
+            this.textBoxSSN.Name = "textBoxSSN";
+            this.textBoxSSN.Size = new System.Drawing.Size(178, 20);
+            this.textBoxSSN.TabIndex = 6;
             // 
-            // textBox4
+            // textBoxAddress
             // 
-            this.textBox4.Location = new System.Drawing.Point(347, 274);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(178, 20);
-            this.textBox4.TabIndex = 7;
+            this.textBoxAddress.Location = new System.Drawing.Point(347, 274);
+            this.textBoxAddress.Name = "textBoxAddress";
+            this.textBoxAddress.Size = new System.Drawing.Size(178, 20);
+            this.textBoxAddress.TabIndex = 7;
             // 
-            // textBox5
+            // textBoxROOM
             // 
-            this.textBox5.Location = new System.Drawing.Point(347, 305);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(178, 20);
-            this.textBox5.TabIndex = 8;
+            this.textBoxROOM.Location = new System.Drawing.Point(347, 305);
+            this.textBoxROOM.Name = "textBoxROOM";
+            this.textBoxROOM.Size = new System.Drawing.Size(178, 20);
+            this.textBoxROOM.TabIndex = 8;
             // 
             // label4
             // 
@@ -156,16 +155,6 @@
             this.dateTime_check_in.Name = "dateTime_check_in";
             this.dateTime_check_in.Size = new System.Drawing.Size(178, 20);
             this.dateTime_check_in.TabIndex = 13;
-            // 
-            // buttonRegister
-            // 
-            this.buttonRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonRegister.Location = new System.Drawing.Point(236, 340);
-            this.buttonRegister.Name = "buttonRegister";
-            this.buttonRegister.Size = new System.Drawing.Size(133, 34);
-            this.buttonRegister.TabIndex = 15;
-            this.buttonRegister.Text = "Regisztrálás";
-            this.buttonRegister.UseVisualStyleBackColor = true;
             // 
             // buttonExit
             // 
@@ -253,12 +242,12 @@
             this.button_Delete.UseVisualStyleBackColor = true;
             this.button_Delete.Click += new System.EventHandler(this.Button_Delete_Click);
             // 
-            // textBox2
+            // textBoxTIN
             // 
-            this.textBox2.Location = new System.Drawing.Point(347, 212);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 20);
-            this.textBox2.TabIndex = 26;
+            this.textBoxTIN.Location = new System.Drawing.Point(347, 212);
+            this.textBoxTIN.Name = "textBoxTIN";
+            this.textBoxTIN.Size = new System.Drawing.Size(179, 20);
+            this.textBoxTIN.TabIndex = 26;
             // 
             // label11
             // 
@@ -335,7 +324,7 @@
             // button_insert
             // 
             this.button_insert.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_insert.Location = new System.Drawing.Point(348, 404);
+            this.button_insert.Location = new System.Drawing.Point(236, 340);
             this.button_insert.Name = "button_insert";
             this.button_insert.Size = new System.Drawing.Size(133, 34);
             this.button_insert.TabIndex = 36;
@@ -358,7 +347,7 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxTIN);
             this.Controls.Add(this.button_Delete);
             this.Controls.Add(this.dataGridView_students);
             this.Controls.Add(this.label10);
@@ -368,15 +357,14 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.buttonLogout);
             this.Controls.Add(this.buttonExit);
-            this.Controls.Add(this.buttonRegister);
             this.Controls.Add(this.dateTime_check_in);
             this.Controls.Add(this.button_view);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.nameTextBox);
+            this.Controls.Add(this.textBoxROOM);
+            this.Controls.Add(this.textBoxAddress);
+            this.Controls.Add(this.textBoxSSN);
+            this.Controls.Add(this.TextBox_name);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -395,15 +383,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox nameTextBox;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox TextBox_name;
+        private System.Windows.Forms.TextBox textBoxSSN;
+        private System.Windows.Forms.TextBox textBoxAddress;
+        private System.Windows.Forms.TextBox textBoxROOM;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button_view;
         private System.Windows.Forms.DateTimePicker dateTime_check_in;
-        private System.Windows.Forms.Button buttonRegister;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.Label label6;
@@ -413,7 +400,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dataGridView_students;
         private System.Windows.Forms.Button button_Delete;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxTIN;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;

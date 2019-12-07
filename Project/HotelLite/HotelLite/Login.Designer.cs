@@ -83,6 +83,7 @@
             this.textBox_passwd.Size = new System.Drawing.Size(205, 20);
             this.textBox_passwd.TabIndex = 4;
             this.textBox_passwd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_passwd.TextChanged += new System.EventHandler(this.TextBox_passwd_TextChanged);
             // 
             // button_Enter
             // 

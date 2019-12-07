@@ -305,12 +305,15 @@ namespace HotelLite
 
         private void ButtonExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
+            Application.Exit();
         }
 
         private void ButtonLogout_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            Login login = new Login();
+            login.ShowDialog();
             
         }
 
@@ -334,9 +337,27 @@ namespace HotelLite
 
         private void Button_insert_Click(object sender, EventArgs e)
         {
-            Person person = new Person("Zsolti", "2132213", "4651", "fsdf", "1997-10-12", "St", "F", "2019-05-05", "2020-05-05", 4);
-            manager_studentsTable.Insert(person);
-            Button_view_Click(sender, e);
+            if (TextBox_name.Text == "" || textBox_Birth_city.Text == "" || textBoxTIN.Text == "" || textBoxSSN.Text == "" || textBoxAddress.Text == "" || textBoxROOM.Text == "")
+            {
+                MessageBox.Show("Az össszes mező kitöltése kötelező!");
+            }
+            else
+            {
+                string[] BirthDate = Convert.ToString(dateTime_BirthDate.Value).Split('.');
+                string[] check_in= Convert.ToString(dateTime_check_in.Value).Split('.');
+                string[]check_out= Convert.ToString(dateTime_check_out.Value).Split('.');
+
+
+                Person person = new Person(TextBox_name.Text, textBoxTIN.Text, textBoxSSN.Text, textBoxAddress.Text,BirthDate[0]+"-"+BirthDate[1]+"-"+BirthDate[2], textBox_Birth_city.Text, "F", check_out[0] + "-" + check_out[1] + "-" + check_out[2], check_in[0] + "-" + check_in[1] + "-" + check_in[2],int.Parse(textBoxROOM.Text));
+                manager_studentsTable.Insert(person);
+                Button_view_Click(sender, e);
+                TextBox_name.Clear();
+                textBox_Birth_city.Clear();
+                textBoxTIN.Clear();
+                textBoxSSN.Clear();
+                textBoxAddress.Clear();
+                textBoxROOM.Clear();
+            }
         }
 
         private void Button_view_Click(object sender, EventArgs e)
