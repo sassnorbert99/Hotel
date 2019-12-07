@@ -1,0 +1,4 @@
+2019_12_07
+Oravecz Zsolt
+Kidolgoztam az alkalmazás Insert utasítását
+Tökéletesítettem a gombok funkcióit.
