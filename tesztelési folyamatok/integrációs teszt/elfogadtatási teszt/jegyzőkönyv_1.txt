@@ -4,4 +4,33 @@
 funkcionalitásának vizsgálata a felhasználók szemszögébõl.
 ----------------------------------------------------------------------------------------------
 2019.12.03.
+Készítette: Sass-Gyarmati Norbert
 
+Béta verzió megnevezése		kód		felhasználó		funkció			megjegyzés
+	HotelLite Beta			001		Kiss Pista		login			regisztrálni egy fiókkal tudtam, melyet a csoport generált
+
+					002		Nagy Pista		adatfeltöltés		adatokat csak bejelentkezés után tudtam lekérni, illetve 
+													feltölteni
+-----------------------------------------------------------------------------------------------
+2019.12.04
+Készítette: Sass-Gyarmati Norbert
+Béta verzió megnevezése			kód		felhasználó		funkció			megjegyzés
+	HotelLite Beta			
+					003		Géza			adatbiztonság		Az adatokat csak akkor lehet kinyerni, ha arra jogosult
+													felhasználó teszi. A védet adatok egy hash függvény alatt
+													van kódolva, ezáltal nem lehet az eredetire visszafejteni.
+
+					005		Gizi			adatlekérés		Az adatokat dinamikusan és gyorsan lehet feltölteni, majd
+													azokat lekérni.
+
+-----------------------------------------------------------------------------------------------
+2019.12.05
+Készítette: Sass-Gyarmati Norbert
+
+
+Béta verzió megnevezése			kód		felhasználó		funkció			megjegyzés
+					006		Béla			adatfeltöltés		A szoftver jelzi, ha helytelen adatot szeretne a kliens	
+													feltölteni, így nem áll le a program, hanem helytelen adatok
+								
+
+					
