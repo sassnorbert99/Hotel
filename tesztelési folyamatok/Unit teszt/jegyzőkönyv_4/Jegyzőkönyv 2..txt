@@ -1,0 +1,44 @@
+Exception osztályok unit teszetlése a Room osztályban
+- bedsException
+
+public void TestExceptionCase()
+{
+	room r1 = new room();
+	try
+	{
+		r1.Beds = 15;
+	}
+	catch(bedsException e)
+	{
+		StringAssert.Contains(e.Message, "beds <= 10");
+		return;
+	}
+	catch(Exception e)
+	{
+		StringAssert.Contains(e.Message, "beds = 0");
+		return;
+	}
+	Assert.Fail("No exception was thrown");
+}
+
+- priceLessException
+
+public void TestExceptionCase()
+{
+	room r1 = new room();
+	try
+	{
+		r1.Price = -10;
+	}
+	catch(priceLessException e)
+	{
+		StringAssert.Contains(e.Message, "price >= 0");
+		return;
+	}
+	catch(Exception e)
+	{
+		StringAssert.Contains(e.Message, "price = 0");
+		return;
+	}
+	Assert.Fail("No exception was thrown");
+}
