@@ -1,0 +1,64 @@
+Tesztelési jelentés*
+A hivatkozott tesztjegyzõkönyvek rövid leírása és eredménye:				tesztjegyzõkönyv 1 újra tesztelése, eredmények újra kérése
+A tesztelt folyamatok/funkciók/modulok leírása:						A folyamat gyors, funkciója szempontjából a terhelést tesztelem,
+											valamint a terhelés által kialakuló különbségeket
+
+A tesztadatok típusa:									visual studio által támogatott c# metódus
+											script nyelvek
+
+A tesztelt rendszer beállításai:							1000 vendég adattal dolgozó metódus
+
+A tesztelések eredménye:								Megfelelt/élesíthetõ - IGEN
+											Nem felelt meg
+											Megfelelt megjegyzésekkel
+Megjegyzések:										idõ szempontjából lényegtelen különbség, tárigény szempontjából viszont
+											dinamikusan emelkedett
+
+Tesztelést elvégezte
+Név:											Oravecz Zsolt
+Szervezeti egység/ beosztás:								vezetõ programozó
+Aláírás:										Oravecz Zsolt
+Dátum:											2019.12.05
+
+
+Jóváhagyások
+Jóváhagyó
+Név:											Sass-Gyarmati Norbert
+Szervezeti egység/ beosztás:								vezetõ programozó
+Aláírás:										Sass-Gyarmati Norbert
+Dátum:											2019.12.06
+
+
+
+***************************************************************************************************************************************************************
+
+Tesztelési jelentés*
+A hivatkozott tesztjegyzõkönyvek rövid leírása és eredménye:				tesztjegyzõkönyv 1 újra tesztelése, eredmények újra kérése
+A tesztelt folyamatok/funkciók/modulok leírása:						A folyamat gyors, funkciója szempontjából a terhelést tesztelem,
+											valamint a terhelés által kialakuló különbségeket
+
+A tesztadatok típusa:									visual studio által támogatott c# metódus
+											script nyelvek
+
+A tesztelt rendszer beállításai:							adatvédelmi beállítások
+
+A tesztelések eredménye:								Megfelelt/élesíthetõ - IGEN
+											Nem felelt meg
+											Megfelelt megjegyzésekkel
+Megjegyzések:										a rendszer biztonságilag is megfelelõen mûködik
+
+Tesztelést elvégezte
+Név:											Sass-Gyarmati Norbert
+Szervezeti egység/ beosztás:								vezetõ programozó
+Aláírás:										Sass-Gyarmati Norbert
+Dátum:											2019.12.06
+
+
+Jóváhagyások
+Jóváhagyó
+Név:											Oravecz Zsolt
+Szervezeti egység/ beosztás:								vezetõ programozó
+Aláírás:										Oravecz Zsolt
+Dátum:											2019.12.07
+
+

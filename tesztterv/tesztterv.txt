@@ -308,7 +308,9 @@ Biztonsági tesztelésre akkor van szükség, ha a rendszer szenzitív (pl. személyes
 A tesztelési feladat a következõ teszt-eseteket foglalja magában:
 ?	…A tesztek sikeresek voltak
 ?	Hibát nem észleltünk, minden teszt elvárásainknak eleget tett
-?	…
+?	…Funkciók szempontjából hibák nem jelentkeztek
+
+
 
 3.9	Tesztelési ütemterv, függõségek – tesztforgatókönyv
 
@@ -322,11 +324,242 @@ csökkentésének érdekében. A tesztforgatókönyvben rögzíteni szükséges továbbá a t
 
 4.1	Tesztelési jegyzõkönyv
 
-A tesztelõk a tesztforgatókönyvnek megfelelõen elvégzik a tesztelést és az eredményt tesztjegyzõkönyvekben dokumentálják. A teszt kimenetelést minden esetben jelenteni kell a tesztkoordinátornak. A tesztkoordinátor a szakértõkkel együtt megoldást keres a problémákra, majd frissíti a tesztforgatókönyvet. Ha a problémát megoldották, a tesztelõ újrakezdheti a tesztelést, majd dokumentálja az eredményeket. Ha a hiba továbbra is fennáll, és harmadik félen múlik a megoldása eszkalálni kell a problémát a projekt menedzsernek. 
+A tesztelõk a tesztforgatókönyvnek megfelelõen elvégzik a tesztelést és az eredményt tesztjegyzõkönyvekben dokumentálják. A teszt kimenetelést
+minden esetben jelenteni kell a tesztkoordinátornak. A tesztkoordinátor a szakértõkkel együtt megoldást keres a problémákra, majd frissíti a
+tesztforgatókönyvet. Ha a problémát megoldották, a tesztelõ újrakezdheti a tesztelést, majd dokumentálja az eredményeket. Ha a hiba továbbra
+is fennáll, és harmadik félen múlik a megoldása eszkalálni kell a problémát a projekt menedzsernek. 
+************************************************************************************************************************************************************
+				Prototípus	
+
+	A prototípusunk unit tesztelésen esett át, melyben fõbb feladatunk volt,
+hogy a program kapacitása nagyobb mennyiségnél ne omljon össze, melyet 
+metódusok segítségével tudtunk létrehozni.
+1.
+
+for (int i = 0; i < 100000; i++)
+            {
+                comboBox2.Items.Add("szobaszám: " + szoba[i].Szoba + " ágyak száma: " + szoba[i].Agyszam + " felszererltsége: " + szoba[i].Felszereles);
+            }
+
+tulajdonságok:
+- a rendszer lassabbnak bizonyult, azonban nem omlott össze, sikeres tesztelés.
+- a memória hirtelen megnõtt, de ezek az adatok néhány kb plusz adatot tudtak 
+szolgáltatni, ezáltal sikeres tesztelés volt.
+- a panelen látszólag nem történt semmi negatív változás, sikeres tesztelés.
+
+2.
+
+for (int i = 0; i < 999999999999999999; i++)
+            {
+                comboBox1.Items.Add("név: " + vendeglista[i].Nev + " taj száma: " + vendeglista[i].Taj + " lakcíme: " + vendeglista[i].Lakcim + " kivett szoba: " + vendeglista[i].KivettSzoba);
+            }
+
+tulajdonságok:
+- a rendszer lényegesebben lassabbnak bizonyult, azonban nem omlott össze, 
+sikeres tesztelés.
+- a memória hirtelen megnõtt, de ezek az adatok néhány kb plusz adatot tudtak 
+szolgáltatni, ezáltal sikeres tesztelés volt.
+- a panelen negatív változás történt, mely abban nyilvánult meg,
+hogy több idõt kellett várni a legördülõ menü lekérdezéséhez, sikertelen tesztelés
+
+
+	A tesztelések alatt megfigyeltük, hogy a szoftver normálisan fog mûködni, 
+reális adatokkal tud dolgozni, valamint irreális adatok során sem omlik össze a 
+rendszer.
+	Megfigyeltük tobábbá, hogy a memória igénye dinamikusan fejlõdik,
+ezáltal a teljes szoftver memória igénye körülbelül kevesebb lesz, mint 200MB.
+	
+tesztelve:
+- Windows PC
+- Windows notebook
+
+
+				Nagy projekt
+
+	Projektünk kifejezetten ügyel és figyel a biztonsági intézkedésekre, melyet a megbízó
+igényeihez formáltunk. Kódunk kimenõ paramétereit, ide beleértve a jelszavak, személyes 
+adatok, hashelve lett.
+Példa: 
+	entry.LoginName == textBox_loginname.Text && entry.Passwd == Convert.ToString(textBox_passwd.Text.GetHashCode()
+
+
+Ennek hatására nem lehet személyes adatokat kinyerni a hackerek számára.
+------------------------------------------------------------------------------------------------
+A HotelLite programot teszt alá vetettük.
+Fõbb tesztelési területek:
+	1. teljesítmény
+	2. elvárt mûködés
+
+1.) A szoftvert teljesítmény használatot tekintve kiegyensúlyozottan mûködik. Nem terheli a számítógépet.
+Ez annak is köszönhetõ hogy a loginoltató alkalmazás hátterében nem áll túl kombinált kód. Egyszerûbb összehasonlítsokat végez,
+illetve megfelelõ üzenettel, esetenként hibaüzenettel tájékoztatja a felhasználót a mûveletek eredményességérõl. 
+
+Egyedi hibák megnevezése:
+	-tinException: az adó azonosító csak számokat tartalmazhat
+	-identityException: 11 hosszú lehet a személyi azonosító
+	-nationalityException: túl hosszú a mezõ értéke
+	-bedsException: 10-nél több ágy nem lehet egy szobában
+	-priceLessException: nem lehet mínusz értékû a szoba
+
+Megfigyeltük tobábbá, hogy a memória igénye dinamikusan fejlõdik,
+ezáltal a teljes szoftver memória igénye körülbelül kevesebb lesz, mint 200MB.
+	
+tesztelve:
+- Windows PC
+- Windows notebook
+
+2.) A szoftver teszteltük mind megfelelõ, mind fals bejelentkezési információkkal. Mind két információ típusnak helyt állt és
+megfelelõen mûködött. Abban az esetben ha a regisztráció sikeres volt, akkor a meglfelelõ adatokkal a felhasználó be tudott lépni,
+és a loginoló alkalmazás meghívta a fõalkalmazást. A következõ esetekben a szoftver hiba üzenetet dobott:
+	-Ha a termékkulcs hibás volt
+	-Ha hiányzott a termékkulcs, felhasználói név, jelszó hármas valamelyike. 
+	-Ha a regisztráció sikeresnek bizonyult, azonban a felhasználói név-jelszó páros nem egyezett 
+
+
+Jellemzõk:
+- operációs rendszer: windows
+- programozási nyelv: c# - winform application
+- adatok szerkezete: statikus
+- adatbázis: nincs
+- RAM: <100MB
+- tesztelt eszközök: PC, notebook
+
+Fõbb funkciói:
+- vendégek felvétele a jegyzékbe
+- vendégek datainak listázása
+- szobák és azok funkcióinak listázása
+- vendégek által lefoglalt szobák listázása
+------------------------------------------------------------------------------------------------
+				HotelLite Unit tesztelés
+
+1. Bevezetés-védelem:
+
+Projektünk kifejezetten ügyel és figyel a biztonsági intézkedésekre, melyet a megbízó
+igényeihez formáltunk. Kódunk kimenõ paramétereit, ide beleértve a jelszavak, személyes 
+adatok, hashelve lett.
+Példa: 
+	entry.LoginName == textBox_loginname.Text && entry.Passwd == Convert.ToString(textBox_passwd.Text.GetHashCode()
+
+
+Ennek hatására nem lehet személyes adatokat kinyerni a hackerek számára.
+
+2. Unit Teszt:
+	
+	Unit tesztelés során nagy hangsújt fektettünk bele, hogy kapacitás szempontjából 
+mennyi vendéget tud kezelni a rendszer.
+	Két elhatározásra jutottunk:
+	1.adatbázis(SQLDeveloper):
+	-Az adatbázis egyszerre összesen 30 MB-i adattal tud dolgozni, amibõl körülbelül
+20 MB az optimális. Összesen 1000, azaz ezer beégetett vendég adatokkal teszteltük a 
+szolgáltatásunkat. 
+eredmény:	1000 vendég adattal nagyobb memória fogy, azonban könnyen és gyorsan ellehet 
+érni adatokat, optimálisan fut.
+	-Másodjára 10000, azaz tízezer vendég adattal dolgoztunk és teszteltük. 
+Az eredmény:	10000 vendég adattal jóval nagyobb memória fogy, nehezebben, de gyorsan ellehet 
+érni adatokat, alacsonyabban fut.
+
+	2.fájlkezelés(txt fájl):
+	-A fájlkezelés egyszerre összesen véges sok adattal tud dolgozni, amibõl körülbelül
+20 MB az optimális. Összesen 1000, azaz ezer beégetett vendég adatokkal teszteltük a 
+szolgáltatásunkat. 
+eredmény:	1000 vendég adattal nagyobb memória fogy, nehezen és lassabban ellehet 
+érni adatokat, közepes idõintervallummal fut.
+	-Másodjára 10000, azaz tízezer vendég adattal dolgoztunk és teszteltük. 
+Az eredmény:	10000 vendég adattal a memória csaknem fele elfogy, nehezebben, 
+és nagyon lassan ellehet érni adatokat, lassan fut.
+	
+
+
+***********************************************************************************************************************************************************
+
+
 4.2	Tesztelési jelentés
 
 A tesztelési jelentést a tesztkoordinátor készíti el. Ez egy részletes áttekintése a lefutott teszteknek, azok eredményeinek, státuszának és a megjegyzéseknek.
 A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést. 
+
+Tesztelési jelentés*
+A teszt-eset leírás és célja:			Projekt tesztelése a prototípusnál leírt tesztek által
+A tesztelt folyamat/funkció leírása:		A folyamat gyors, funkciója szempontjából a terhelést tesztelem, valamint a terhelés által kialakuló különbségeket
+A tesztelés elõfeltételei:			prototípus által elõírt teszt kódok
+A tesztelés dátuma és idõpontja:		2019.11.29
+A tesztadatok típusa:				visual studio által támogatott c# metódus
+A tesztet végzõ személy(ek):			Sass-Gyarmati Norbert
+A tesztelt rendszer beállításai:		1000 vendég adattal dolgozó metódus
+A teszt-eset elvárt eredménye:			elvárt eredmény a dinamikus növekedés, valamint idõ és tárhely megmaradása
+A tesztelés eredménye:	?			Megfelelt - IGEN
+?						Nem felelt meg
+?						Megfelelt megjegyzésekkel
+Megjegyzések:					idõ szempontjából lényegtelen különbség, tárigény szempontjából viszont dinamikusan emelkedett
+
+
+
+Tesztelési jelentés*
+A hivatkozott tesztjegyzõkönyvek rövid leírása és eredménye:				tesztjegyzõkönyv 1 újra tesztelése, eredmények újra kérése
+A tesztelt folyamatok/funkciók/modulok leírása:						A folyamat gyors, funkciója szempontjából a terhelést tesztelem,
+											valamint a terhelés által kialakuló különbségeket
+
+A tesztadatok típusa:									visual studio által támogatott c# metódus
+											script nyelvek
+
+A tesztelt rendszer beállításai:							1000 vendég adattal dolgozó metódus
+
+A tesztelések eredménye:								Megfelelt/élesíthetõ - IGEN
+											Nem felelt meg
+											Megfelelt megjegyzésekkel
+Megjegyzések:										idõ szempontjából lényegtelen különbség, tárigény szempontjából viszont
+											dinamikusan emelkedett
+
+Tesztelést elvégezte
+Név:											Oravecz Zsolt
+Szervezeti egység/ beosztás:								vezetõ programozó
+Aláírás:										Oravecz Zsolt
+Dátum:											2019.12.05
+
+
+Jóváhagyások
+Jóváhagyó
+Név:											Sass-Gyarmati Norbert
+Szervezeti egység/ beosztás:								vezetõ programozó
+Aláírás:										Sass-Gyarmati Norbert
+Dátum:											2019.12.06
+
+
+
+
+
+Tesztelési jelentés*
+A hivatkozott tesztjegyzõkönyvek rövid leírása és eredménye:				tesztjegyzõkönyv 1 újra tesztelése, eredmények újra kérése
+A tesztelt folyamatok/funkciók/modulok leírása:						A folyamat gyors, funkciója szempontjából a terhelést tesztelem,
+											valamint a terhelés által kialakuló különbségeket
+
+A tesztadatok típusa:									visual studio által támogatott c# metódus
+											script nyelvek
+
+A tesztelt rendszer beállításai:							adatvédelmi beállítások
+
+A tesztelések eredménye:								Megfelelt/élesíthetõ - IGEN
+											Nem felelt meg
+											Megfelelt megjegyzésekkel
+Megjegyzések:										a rendszer biztonságilag is megfelelõen mûködik
+
+Tesztelést elvégezte
+Név:											Sass-Gyarmati Norbert
+Szervezeti egység/ beosztás:								vezetõ programozó
+Aláírás:										Sass-Gyarmati Norbert
+Dátum:											2019.12.06
+
+
+Jóváhagyások
+Jóváhagyó
+Név:											Oravecz Zsolt
+Szervezeti egység/ beosztás:								vezetõ programozó
+Aláírás:										Oravecz Zsolt
+Dátum:											2019.12.07
+
+
+
+***********************************************************************************************************************************************************
 4.3	Tesztelt elvárások 
 
 Az alábbi funkcionális elvárások szerepelnek az üzleti illetve fejlesztõi specifikációban, amelyek tesztelésre is kerültek: 
@@ -353,9 +586,12 @@ Az alábbi elvárások szerepelnek az üzleti illetve fejlesztõi specifikációban, am
 
 #	Leírás
 1.	beégetett adatok
-2.	
+2.	szoftverfrissítési lehetõségek
 3.	
 4.	
+
+
+**********************************************************************************************************************************************************
 
 4.4	Elfogadási kritériumok
 
@@ -364,16 +600,16 @@ A teszt sikerességének kritériumai:
 ?	A projekt menedzser jóváhagyása a teszt leszállítandókra. 
 4.5	Kockázat kezelés
 
-#	Kockázat				Hatás(magas/közepes/alacsony)							A kockázat kezelésének módja
-1.	dinamikus adat bõvülés			magas										feltöltött 1000 adat gyors és biztonságos elérésû volt
+#	Kockázat				Hatás(magas/közepes/alacsony)								A kockázat kezelésének módja
+1.	dinamikus adat bõvülés				magas										feltöltött 1000 adat gyors és biztonságos elérésû volt
 
-2.	hibás adatokkal való regisztrálás	magas										a szoftver minden hibát képes lekezelni,
-																ami a program futása során keletkezhet
+2.	hibás adatokkal való regisztrálás		magas										a szoftver minden hibát képes lekezelni,
+																	ami a program futása során keletkezhet
 
-3.	szoftver terhelés			közepes										a szoftver lassabban mûködik 30MB-nál több adattal
+3.	szoftver terhelés				közepes										a szoftver lassabban mûködik 30MB-nál több adattal
 
 
-
+******************************************************************************************************************************************************************************************
 
 5	Tesztjegyzõkönyv 1 
 Tesztelési jegyzõkönyv*
