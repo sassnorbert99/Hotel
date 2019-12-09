@@ -113,12 +113,15 @@ Az összes teszt dokumentáció és leszállítandó a következõ helyen érhetõ el: Eszt
 
 …
 Cím			Felelõs személy			Szállítási gyakorisága		Szállítás módja
-Teszt terv:		Sass-Gyarmati Norbert		nincs				nincs
-Teszt-esetek:		Oravecz Zsolt			nincs				nincs
+Teszt terv:		Sass-Gyarmati Norbert		nincs				github
+
+Teszt-esetek:		Oravecz Zsolt			nincs				github
 Tesztjegyzõkönyvek:	Járomi Dávid Antal
 			Sass-Gyarmati Norbert
 			Oravecz Zsolt			nincs				nincs
-Tesztelési jelentés:	Sass-Gyarmati Norbert		nincs				nincs
+Tesztelési jelentés:	Sass-Gyarmati Norbert		nincs				trello
+											github
+											személyes
 
 
 2.5	Tesztelési eszközök
@@ -309,7 +312,9 @@ A tesztelési feladat a következõ teszt-eseteket foglalja magában:
 
 3.9	Tesztelési ütemterv, függõségek – tesztforgatókönyv
 
-A teszt elvégzésének meghatározott sorrendjét és függõségeit tesztforgatókönyvben kell rögzíteni. A tesztforgatókönyv elkészítése a tesztelések koordinálásért felelõs szakértõ feladata, elkészítése során törekedni kell a párhuzamos elvégezhetõ tevékenységek lehetõség szerinti kihasználására, a tesztelési idõigény csökkentésének érdekében. A tesztforgatókönyvben rögzíteni szükséges továbbá a tesztelés sorrendjét és a tesztelés logikáját (funkciók vagy folyamatok alapján) is.
+A teszt elvégzésének meghatározott sorrendjét és függõségeit tesztforgatókönyvben kell rögzíteni. A tesztforgatókönyv elkészítése a tesztelések koordinálásért
+felelõs szakértõ feladata, elkészítése során törekedni kell a párhuzamos elvégezhetõ tevékenységek lehetõség szerinti kihasználására, a tesztelési idõigény
+csökkentésének érdekében. A tesztforgatókönyvben rögzíteni szükséges továbbá a tesztelés sorrendjét és a tesztelés logikáját (funkciók vagy folyamatok alapján) is.
 
 
 4	Tesztelési jegyzõkönyv és tesztelési jelentés
