@@ -1,13 +1,15 @@
 				Integrációs teszt
 
-Fejezetek:
+Az integrációs teszt célja a rendszer más rendszerekhez történõ illesztésének vizsgálata, a
+több rendszereken keresztül átívelõ funkciók tesztelésének érdekében.
+Az adatmigrációs tesztelés az integrációs teszteléshez tartozik, ennek lényege, hogy a
+bevezetendõ rendszerbe áttöltik azokat az adatokat, amelyekkel a rendszer dolgozni
+fog és letesztelik a betöltött adatok, illetve az adatokat kezelõ funkciók helyességét.
+Módszere:
 
-1	Néhány elemet (modult vagy részrendszert) kombinálunk.
 
-2	Olyan teszteket futtatunk, amelyek csak az összeépített elemeket igénylik.
-
-3	Ha minden teszt sikeres, újabb elemeket teszünk hozzá a rendszerhez.
-
-4	További teszteseteket tervezünk, amelyek az új elemek meglétét is igénylik.
-
-5	Minden eddigi tesztet újra lefuttatunk.
+	*A szoftverünk a megbízó igényeit kielégítve nem multiplatformos programozási nyelven
+készült, ennek hatására más operációs rendszerrel rendelkezõ személyi-illetve hordozható 
+számítógépeken nem mûködik.
+	*Szoftverünk csak a Windows operációs rendszerrel rendelkezõ készülékeken fut.
+	*Windows alapú számítógépeken megfelelõen és a megrendelõ igényeihez mérten mûködik.
