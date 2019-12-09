@@ -1,0 +1,70 @@
+					Biztonsági teszt
+
+2019.12.01
+Készítette: Oravecz Zsolt
+
+	Béta verzió megnevezése		kód		felhasználó			funkció			megjegyzés
+
+	HotelLite Beta			001		Oravecz Zsolt			adatbiztonság		regisztrálni egy fiókkal lehet, melyet a csoport generál
+
+**************************************************************************************************************************************************************************
+
+2019.12.01
+Készítette: Sass-Gyarmati Norbert
+
+
+	Béta verzió megnevezése		kód		felhasználó			funkció			megjegyzés
+
+
+	Hotellite Beta			002		Sass-Gyarmati Norbert		adatfeltöltés		adatokat csak bejelentkezés után tudtam lekérni, illetve 
+														feltölteni
+	
+************************************************************************************************************************************************************************
+
+
+2019.12.02
+Készítette: Sass-Gyarmati Norbert
+
+	Béta verzió megnevezése		kód		felhasználó			funkció			megjegyzés
+
+
+	Hotellite Beta			003		Sass-Gyarmati Norbert		adatbiztonság		Az adatokat csak akkor lehet kinyerni, ha arra jogosult
+														felhasználó teszi. A védet adatok egy hash függvény alatt
+														van kódolva, ezáltal nem lehet az eredetire visszafejteni.
+
+************************************************************************************************************************************************************************
+
+2019.12.03
+Készítette: Oravecz Zsolt
+
+	Béta verzió megnevezése		kód		felhasználó			funkció			megjegyzés
+
+
+
+	Hotellite Beta			005		Oravecz Zsolt			adatlekérés		Az adatokat csak arra jogosult kliens kérhet le, adatbázis
+														szervert csak a szoftverkliens által lehet elérni
+
+************************************************************************************************************************************************************************
+
+2019.12.03.
+Készítette: Sass-Gyarmati Norbert
+
+	Béta verzió megnevezése		kód		felhasználó			funkció			megjegyzés
+
+
+
+	Hotellite Beta			006		Sass-Gyarmati Norbert		adatfeltöltés		A szoftver jelzi, ha helytelen adatot szeretne a kliens	
+														feltölteni, így nem áll le a program, hanem helytelen adatok
+														után is tovább tud futni.
+
+************************************************************************************************************************************************************************
+
+2019.12.04
+Készítette: Oravecz Zsolt
+
+	Béta verzió megnevezése		kód		felhasználó			funkció			megjegyzés
+
+
+	Hotellite Beta			007		Oravecz Zsolt			adatbiztonság		Az adatok értékei hash függvény miatt nem olvasható,
+														ezáltal nem lehet visszafejteni.
+
