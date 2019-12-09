@@ -1,0 +1,72 @@
+Exception osztályok unit teszetlése a Person osztályban
+- tooMuchRoomException
+
+public void TestExceptionCase()
+{
+	Person p1 = new Person();
+	try
+	{
+		p1.CheckedRoom = 120;
+	}
+	catch(tooMuchRoomException e)
+	{
+		StringAssert.Contains(e.Message, "checkedroom <= 100");
+		return;
+	}
+	catch(Exception e)
+	{
+		StringAssert.Contains(e.Message, "checkedroom = 0");
+		return;
+	}
+	Assert.Fail("No exception was thrown");
+}
+
+- nationalityException
+
+public void TestExceptionCase()
+{
+	Person p1 = new Person();
+	try
+	{
+		p1.Nationality = 25;
+	}
+	catch(nationalityException e)
+	{
+		StringAssert.Contains(e.Message, "nationality <= 20");
+		return;
+	}
+	catch(Exception e)
+	{
+		StringAssert.Contains(e.Message, "nationality = 0");
+		return;
+	}
+	Assert.Fail("No exception was thrown");
+}
+
+- ArgumentNullException, ArgumentOutOfRangeException
+
+public void TestExceptionCase()
+{
+	Person p1 = new Person();
+	try
+	{
+		p1.ssn = null;
+		//p1.ssn = 10;
+	}
+	catch(ArgumentNullException e)
+	{
+		StringAssert.Contains(e.Message, "ssn != null");
+		return;
+	}
+	catch(ArgumentOutOfRangeException e)
+	{
+		StringAssert.Contains(e.Message, "ssn.Length = 9");
+		return;
+	}
+	catch(Exception e)
+	{
+		StringAssert.Contains(e.Message, "ssn = 0");
+		return;
+	}
+	Assert.Fail("No exception was thrown");
+}
