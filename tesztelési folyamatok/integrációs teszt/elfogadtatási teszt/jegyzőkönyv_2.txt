@@ -1,0 +1,14 @@
+				elfogadtatási teszt
+
+	Az elfogadási teszt (angolul User Acceptance Test) célja a rendszer teljes 
+funkcionalitásának vizsgálata a felhasználók szemszögébõl.
+----------------------------------------------------------------------------------------------
+2019.12.03.
+
+Béta verzió megnevezése		kód		felhasználó		funkció			megjegyzés
+	HotelLite Beta			001		Kiss Pista		login			regisztrálni egy fiókkal tudtam, melyet a csoport generált
+
+					002		Nagy Pista		adatfeltöltés		adatokat csak bejelentkezés után tudtam lekérni, illetve 
+													feltölteni
+	
+					
