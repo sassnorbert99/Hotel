@@ -1,0 +1,19 @@
+Az összes teszt dokumentáció és leszállítandó a következõ helyen érhetõ el:
+Eszterházy Károly Egyetem C épület
+
+…
+Cím			Felelõs személy			Szállítási gyakorisága		Szállítás módja
+
+Teszt terv:		Sass-Gyarmati Norbert		nincs				github
+
+Teszt-esetek:		Oravecz Zsolt			nincs				nincs
+
+Tesztjegyzõkönyvek:	Járomi Dávid Antal
+			Sass-Gyarmati Norbert
+			Oravecz Zsolt			nincs				github
+
+
+Tesztelési jelentés:	Sass-Gyarmati Norbert		nincs				személyes
+											trello
+											github
+
