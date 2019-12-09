@@ -1,0 +1,36 @@
+						Feladatkörök és felelõsségek
+Feladatkör			Felelõsség/tevékenység						Személy
+Tesztelõ: 	
+?				A teszt végrehajtása						Oravecz Zsolt
+
+?				Észrevételek dokumentálása					Sass-Gyarmati Norbert
+
+?				Teszt dokumentáció archiválása					Sass-Gyarmati Norbert
+									
+Szakértõ:	
+				A szakértõ az észrevételek elemzi és megoldást javasol.			
+Teszt-koordinátor:	
+?				Teszt terv készítése						Sass-Gyarmati Norbert
+
+?				A tesztterv jóváhagyatása a projektmenedzserrel			Sass-Gyarmati Norbert
+												Oravecz Zsolt
+
+?				Teszt forgatókönyvek létrehozása				Sass-Gyarmati Norbert
+
+?				Inkonzisztenciák kezelése 					Oravecz Zsolt
+
+?				Helyes és idõbeni hibakezelés 					Oravecz Zsolt
+
+?				Szükség esetén problémák eszkalálása a projekt menedzsernek 	Oravecz Zsolt
+
+?				Végsõ riport készítése						Sass-Gyarmati Norbert
+
+?				Teszt dokumentum archiválása					Járomi Dávid Antal
+
+?				Az észrevételek státuszának követése, ill. dokumentálása	Sass-Gyarmati Norbert
+												Járomi Dávid Antal
+												Oravecz Zsolt
+Projektvezetõ:											Sass-Gyarmati Norbert
+?				Teszt terv jóváhagyása 
+?				Teszt forgatókönyv (testscript)					Sass-Gyarmati Norbert
+												Oravecz Zsolt
