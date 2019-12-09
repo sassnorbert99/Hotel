@@ -1,0 +1,65 @@
+2019.12.02.
+
+	kód		teszter				mellék		megjegyzés
+
+	001		Sass-Gyarmati Norbert		01		A terheléses teszt sikeres volt, a feltételeknek eleget tett
+
+	002		Sass-Gyarmati Norbert		02		A terheléses teszt látszólag közepesen sikeres, a teljesítmény alacsonyabb lett,
+									a tárigény dinamikusan emelkedett, valamint az idõ megnõtt.
+
+										kielégítve elkészült.
+******************************************************************************************************************************
+2019.12.03.
+
+	kód		teszter				mellék		megjegyzés
+
+	003		Oravecz Zsolt			03		A bejelentkeztetést 100 adattal próbáltam feltörni, mely sikertelen eredményt
+									hozott, ennek hatására a terheléses teszt sikeres lett.
+
+	
+********************************************************************************************************************************
+2019.12.04
+
+
+	kód		teszter				mellék		megjegyzés
+
+	004 		Sass-Gyarmati Norbert				A szoftver ezen terheléses teszt célja az volt, hogy összesen egy 1GB-os lemez
+									területen összesen mennyi adat fér el. Eredménye a következõ: A szolgáltatás tárhelye
+									(kb. 150MB) körülbelül 100 000, azaz százezer adatot tudunk bevinni akadás és fagyás
+									mentesen.
+
+*********************************************************************************************************************************
+2019.12.05
+
+
+	kód		teszter				mellék		megjegyzés
+
+
+	005		Sass-Gyarmati Norbert				A szofter minden terheléses igénynek megfelelt, a szolgáltatás a megbízó igényeit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mellék:
+-01:
+	for (int i = 0; i < 100000; i++)
+            {
+                comboBox1.Items.Add("név: " + vendeglista[i].Nev + " taj száma: " + vendeglista[i].Taj + " lakcíme: " + vendeglista[i].Lakcim + " kivett szoba: " + vendeglista[i].KivettSzoba);
+            }
+
+	-02:
+	for (int i = 0; i < 99999999999; i++)
+            {
+                comboBox1.Items.Add("név: " + vendeglista[i].Nev + " taj száma: " + vendeglista[i].Taj + " lakcíme: " + vendeglista[i].Lakcim + " kivett szoba: " + vendeglista[i].KivettSzoba);
+            }

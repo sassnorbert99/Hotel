@@ -235,7 +235,7 @@ Az elfogadási teszt (angolul User Acceptance Test) célja a rendszer teljes funkc
 
 ******************************************************************************************************************************************************************
 3.5	Terheléses teszt 
-A terheléses teszt célja a tervezett kapacitások, valamint a rendelkezésre álló növekedési potenciál meghatározása. Módszere:...
+A terheléses teszt célja a tervezett kapacitások, valamint a rendelkezésre álló növekedési potenciál meghatározása. Módszere:
 
 	kód		teszter				mellék		megjegyzés
 
@@ -246,6 +246,14 @@ A terheléses teszt célja a tervezett kapacitások, valamint a rendelkezésre álló 
 
 	003		Oravecz Zsolt			03		A bejelentkeztetést 100 adattal próbáltam feltörni, mely sikertelen eredményt
 									hozott, ennek hatására a terheléses teszt sikeres lett.
+
+	004 		Sass-Gyarmati Norbert				A szoftver ezen terheléses teszt célja az volt, hogy összesen egy 1GB-os lemez
+									területen összesen mennyi adat fér el. Eredménye a következõ: A szolgáltatás tárhelye
+									(kb. 150MB) körülbelül 100 000, azaz százezer adatot tudunk bevinni akadás és fagyás
+									mentesen.
+
+	005		Sass-Gyarmati Norbert				A szofter minden terheléses igénynek megfelelt, a szolgáltatás a megbízó igényeit
+									kielégítve elkészült.
 
 
 
