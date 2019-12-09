@@ -1,0 +1,798 @@
+1
+A szoftver tesztelés alapjai
+Micskei Zoltán, Majzik István
+http://www.inf.mit.bme.hu/
+Szoftverellenõrzési technikák
+2
+Hol tartunk a félévi anyagban?
+• Követelményspecifikáció ellenõrzése
+• Ellenõrzések a tervezési fázisban
+• Forráskód verifikáció technikái
+• Tesztelési módszerek és folyamatok
+– A szoftver tesztelés alapjai
+– Specifikáció és struktúra alapú teszttervezési módszerek
+– Tesztelés a fejlesztés különbözõ fázisaiban
+– Teszt környezet és teszt automatizálás
+– Modell alapú tesztelés
+• Validáció
+– GUI tesztelés
+– Stressz és robusztusság tesztelés, hibainjektálás
+3
+A tesztelés definíciói (1)
+„Testing is an activity performed for evaluating
+product quality, and for improving it, by
+identifying defects and problems.”
+– Forrás: IEEE, „Software Engineering Body of Knowledge” (SWEBOK)
+URL: http://www.computer.org/portal/web/swebok/
+– Általános definíció
+– Kulcs: „evaluating product quality”
+• Quality: „the degree to which a system, component, or
+process meets specified requirements”
+4
+A tesztelés definíciói (2)
+„ An activity in which a system or component is
+executed under specified conditions, the results
+are observed or recorded, and an evaluation is
+made of some aspect of the system or
+component.”
+– Forrás: IEEE, "IEEE Standard for Software and System Test
+Documentation," IEEE Std 829-2008 , 2008
+– Kicsit specifikusabb
+– Kulcs: végrehajtjuk a rendszert vagy komponenst
+5
+A tesztelés definíciói (3)
+„The process consisting of all lifecycle activities, both
+static and dynamic, concerned with planning, preparation
+and evaluation of software products and related work
+products
+- to determine that they satisfy specified requirements,
+- to demonstrate that they are fit for purpose and
+- to detect defects.
+– Forrás: International Software Testing Qualifications Board
+(ISTQB), URL: http://istqb.org/
+– Sokkal bõvebb definíció
+– Kulcs:
+• Tesztelés egy folyamat
+• Statikus és dinamikus technikák is
+6
+A tesztelés lehetséges céljai
+A tesztelés lehetséges céljai
+– Bizonyosságot szerezni a rendszer minõségi állapotáról
+– Információ a döntéshozáshoz (pl. release / no release)
+– Hibák keresése
+– Hibák megakadályozása
+Mottók:
+– Dijkstra: A tesztelés a hibák jelenlétét, és nem a
+hibamentességet tudja kimutatni.
+– Hoare: A tesztelés egy induktív bizonyítás része:
+Ha a program jól mûködik egy adott teszt adatra,
+akkor várhatóan hasonló adatokra is jól mûködik.
+7
+Alapelvek (7 testing principles)
+• Csak a hibák meglétét tudja kimutatni
+• A kimerítõ tesztelés legtöbbször lehetetlen
+– Hány teszt kéne egy 3 integer paraméterû függvényhez?
+• Tesztelés már a korai fázisokban szükséges
+• Hibák csoportosulása (defect clustering)
+– A komponensek egy kis részében van a hibák nagy része
+• Féregirtó paradoxon (pesticide paradox)
+– Teszt újra és újra futtatva egyre kevésbé hatékony
+– Minden módszer után marad még valami más típusú hiba
+• A tesztelés függ a körülményektõl (context dependent)
+• Hibamentes rendszer téveszméje
+– Hibamentes tesztlefutás még nem jelent jó rendszert
+8
+Alapfogalmak
+• Teszteset (test case)
+– Bemeneti értékek és végrehajtási elõfeltételek
+– Várt eredmények és végrehajtási utófeltételek halmaza
+• Tesztkészlet (test suite)
+• Orákulum (test oracle)
+– Várt eredmények származtatása, összehasonlítása
+• Eredmény (verdict)
+– Sikeres (pass), sikertelen (fail)
+– Nem meggyõzõ (inconclusive), hiba (error)
+• Tesztelés != Hibakeresés (debugging)
+Teszt
+bemenet SUT Teszt
+kimenet Orákulum Eredmény
+9
+Tesztelési környezet (eszközök)
+10
+Alap problémák
+• Teszt kiválasztás (test selection)
+– Milyen teszt bemeneteket használjunk?
+– Ld. mûködési profil szerepe
+• Kilépési feltétel (exit criteria)
+– Meddig teszteljünk?
+• Specifikáció fedése, kód fedése, hibák fedése?
+– Ld. megbízhatóság elõrejelzése
+• Orákulum
+– Honnan lesz jó teszt orákulum?
+• Tesztelhetõség (testability)
+– Megfigyelhetõség (observability)
+– Vezérelhetõség (controllability)
+11
+A megbízhatóság elõrejelzése
+• Alapkérdés: A tesztelési folyamat során hogyan
+változik a szoftver megbízhatósága?
+– Hibák detektálása és javítása:
+Meghibásodási gyakoriság csökken
+• Megbízhatóság növekedési modellek
+– Legegyszerûbb: Lépcsõs függvény modell
+• Tökéletes hibajavítás
+• Azonos gyakoriságú hibák
+– Komplikáltabb: Véletlen ugrású lépcsõs függvény
+• A hibajavítás újabb hibát bevihet
+• A javított hibák különbözõ gyakoriságúak
+– Folytonos modellek
+• Adott feltételek mellett alkalmazhatók (feladattípus,
+paradigma, komplexitás, fejlesztõk, …)
+• Mért hibajavítási adatok illesztése szükséges
+12
+A megbízhatóság elõrejelzése
+• Alapkérdés: A tesztelési folyamat során hogyan
+változik a szoftver megbízhatósága?
+– Hibák detektálása és javítása:
+Meghibásodási gyakoriság csökken
+• Megbízhatóság növekedési modellek
+– Legegyszerûbb: Lépcsõs függvény modell
+• Tökéletes hibajavítás
+• Azonos gyakoriságú hibák
+– Komplikáltabb: Véletlen ugrású lépcsõs függvény
+• A hibajavítás újabb hibát bevihet
+• A javított hibák különbözõ gyakoriságúak
+– Folytonos modellek
+• Adott feltételek mellett alkalmazhatók (feladattípus,
+paradigma, komplexitás, fejlesztõk, …)
+• Mért hibajavítási adatok illesztése szükséges
+13
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelés az
+életciklusban
+A tesztelési fogalmak áttekintése
+14
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Planning and
+Control
+Analysis and
+Design
+Imlementation
+and Execution
+Evaluating Exit
+Criteria and
+Reporting
+Test Closure
+Activities
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelés az
+életciklusban
+15
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Planning and
+Control
+Analysis and
+Design
+Imlementation
+and Execution
+Evaluating Exit
+Criteria and
+Reporting
+Test Closure
+Activities
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelés az
+életciklusban
+16
+Tesztelési stratégia
+• Általános irányelvek
+– Milyen metodológiát?
+– Milyen típusú teszteket?
+– Milyen eszközöket?
+– Ki fogja használni?
+– Milyen kilépési feltétellel?
+– Milyen dokumentáció kell?
+– …
+• Példák az irányelvekre:
+– Test-driven development
+– Modul & rendszer
+– JUnit & GUI Tester
+– Fejlesztõ és teszt csapat
+– 90% utasítás lefedettség &
+minden használati eset
+17
+Teszt terv (test plan)
+• Teszt stratégia leképezése az aktuális projektre
+– Tesztelési célok, irányelvek, környezet…
+– Tesztelendõ funkciók
+– Erõforrások, szerepek, ütemezés
+• Tesztelési fázisok definiálása
+– Fázisok hossza
+– Kilépési feltétel
+– Tesztelés minõségét hogyan fogjuk mérni
+• Egyszerû példa: http://bazman.tripod.com/
+18
+Teszt dokumentáció
+• IEEE 829 - Standard for
+Software and System Test
+Documentation (1998)
+– Test Plan (SPACEDIRT:
+Scope, People, Approach,
+Criteria, Environment,
+Deliverables, Incidentals,
+Risks, Tasks)
+– Test specifications: Test
+Design, Test Case, Test
+Procedure Specifications
+– Test reporting: Test Item
+Transmittal Report, Test
+Log, Test Incident Report,
+Test Summary Report
+19
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Planning and
+Control
+Analysis and
+Design
+Imlementation
+and Execution
+Evaluating Exit
+Criteria and
+Reporting
+Test Closure
+Activities
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelés az
+életciklusban
+• Mit lehet és kell tesztelni?
+• Tesztesetek tervezése, specifikálása
+– Teszteset célja
+– Kiindulási környezet
+– Teszteset lépései, teszt adatok
+– Elvárt kimenet
+• Mielõtt elkezdenénk tesztkódot írni
+• Szisztematikus módszer ajánlott
+20
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Planning and
+Control
+Analysis and
+Design
+Imlementation
+and Execution
+Evaluating Exit
+Criteria and
+Reporting
+Test Closure
+Activities
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelés az
+életciklusban
+• Manuális vagy automatikus
+• Van, amit nem éri meg
+automatizálni
+• Tesztek végrehajtása
+• Kimenetek naplózása
+• Idõ, teszt környezet
+• Komponensek verziói
+• Rendszer kimenete
+• …
+• Incidensek rögzítése
+21
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Planning and
+Control
+Analysis and
+Design
+Imlementation
+and Execution
+Evaluating Exit
+Criteria and
+Reporting
+Test Closure
+Activities
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelés az
+életciklusban
+• Döntés a tesztelés folytatásáról
+• Összefoglaló jelentés
+• Tesztelés lezárása
+• Tipikusan mérföldkövenként
+• Tapasztalat összegyûjtése
+• Teszt eszközök, környezetek
+(testware) befejezése
+22
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Tesztelés
+szintjei
+Unit / Modul
+Integrációs
+Rendszer
+Átvételi
+(Acceptance)
+Alfa és béta
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelés az
+életciklusban
+25
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Tesztelés
+szintjei
+Unit / Modul
+Integrációs
+Rendszer
+Átvételi
+(Acceptance)
+Alfa és béta
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelés az
+életciklusban
+• Akár a megrendelõ által
+• Végleges (vagy nagyon
+hasonló) környezet
+• Teljes rendszer (minden
+függõséggel együtt)
+• Követelmények alapján
+26
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Funkcionális
+Nemfunkcionális
+Regressziós
+…
+Teszttervezési
+technikák
+Tesztelés az
+életciklusban
+27
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Funkcionális
+Nemfunkcionális
+Regressziós
+…
+Teszttervezési
+technikák
+Tesztelés az
+életciklusban
+Példák:
+• Teljesítmény,
+• Stressz,
+• Használhatóság,
+• Robusztusság,
+• …
+28
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Funkcionális
+Nemfunkcionális
+Regressziós
+…
+Teszttervezési
+technikák
+Tesztelés az
+életciklusban
+• Módosítások után
+• Korábbi funkciót
+ nem rontottunk el
+• Teljes tesztkészlet
+ egy részét csak
+• Teszt készlet
+ minimalizálás
+29
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelõ
+tapasztalata
+Specifikáció
+alapú
+Struktúra
+alapú
+Hiba alapú
+Valószínûségi
+Tesztelés az
+életciklusban
+30
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelõ
+tapasztalata
+Specifikáció
+alapú
+Struktúra
+alapú
+Hiba alapú
+Valószínûségi
+Tesztelés az
+életciklusban
+• Ad hoc tesztelés
+• Felderítõ tesztelés
+(exploratory)
+• Rendszer megismerése
+• Teszt tervezés és alkalmazás
+futtatása együtt
+31
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelõ
+tapasztalata
+Specifikáció
+alapú
+Struktúra
+alapú
+Hiba alapú
+Valószínûségi
+Tesztelés az
+életciklusban
+• Fekete doboz (black box)
+/ funkcionális tesztelés
+• Csak a specifikációból
+indulunk ki 
+32
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelõ
+tapasztalata
+Specifikáció
+alapú
+Struktúra
+alapú
+Hiba alapú
+Valószínûségi
+Tesztelés az
+életciklusban
+• Fehér doboz (white box) /
+strukturális tesztelés
+• Belsõ mûködést is
+ismerjük
+• Forráskód, részletes terv,
+belsõ modell ismert
+33
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelõ
+tapasztalata
+Specifikáció
+alapú
+Struktúra
+alapú
+Hiba alapú
+Valószínûségi
+Tesztelés az
+életciklusban
+• Hibasejtés (error guessing)
+• Pl. korábbi hibák alapján
+• Mutációs tesztelés
+• Kód mutálása
+– tesztek értékelése
+• Teszt mutálása
+– új tesztesetek készítése
+34
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelõ
+tapasztalata
+Specifikáció
+alapú
+Struktúra
+alapú
+Hiba alapú
+Valószínûségi
+Tesztelés az
+életciklusban
+• (Ortogonális kategória)
+• Tesztesetek származtatása:
+• Determinisztikus vagy
+• Valószínûségi módon
+• Módszerek
+• Véletlenszerû (random)
+• Mûködési (operational)
+• Statisztikai (random +
+kritérium)
+35
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelõ
+tapasztalata
+Specifikáció
+alapú
+Struktúra
+alapú
+Hiba alapú
+Valószínûségi
+Tesztelés az
+életciklusban
+Ezek kombinációja
+hatásos általában!
+36
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelés az
+életciklusban
+V modell
+Agilis
+…
+37
+Ismétlés: A tesztelés tervezése
+Követelmények
+elemzése
+Rendszer
+specifikálás
+Architektúra
+tervezés
+Modul
+tervezés
+Modul
+implementáció
+Modul teszt
+tervezés
+Integrációs teszt
+tervezés
+Rendszerteszt
+tervezés
+Rsz. validáció
+tervezés
+Modul
+verifikáció
+Rendszer
+integrálás
+Rendszer
+verifikáció
+Rendszer
+validáció
+Üzemeltetés,
+karbantartás
+38
+Szoftver
+tesztelés
+Tesztelés
+folyamata
+Tesztelés
+szintjei
+Tesztelési
+típusok
+Teszttervezési
+technikák
+Tesztelés az
+életciklusban
+V modell
+Agilis
+…
+• Teszt-vezérelt fejlesztés (TDD)
+• Test-first development
+• Folyamatos tesztelés
+39
+Tesztelés gyakorlati kérdései
+• Tesztelés a fejlesztési költség több mint 50%-a!
+– Teszt adatok generálása
+– Teszt kód írása
+– Tesztek futtatása
+– Eredmények kiértékelése
+• Az automatizálás alapja: pl. UML modell
+– Osztálydiagram: modul interfészek
+? Teszt vezérlõk és teszt csonk váz generálása
+– Szekvencia diagram: modulok együttmûködése
+? Teszt szekvencia származtatása
+• Lásd majd a modell-alapú tesztelés elõadást!
+Tipikusan kézi
+munka
+Automatizálható
+40
+Testing @ Microsoft
+• Software Developer Engineer in Test (SDET)
+• Kb. ugyanannyi tesztelõ, mint fejlesztõ
+• Fejlesztõivel egyenrangú karrierút
+– Tesztelõ nem belépõ pozíció
+– Teszt menedzser nem elõléptetés, hanem külön út
+• 10 éves támogatási ciklus az OS verziókhoz
+– Megéri automatizálni a tesztelést
+„How we test software at Microsoft”, Microsoft
+Press, ISBN 0735624259, 2008.
+41
+Testing @ Google
+• Software Engineer in Test (SET) és
+Test Engineer (TE) szerepek
+• „The burden of quality is on the shoulders of
+those writing the code.”
+• „Ne vegyünk fel túl sok tesztelõt”
+42
+További információk
+• International Software Testing Qualifications Board
+(ISTQB), URL: http://istqb.org/
+– ISTQB Glossary of Testing Terms
+– Foundation Level Syllabus (2011)
+– Magyarul is: http://www.hstqb.com/index.php?title=Downloads
+• IEEE, Software Engineering Body of Knowledge
+(SWEBOK), URL:
+http://www.computer.org/portal/web/swebok/
+– Chapter 5: Software Testing
+• IEEE, Software and Systems Engineering Vocabulary (SE
+VOCAB), URL: http://pascal.computer.org/sev_display/
+– Definíciók kereshetõ jegyzéke
+43
+Összefoglalás Szoftver
+tesztelés
+Tesztelés
+folyamata
+Planning and
+Control
+Analysis and
+Design
+Imlementation
+and Execution
+Evaluating Exit
+Criteria and
+Reporting
+Test Closure
+Activities
+Tesztelés
+szintjei
+Unit / Modul
+Integrációs
+Rendszer
+Átvételi
+(Acceptance)
+Alfa és béta
+Tesztelési
+típusok
+Funkcionális
+Nemfunkcionális
+Regressziós
+…
+Teszttervezési
+technikák
+Tesztelõ
+tapasztalata
+Specifikáció
+alapú
+Struktúra alapú
+Hiba alapú
+Valószínûségi
+Tesztelés az
+életciklusban
+V modell
+Agilis
+…
