@@ -233,6 +233,21 @@ namespace HotelLite
                 this.birthCity = value;
             }
         }
+
+        public string Nationality
+        {
+            get
+            {
+                return nationality;
+            }
+            set
+            {
+                if (value.Length > 20)
+                {
+                    throw new nationalityException("túl hosszú a mező értéke");
+                }
+            }
+        }
         */
     }
 }
