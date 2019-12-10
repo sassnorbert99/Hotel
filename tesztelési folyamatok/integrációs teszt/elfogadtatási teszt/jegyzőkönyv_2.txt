@@ -6,9 +6,15 @@ funkcionalitásának vizsgálata a felhasználók szemszögébõl.
 2019.12.03.
 
 Béta verzió megnevezése		kód		felhasználó		funkció			megjegyzés
-	HotelLite Beta			001		Kiss Pista		login			regisztrálni egy fiókkal tudtam, melyet a csoport generált
+	HotelLite Beta		001		Kiss Pista		login			regisztrálni egy fiókkal tudtam, melyet a csoport generált
 
-					002		Nagy Pista		adatfeltöltés		adatokat csak bejelentkezés után tudtam lekérni, illetve 
+-------------------------------------------------------------------------------------------------
+2019.12.04.
+
+Béta verzió megnevezése		kód		felhasználó		funkció			megjegyzés
+
+
+Hotellite Beta			002		Nagy Pista		adatfeltöltés		adatokat csak bejelentkezés után tudtam lekérni, illetve 
 													feltölteni
 	
 					
