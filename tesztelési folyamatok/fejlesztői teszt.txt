@@ -1,6 +1,21 @@
 					Fejlesztõi teszt
 
 
+Feladata annak megállapítása, hogy a rendszer éles üzembe állítható-e.
+Célja a felhasználó és minden haszonélvezõ (stakeholder) elégedettségének vizsgálata.
+Általában a megrendelõ telephelyén, annak közremûködésével, és a végleges üzemeltetési
+körülmények között kell végrehajtani.
+A használható tesztelési módszerek hasonlóak, mint a SLT esetén, de azok közül csak a
+felhasználó számára releváns eseteket kell bemutatni.
+Ez a szint elsõsorban verifikációs szemléletû, tehát az a jó teszt, amely sikeres mûködést
+produkál.
+Lehet verifikációs célja is (olyan hibák kimutatására, amelyek csak a végleges mûködtetõ
+környezetben vizsgálhatók.)
+Egy speciális UAT módszer a béta verzió kibocsátása. A béta verziót általában egy korlátozott
+felhasználói kör kapja meg, akiktõl elvárható, hogy az észlelt hibákat rendszeresen jelentik a
+fejlesztõknek. 
+
+
 
 2019.12.01
 Készítette: Oravecz Zsolt

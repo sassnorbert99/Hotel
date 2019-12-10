@@ -1,3 +1,17 @@
+A tesztelt rendszert valamilyen szempontból erõs terhelésnek teszi ki. Fontos feladata a
+megfelelõ válaszidõk ellenõrzése. Ennek érdekében:
+• Vizsgálni kell, hogy a rendszer adott idõkorláton belül hogyan teljesít nagy
+mennyiségû adatokon dolgozva.
+• Intenzív feldolgozást kívánó helyzeteket kell teremteni, melyek szélsõségesek, de
+elõfordulhatnak.
+• A robosztusság ellenõrzésére érdemes a terhelést olyan szintre is emelni, amely
+(elvileg) a használat során nem fordulhat elõ. 
+
+
+
+
+
+
 2019.12.02.
 
 	kód		teszter				mellék		megjegyzés
